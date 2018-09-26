@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="gerenpingbi.css" />
+		<script src="../common/js/jquery-1.11.0.js" charset="UTF-8"></script>
+		<script src="gerenpingbi.js" charset="UTF-8"></script>
+	</head>
+
+	<body>
+
+		<iframe align="center" width="100%" height="36px" src="../common/topTitle.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		<div class="content">
+			<div class="contentContent">
+				<iframe align="center" width="auto" height="980px" src="../common/personallist.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+				<div class="rightContent">
+					<h3>我的屏蔽</h3>
+					<div class="pingbiContent">
+						<div class="sousuo">
+							<input placeholder="搜索想要屏蔽的公司名称或个人昵称" id="sousuoInput"/>
+							<div class="btnSousuo">
+								<img src="img/sousuo.png" />
+							</div>
+							<p>注： 屏蔽后，公司或个人将无法在网站内搜索到你，也将不会在网站内看到你发布的东西</p>
+							<div class="sousuoDisplay" id="sousuoDisplay">
+								<div class="sousuoContent">
+									<div class="everySousuo">
+										<input type="checkbox" />
+										<div class="pingbiInfo">
+											<a href="#">1<span>[企业]</span></a>
+											<p>昵称：九尾狐</p>
+										</div>
+									</div>
+									<div class="everySousuo">
+										<input type="checkbox" />
+										<div class="pingbiInfo">
+											<a href="#">2<span>[企业]</span></a>
+											<p>昵称：九尾狐</p>
+										</div>
+									</div>
+									<div class="everySousuo">
+										<input type="checkbox" />
+										<div class="pingbiInfo">
+											<a href="#">3<span>[企业]</span></a>
+											<p>昵称：九尾狐</p>
+										</div>
+									</div>
+									<div class="everySousuo">
+										<input type="checkbox" />
+										<div class="pingbiInfo">
+											<a href="#">4<span>[企业]</span></a>
+											<p>昵称：九尾狐</p>
+										</div>
+									</div>
+									<div class="everySousuo">
+										<input type="checkbox" />
+										<div class="pingbiInfo">
+											<a href="#">5<span>[企业]</span></a>
+											<p>昵称：九尾狐</p>
+										</div>
+									</div>
+									</div>
+								<div class="quanxuanPingbi">
+									<input type="checkbox" id="cbkQuanxuan" />
+									<label for="cbkQuanxuan">全选</label>
+									<a id="pingbiSelectGongsi">屏蔽所选公司</a>
+								</div>
+							</div>
+						</div>
+						<div class="yipingbiLiebiao" id="yipingbiLiebiao">
+							<p id="yipingbiliebiaoTitle">已屏蔽列表</p>
+						<!--	<div class="everyPingbi" onmouseenter="everyPingbiMouseenter(this)" onmouseleave="everyPingbiMouseleave(this)">
+								<div class="pingbiInfo">
+									<a href="#">九尾狐电子科技<span>[企业]</span></a>
+									<p>昵称：九尾狐</p>
+								</div>
+								<a class="delPingbi" onclick="delPingbi(this)">删除</a>
+							</div>
+							<div class="everyPingbi" onmouseenter="everyPingbiMouseenter(this)" onmouseleave="everyPingbiMouseleave(this)">
+								<div class="pingbiInfo">
+									<a href="#">九尾狐电子科技<span>[企业]</span></a>
+									<p>昵称：九尾狐</p>
+								</div>
+								<a class="delPingbi" onclick="delPingbi(this)">删除</a>
+							</div>
+							<div class="everyPingbi" onmouseenter="everyPingbiMouseenter(this)" onmouseleave="everyPingbiMouseleave(this)">
+								<div class="pingbiInfo">
+									<a href="#">南山有鹿<span>[个人]</span></a>
+									<p>昵称：九尾狐</p>
+								</div>
+								<a class="delPingbi" onclick="delPingbi(this)">删除</a>
+							</div>
+							<div class="everyPingbi" onmouseenter="everyPingbiMouseenter(this)" onmouseleave="everyPingbiMouseleave(this)">
+								<div class="pingbiInfo">
+									<a href="#">九尾狐电子科技<span>[企业]</span></a>
+									<p>昵称：九尾狐</p>
+								</div>
+								<a class="delPingbi" onclick="delPingbi(this)">删除</a>
+							</div>
+						--></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<iframe align="center" width="100%" height="230px" src="../common/footer.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		</div>
+		<div class="bac" id="bac"></div>
+		<div class="bacLight"></div>
+	</body>
+
+</html>

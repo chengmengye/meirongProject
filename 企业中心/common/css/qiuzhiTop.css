@@ -1,0 +1,58 @@
+body,div,p,ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font: "microsoft yahei";
+	color: #212121;
+}
+
+.qiuzhiTop{
+	width: 1200px;
+	height: 80px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+}
+.qiuzhiTopContent{
+	width: auto;
+	height: 80px;
+}
+ .qiuzhiTopContent > ul{
+ 	display: inline-block;
+ 	margin-left: 298px;
+ 	font-size: 16px;
+ }
+ 
+.qiuzhiTopContent > ul > li{
+	display: inline-block;
+	margin-right: 30px;
+	cursor: pointer;
+}
+.qiuzhiTopContent > ul > li > a{
+	display: inline-block;
+	height: 80px;
+	padding-left: 6px;
+	padding-right: 6px;
+	line-height: 80px;
+	text-decoration: none;
+	color: #212121;
+}
+.qiuzhiTopContent > ul > li > a:hover{
+	color: #C93756;
+	box-shadow: inset 0 -4px #C93756 ; 
+}
+.qiuzhiTitleClick{
+	color: #C93756 !important;
+	/*font-weight: 500;*/
+	box-shadow: inset 0 -4px #C93756 ; 
+}

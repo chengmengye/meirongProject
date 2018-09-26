@@ -1,0 +1,1856 @@
+body,
+div,
+p,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font: "microsoft yahei";
+	color: #212121;
+}
+
+input,
+textarea {
+	font-size: 14px;
+	outline: none;
+}
+
+.content {
+	width: 100%;
+	height: auto;
+	background-color: #F5F5F5;
+}
+
+.contentContent {
+	width: 1200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+}
+
+
+/*左侧职位记录  begin*/
+
+.leftJianliInfo {
+	position: relative;
+	float: left;
+	display: inline-block;
+	width: 840px;
+	height: auto;
+	padding: 15px 20px 0 20px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.leftJianliInfo>div {
+	margin-top: 15px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.leftJianliInfo>div:first-of-type {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+
+/*个人信息 begin*/
+
+.divGerenInfo {
+	/*display: none;*/
+	overflow: hidden;
+}
+
+.gerenInfo {
+	float: left;
+	display: inline-block;
+	padding-left: 10px;
+	padding-bottom: 24px;
+	width: 600px;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.name {
+	margin-bottom: 20px;
+	font-size: 24px;
+}
+
+.jibenInfo>span {
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 16px;
+	border-right: 1px solid #e6e6e6;
+}
+
+.jibenInfo>span:first-of-type {
+	padding-left: 0;
+}
+
+.jibenInfo>span:last-of-type {
+	border-right: none;
+}
+
+.hukousuozaidi {
+	margin-top: 10px;
+	color: #666;
+}
+
+.hukousuozaidi>span {
+	display: inline-block;
+	margin-bottom: 20px;
+	color: #212121;
+}
+
+.tongxun>span:first-of-type {
+	background: url(img/shouji.png) no-repeat left;
+	padding-left: 25px;
+}
+
+.tongxun>span:nth-of-type(2) {
+	margin-left: 80px;
+	background: url(img/youxiang.png) no-repeat left;
+	padding-left: 29px;
+}
+
+.divGerenInfo>img {
+	float: left;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.edit {
+	float: right;
+	display: inline-block;
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+	background: url(img/edit.png) no-repeat left center;
+	padding-left: 20px;
+	cursor: pointer;
+}
+
+.edit:hover {
+	color: #212121;
+}
+
+
+/*个人信息 end*/
+
+
+/*公共下拉框样式  begin*/
+
+.leftJianliInfo>div>form>div {
+	margin-top: 20px;
+	/*height: 36px;*/
+}
+
+.inputSelect {
+	display: inline-block;
+	width: 233px;
+	height: 34px;
+	margin-left: -5px;
+	padding-left: 5px;
+	line-height: 34px;
+	outline: none;
+	border-radius: 2px;
+	border: 1px solid #999;
+	background: url(img/xialajiantou.png)no-repeat;
+	background-position: 98% 50%;
+	cursor: pointer;
+}
+
+.muliSelect>span {
+	display: inline-block;
+	width: 170px;
+	height: 24px;
+	margin-right: 5px;
+	padding-left: 10px;
+	line-height: 24px;
+	/*background: url(../common/img/close.png) no-repeat #F7F7F7 95% center;
+	background-size: 10px 10px;*/
+	background-color: #f7f7f7;
+}
+
+.muliSelect>span>img {
+	width: 10px;
+	height: 10px;
+	float: right;
+	margin-top: 6px;
+	margin-right: 10px;
+}
+
+.muliSelect {
+	width: 593px !important;
+}
+
+.input {
+	width: 233px;
+	height: 34px;
+	margin-left: -5px;
+	padding-left: 5px;
+	line-height: 34px;
+	outline: none;
+	border-radius: 2px;
+	border: 1px solid #999;
+}
+
+.weitianxieImg {
+	display: none;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+.firstSpan {
+	display: inline-block;
+	width: 80px;
+	margin-right: 20px;
+	text-align: right;
+	color: #666;
+	/*line-height: 36px;*/
+}
+
+.ulDisplay {
+	display: none;
+	width: 240px;
+	height: auto;
+	background: #fff;
+	position: absolute;
+	top: 36px;
+	left: 99px;
+	border-radius: 4px;
+	z-index: 1;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+}
+
+.ulMuliSelect {
+	width: 600px;
+}
+
+.ulMuliSelect>li {
+	width: 580px !important;
+}
+
+.ulDisplay>li {
+	padding-left: 20px;
+	width: 220px;
+	/*float: left;*/
+	cursor: pointer;
+	line-height: 36px;
+}
+
+.ulDisplay>li>input {
+	vertical-align: middle;
+	margin-top: -2px;
+	margin-right: 5px;
+}
+
+.ulDisplay>li>span {
+	display: inline-block;
+	line-height: 36px;
+}
+
+.ulDisplay>li:hover {
+	background: #e6e6e6;
+}
+
+.ulDisplay>li:nth-child(1) {
+	margin-top: 12px;
+}
+
+.save {
+	width: 112px;
+	height: 36px;
+	margin-top: 10px;
+	margin-left: 99px;
+	color: white;
+	background: #c93756;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.save:hover {
+	background: #9e2d45;
+}
+
+.cancel {
+	width: 112px;
+	height: 36px;
+	margin-top: 10px;
+	margin-left: 15px;
+	border: 1px solid #ccc;
+	background: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.cancel:hover {
+	background: #ccc;
+	color: #fff;
+}
+
+
+/*公共下拉框样式  end*/
+
+
+/*个人信息编辑 begin*/
+
+.leftJianliInfo .divGerenInfoEdit {
+	display: none;
+	width: 840px;
+	margin-top: 20px;
+	padding-bottom: 30px;
+	font-size: 14px;
+}
+
+.divGerenInfoEdit>form {
+	position: relative;
+	display: inline-block;
+}
+
+.divGerenInfoEdit .sex {
+	margin-top: 25px;
+}
+
+.sex>input:first-of-type {
+	margin-left: -3px;
+}
+
+.bornDate input::-webkit-calendar-picker-indicator,
+.peixunDate input::-webkit-calendar-picker-indicator,
+.gongzuoDate input::-webkit-calendar-picker-indicator {
+	background: rgba(0, 0, 0, 0);
+	color: rgba(0, 0, 0, 0);
+	width: 140px;
+	height: 34px;
+}
+
+.bornDate input::-webkit-inner-spin-button,
+.peixunDate input::-webkit-inner-spin-button,
+.gongzuoDate input::-webkit-inner-spin-button {
+	display: none;
+}
+
+.bornDate input::-webkit-clear-button,
+.peixunDate input::-webkit-clear-button,
+.gongzuoDate input::-webkit-clear-button {
+	display: none;
+}
+
+.xueli,
+.gongzuojingyan,
+.xianjudi,
+.hukousuozaidi {
+	position: relative;
+}
+
+.xueli input,
+.gongzuojingyan input,
+.xianjudi input,
+.selectHukousuozaidi input {
+	cursor: pointer;
+}
+
+.jianliTouxiang {
+	position: absolute;
+	left: 600px;
+	top: 0;
+	width: 190px;
+	text-align: center;
+}
+
+.imgTouxiang {
+	position: relative;
+	margin-left: 20px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.imgTouxiang>img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.jianliTouxiang>p {
+	margin-top: 15px;
+	font-size: 12px;
+	color: #999;
+}
+
+.editTouxiangHover {
+	display: none;
+	position: absolute;
+	left: 19px;
+	top: 0;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background-color: rgb(0, 0, 0, 0.7);
+}
+
+.imgFile {
+	position: relative;
+	display: inline-block;
+	margin-top: 65px;
+}
+
+.imgFile>input {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 25px;
+	height: 25px;
+	overflow: hidden;
+	opacity: 0;
+}
+
+.editTouxiangHover>img {
+	/*display: none;*/
+	margin-top: 65px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.lianxidianhua {
+	position: absolute;
+	top: 240px;
+	left: 460px;
+	width: 400px;
+}
+
+.youxiang {
+	position: absolute;
+	top: 295px;
+	left: 460px;
+	width: 400px;
+}
+
+.leftJianliInfo .juzhudi {
+	position: absolute;
+	left: 120px;
+	top: 306px;
+	margin-top: 0;
+}
+
+.leftJianliInfo .hujidi {
+	position: absolute;
+	left: 120px;
+	top: 362px;
+	margin-top: 0;
+}
+
+
+/*个人信息编辑 end*/
+
+
+/*求职意向  begin*/
+
+.divQiuzhiyixiang {
+	/*display: none;*/
+	margin-top: 15px;
+	font-size: 14px;
+	padding-bottom: 25px;
+	/*border-bottom: 1px solid #E6E6E6;*/
+}
+
+.infoTitle {
+	display: inline-block;
+	font-size: 18px;
+	color: #212121;
+}
+
+.qiuzhiyixiang {
+	margin-top: 5px;
+	margin-left: 10px;
+	overflow: hidden;
+}
+
+.qiuzhiyixiang div {
+	float: left;
+	display: inline-block;
+	width: 410px;
+	margin-top: 15px;
+}
+
+.qiuzhiyixiang p {
+	display: inline-block;
+	color: #666;
+}
+
+.qiuzhiyixiang span {
+	display: inline-block;
+	width: 300px;
+	color: #212121;
+}
+
+.qiuzhiMul {
+	width: 820px !important;
+	overflow: hidden;
+}
+
+.qiwanghangyeMul,
+.qiwangzhiweiMul {
+	float: left;
+	display: inline-block;
+	width: 400px;
+}
+
+.qiwanghangyeMul>span:nth-of-type(2),
+.qiwanghangyeMul>span:nth-of-type(3),
+.qiwangzhiweiMul>span:nth-of-type(2),
+.qiwangzhiweiMul>span:nth-of-type(3) {
+	margin-left: 74px;
+	margin-top: 15px;
+}
+
+.qiwanghangye .weitianxieImg,
+.qiwangzhiwei .weitianxieImg {
+	margin-top: -30px;
+}
+
+
+/*求职意向  end*/
+
+
+/*求职意向编辑  begin*/
+
+.leftJianliInfo .divQiuzhiyixiangEdit {
+	display: none;
+	position: relative;
+	width: 840px;
+	padding-bottom: 30px;
+	font-size: 14px;
+}
+
+.divQiuzhiyixiangEdit>form>div {
+	/*margin-top: 20px;*/
+	position: relative;
+}
+
+.qiwanghangye,
+.qiwangzhiwei {
+	height: 36px;
+}
+.ulMuliQiwangzhiwei{
+	height: 300px;
+	overflow-y: auto;
+}
+.ulMuliQiwangzhiwei::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 10px;
+	/*高宽分别对应横竖滚动条的尺寸*/
+	height: 4px;
+}
+
+.ulMuliQiwangzhiwei::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 5px;
+	/*-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);*/
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.ulMuliQiwangzhiwei::-webkit-scrollbar-track {
+	/*滚动条里面轨道*/
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+	border-radius: 0;
+	background: rgba(230, 230, 230);
+}
+
+
+.divQiuzhiyixiangEdit .isChuchai {
+	margin-top: 30px;
+}
+
+.divQiuzhiyixiangEdit input {
+	cursor: pointer;
+}
+
+.mulSpan {
+	float: left;
+	margin-right: 23px;
+	line-height: 36px;
+}
+
+
+/*职位类别display*/
+
+.zhiweileibieDisplay {
+	display: none;
+	position: absolute;
+	left: 100px;
+	top: 37px;
+	width: auto;
+	height: 252px;
+	padding: 12px 10px 12px 0;
+	border-radius: 5px;
+	background-color: white;
+	box-shadow: 0px 0px 10px rgb(0, 0, 0, .2), 0px 0px 10px rgb(0, 0, 0, .2);
+	z-index: 1;
+	overflow: hidden;
+}
+
+.zhiweileibieDisplay>ul {
+	float: left;
+	/*display: inline-block;*/
+}
+
+.zhiweileibieDisplay>ul>li {
+	height: 36px;
+	line-height: 36px;
+	padding-left: 20px;
+	cursor: pointer;
+}
+
+.zhiweileibieDisplay>ul>li:hover {
+	background-color: #E6E6E6 !important;
+}
+
+.jibie,
+.zhiwei {
+	display: none;
+}
+
+.hangye>li {
+	width: 130px;
+}
+
+.jibie>li,
+.zhiwei>li {
+	width: 160px;
+}
+
+.zhiwei {
+	width: 194px;
+	height: 252px;
+	overflow-y: auto;
+}
+
+
+/*.zhiwei> li:hover{
+	background-color: #E6E6E6;
+}*/
+
+
+/*滚动条样式*/
+
+
+/*ulSheng是加滚动条的元素*/
+
+.zhiwei::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 4px;
+	/*高宽分别对应横竖滚动条的尺寸*/
+	height: 4px;
+}
+
+.zhiwei::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.9);
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.zhiwei::-webkit-scrollbar-track {
+	/*滚动条里面轨道*/
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0);
+}
+
+.leftJianliInfo .qiwanggongzuodi {
+	position: absolute;
+	left: 99px;
+	top: 212px;
+	margin-top: 0;
+}
+
+
+/*求职意向编辑  end*/
+
+#noPeixunjingli {
+	/*display: none;*/
+}
+
+
+/*无培训经历  begin*/
+
+.weitianxie {
+	height: 36px;
+	line-height: 36px;
+	padding-left: 56px;
+	margin-left: 330px;
+	margin-top: 50px;
+	margin-bottom: 25px;
+	color: #666;
+	background: url(img/wuneirong.png) no-repeat left center;
+}
+
+
+/*无培训经历  end*/
+
+
+/*培训经历  begin*/
+
+#peixunjingli {
+	display: none;
+	padding-bottom: 5px;
+}
+
+.add {
+	float: right;
+	display: inline-block;
+	font-size: 14px;
+	color: #666;
+	text-align: center;
+	background: url(img/add.png) no-repeat left center;
+	padding-left: 20px;
+	cursor: pointer;
+}
+
+.add:hover {
+	color: #212121;
+}
+
+.peixunjingliContent {
+	margin-left: 10px;
+	margin-top: 25px;
+}
+
+.everyPeixunjingli {
+	padding-top: 15px;
+	padding-bottom: 20px;
+	border-top: 1px dashed #E6E6E6;
+}
+
+.everyPeixunjingli:first-of-type {
+	border-top: none;
+	padding-top: 0;
+}
+
+.everyPeixunjingli:nth-last-of-type(2) {
+	/*padding-bottom: 0;*/
+}
+
+.everyPeixunjingliShow {
+	position: relative;
+}
+
+.everyPeixunjingliShow>p {
+	display: inline-block;
+	font-size: 14px;
+	color: #666;
+}
+
+.everyPeixunjingliShow>p:first-of-type {
+	width: 300px;
+	font-size: 16px;
+	color: #212121;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.everyPeixunjingliShow>p:nth-of-type(2) {
+	margin-left: 95px;
+}
+
+.everyPeixunjingliShow>p:nth-of-type(3) {
+	position: absolute;
+	right: 140px;
+	top: 7px;
+}
+
+.editHover {
+	display: none;
+	float: right;
+	margin-top: 7px;
+	margin-right: 10px;
+}
+
+.editHover>img {
+	float: left;
+	display: inline-block;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.everyPeixunjingliShow>img {
+	display: block;
+	margin-top: 15px;
+	max-width: 120px;
+	max-height: 120px;
+}
+
+
+/*培训经历  end*/
+
+
+/*培训经历编辑  begin*/
+
+.peixunjingliContent>.divPeixunjingliEdit {
+	border-top: 1px dashed #E6E6E6;
+	padding-bottom: 25px;
+}
+
+.leftJianliInfo .divPeixunjingliEdit {
+	display: none;
+	width: 840px;
+	/*padding-bottom: 30px;*/
+	font-size: 14px;
+}
+
+.divPeixunjingliEdit div {
+	margin-top: 20px;
+}
+
+.zhijin {
+	margin-left: 20px;
+	vertical-align: middle;
+}
+
+.zhengshuImg {
+	position: relative;
+}
+
+.zhengshuImg {
+	width: auto;
+	height: 120px;
+	overflow: hidden;
+}
+
+.zhengshuInput {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 120px;
+	height: 120px;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.zhengshuImg .uploadZhengshuImg {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 98px;
+	width: 120px;
+	height: 120px;
+	margin-top: 0;
+	background: url(img/uploadImg.png) no-repeat #E6E6E6 center center;
+	overflow: hidden;
+}
+
+.uploadZhengshuImg>img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	max-width: 120px;
+	max-height: 120px;
+}
+
+.zhengshuImg>span {
+	margin-top: 7px;
+}
+
+#editZhengshuHover {
+	margin-top: 0;
+}
+
+.editZhengshuHover {
+	display: none;
+	position: absolute;
+	left: 99px;
+	top: 0;
+	margin-top: 0 !important;
+	width: 120px;
+	height: 120px;
+	background-color: rgb(0, 0, 0, 0.7);
+	text-align: center;
+}
+
+.editZhengshuHover img {
+	cursor: pointer;
+	margin-top: 26px;
+}
+
+.zhengshuFile {
+	display: inline-block;
+	margin-top: 47.5px;
+}
+
+.zhengshuFile>input {
+	position: absolute;
+	left: 23px;
+	top: 48px;
+	width: 25px;
+	height: 25px;
+	overflow: hidden;
+	opacity: 0;
+}
+
+.editZhengshuHover>img {
+	margin-left: 20px;
+}
+
+
+/*培训经历编辑  end*/
+
+
+/*工作经验  begin*/
+
+#noGongzuojingyan {
+	display: block;
+}
+
+#gongzuojingyan {
+	display: none;
+	padding-bottom: 5px;
+}
+
+.gongzuojingyanContent {
+	margin-left: 10px;
+	margin-top: 25px;
+	font-size: 14px;
+	color: #666;
+}
+
+.gongzuojingyanContent>.divGongzuojingyanEdit {
+	border-top: 1px dashed #E6E6E6;
+	padding-bottom: 25px !important;
+}
+
+.divGongzuojingyanEdit div {
+	margin-top: 20px;
+}
+
+.everyGongzuojingyan {
+	padding-top: 15px;
+	padding-bottom: 20px;
+	border-top: 1px dashed #E6E6E6;
+}
+
+.everyGongzuojingyan:first-of-type {
+	border-top: none;
+	padding-top: 0;
+}
+
+.everyGongzuojingyan {
+	position: relative;
+}
+
+.everyGongzuojingyanShow>.editHover {
+	position: absolute;
+	left: 756px;
+	top: 20px;
+	margin-top: 0 !important;
+}
+
+.everyGongzuojingyan:first-of-type>.everyGongzuojingyanShow>.editHover {
+	top: 5px;
+}
+
+.everyGongzuojingyanShow>P:first-of-type {
+	font-size: 16px;
+	color: #212121;
+}
+
+.everyGongzuojingyanShow>p:nth-of-type(2) {
+	float: right;
+	margin-right: 140px;
+	margin-top: -17px;
+}
+
+.everyGongzuojingyanShow>p:nth-of-type(3) {
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+
+.everyGongzuojingyanShow>p:nth-of-type(3)>span {
+	display: inline-block;
+	margin-left: 40px;
+}
+
+.everyGongzuojingyanShow>P:nth-of-type(4) {
+	width: 770px;
+	line-height: 24px;
+}
+
+
+/*工作经验  end*/
+
+
+/*工作经验编辑  begin*/
+
+.leftJianliInfo .divGongzuojingyanEdit {
+	display: none;
+	width: 840px;
+	padding-bottom: 30px;
+	font-size: 14px;
+}
+
+.divGongzuojingyanEdit div {
+	/*margin-top: 20px;*/
+}
+
+.gongzuomiaoshu>textarea {
+	width: 495px;
+	height: 90px;
+	margin-left: -5px;
+	padding-top: 10px;
+	padding-left: 5px;
+	font-family: "microsoft yahei";
+	resize: none;
+}
+
+.gongzuomiaoshu>span {
+	margin-top: 7px;
+	vertical-align: top;
+}
+
+.gongzuomiaoshu>img {
+	margin-top: -20px;
+}
+
+
+/*工作经验编辑  end*/
+
+
+/*个人爱好  begin*/
+
+.divGerenaihao {
+	/*display: none;*/
+	margin-top: 15px;
+	padding-bottom: 25px;
+	font-size: 14px;
+	color: #666;
+	border-bottom: none !important;
+}
+
+.gerenaihao span {
+	font: 16px;
+	color: #212121;
+}
+
+.gerenaihao {
+	margin-top: 20px;
+	line-height: 24px;
+}
+
+.gerenaihao>p:first-of-type {
+	margin-bottom: 7px;
+}
+
+.gerenxingxiang {
+	display: none;
+	width: 175px;
+	height: 233px;
+	margin-top: 15px;
+	border-radius: 6px;
+	overflow: hidden;
+}
+
+
+/*个人爱好  end*/
+
+
+/*个人爱好编辑  begin*/
+
+.leftJianliInfo .divGerenaihaoEdit {
+	display: none;
+	width: 840px;
+	padding-bottom: 30px;
+	font-size: 14px;
+	border-bottom: none;
+}
+
+.divGerenaihaoEdit div {
+	/*margin-top: 20px;*/
+}
+
+.xingxiangImg {
+	position: relative;
+	width: auto;
+	height: 233px;
+	overflow: hidden;
+}
+
+.xingxiangImg>input {
+	position: absolute;
+	left: 99px;
+	top: 0;
+	width: 175px;
+	height: 233px;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.xingxiangImg .uploadXingxiangImg {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 98px;
+	width: 175px;
+	height: 233px;
+	margin-top: 0;
+	background: url(img/uploadImg.png) no-repeat #E6E6E6 center center;
+	border-radius: 6px;
+	overflow: hidden;
+	cursor: pointer;
+	/*opacity: 0.5;*/
+}
+
+.xingxiangImg>span {
+	margin-top: 7px;
+}
+
+.editXingxiangHover {
+	display: none;
+	position: absolute;
+	left: 97px;
+	top: 0;
+	width: 175px;
+	height: 233px;
+	border-radius: 6px;
+	background-color: rgb(0, 0, 0, 0.7);
+	text-align: center;
+}
+
+.editXingxiangHover>img {
+	margin-top: 91.5px;
+	cursor: pointer;
+}
+
+.editXingxiangHover>img:nth-of-type(2) {
+	margin-left: 20px;
+}
+
+
+/*个人爱好编辑 end*/
+
+
+/*左侧职位记录  end*/
+
+
+/*右侧操作简历  begin*/
+
+.rightCaozuojianli {
+	float: right;
+	display: inline-block;
+	margin-left: 15px;
+	width: 300px;
+	height: auto;
+}
+
+.caozuojianli {
+	width: 300px;
+	height: 232px;
+	padding-top: 30px;
+	/*padding-left: 20px;*/
+	font-size: 14px;
+	background-color: white;
+	border-radius: 4px;
+}
+
+.caozuojianli>div>span {
+	color: #666;
+}
+
+.jianliBianji {
+	font-size: 14px;
+	color: #666;
+	padding-left: 40px;
+}
+
+.jianliBianji>div {
+	display: inline-block;
+	text-align: center;
+	margin-right: 23px;
+	cursor: pointer;
+}
+
+.jianliBianji>div>p:hover {
+	color: #212121;
+}
+
+.jianliName {
+	position: relative;
+	margin-top: 23px;
+	margin-left: 20px;
+}
+
+.jianliName>span:nth-of-type(2) {
+	margin-left: 15px;
+}
+
+.jianliName>span:nth-of-type(3) {
+	position: absolute;
+	right: 20px;
+	top: 0;
+	color: #C93756;
+	cursor: pointer;
+}
+
+.isJianliniming {
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+.nimingIsShow {
+	display: inline-block;
+	width: auto;
+	height: 20px;
+	margin-left: 20px;
+	font-size: 12px;
+	border-radius: 3px;
+	background-color: #E6E6E6;
+	overflow: hidden;
+}
+
+.nimingIsShow>span {
+	display: inline-block;
+	width: auto;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 8px;
+	padding-right: 8px;
+	cursor: pointer;
+}
+
+.nimingIsShowClick {
+	color: white;
+	background-color: #2c84f1;
+}
+
+.isJianligongkai {
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+.gongkaiIsShow {
+	display: inline-block;
+	width: auto;
+	height: 20px;
+	margin-left: 20px;
+	font-size: 12px;
+	border-radius: 3px;
+	background-color: #E6E6E6;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.gongkaiIsShow>span {
+	display: inline-block;
+	width: auto;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 8px;
+	padding-right: 8px;
+	cursor: pointer;
+}
+
+.jianliwanchengdu {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.jianliwanchengdu>span:nth-of-type(2) {
+	width: 100px;
+	display: inline-block;
+	margin-left: 20px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #2c84f1;
+	background: url(img/liwu.png) no-repeat 60px center;
+}
+
+.wanchengdu {
+	width: 100%;
+	height: 4px;
+	margin-top: 20px;
+	border-radius: 2px;
+	background-color: #2c84f1;
+}
+
+
+/*置顶套餐  begin*/
+
+.zhidingtaocan {
+	width: 280px;
+	height: 77px;
+	margin-top: 20px;
+	padding-top: 15px;
+	padding-left: 20px;
+	border-radius: 4px;
+	font-size: 14px;
+	background-color: white;
+}
+
+.taocanShengyuDay {
+	margin-top: 5px;
+	color: #999;
+}
+
+.taocanShengyuDay>span:first-of-type {
+	margin-left: 20px;
+	font-size: 24px;
+	color: #e40f0f;
+}
+
+.taocanShengyuDay>span:last-of-type {
+	font-size: 18px;
+}
+
+
+/*置顶套餐  end*/
+
+
+/*人气小火苗  begin*/
+
+.renqihuomiao {
+	width: 260px;
+	height: 112px;
+	padding: 20px 20px;
+	margin-top: 20px;
+	background-color: white;
+	border-radius: 4px;
+}
+
+.renqihuomiao>p:first-of-type {
+	display: inline-block;
+	font-size: 14px;
+}
+
+.renqihuomiao>img {
+	float: right;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.huomiaozhi {
+	margin-top: 15px;
+	margin-left: 95px;
+	padding-left: 25px;
+	font-size: 24px;
+	color: #e40f0f;
+	background: url(img/huomiao.png) no-repeat;
+}
+
+.renqihuomiao>a {
+	display: inline-block;
+	margin-top: 13px;
+	width: 260px;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	color: #C93756;
+	border: 1px solid #C93756;
+	border-radius: 4px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.renqihuomiao>a:hover {
+	color: white;
+	background-color: #C93756;
+}
+
+
+/*人气小火苗  end*/
+
+
+/*右侧操作简历  end*/
+
+
+/*简历完成弹窗  begin*/
+
+.jianliwanchengDisplay {
+	width: 400px;
+	height: 323px;
+	margin-left: -200px;
+	margin-top: -161.5px;
+}
+
+.jianliwanchengDisplay>h2 {
+	font-weight: 300;
+	margin-top: 33px;
+	margin-bottom: 33px;
+}
+
+.jianliwanchengDisplay>p:first-of-type {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+.jianliwanchengDisplay>img {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	background-color: #4b5253;
+}
+
+.jianliwanchengDisplay>p:nth-of-type(2) {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+
+/*简历完成弹窗  end*/
+
+
+/*修改简历失败  begin*/
+
+.editJianliNameFail {
+	/*display: none;*/
+	width: 400px;
+	height: 224px;
+	margin-left: -200px;
+	margin-top: -112px;
+}
+
+.editJianliNameFail>h2 {
+	margin-left: 0;
+}
+
+
+/*修改简历失败  end*/
+
+
+/*修改简历名称  begin*/
+
+.editJianliName {
+	width: 400px;
+	height: 249px;
+	margin-left: -200px;
+	margin-top: -124.5px;
+}
+
+.editJianliName>input {
+	width: 240px;
+	height: 36px;
+	line-height: 36px;
+	padding-left: 5px;
+	border: 1px solid #999;
+	border-radius: 2px;
+}
+
+
+/*修改简历名称  end*/
+
+
+/*个人形象选择照片弹框 begin*/
+
+#selectPhotoDisplay {
+	/*display: block;*/
+}
+
+.selectPhotoDisplay {
+	position: relative;
+	width: 880px;
+	height: 696px;
+	margin-left: -440px;
+	margin-top: -348px;
+}
+
+.selectPhotoDisplay>h2 {
+	margin-left: 0;
+}
+
+.gerenxingxiangPhoto {
+	margin-left: 60px;
+	/*margin-right: 60px;*/
+	text-align: left;
+}
+
+.gerenxingxiangPhoto>li {
+	display: inline-block;
+	width: 171px;
+	height: 229px;
+	margin-right: 15px;
+	margin-bottom: 20px;
+	border-radius: 6px;
+	border: 2px solid white;
+	overflow: hidden;
+}
+
+.gerenxingxiangPhoto>li:hover {
+	border: 2px solid #C93756;
+}
+
+.gerenxingxiangPhotoClick {
+	border: 2px solid #C93756 !important;
+}
+
+.gerenxingxiangBtn {
+	position: absolute;
+	left: 320px;
+	top: 590px;
+}
+
+
+/*个人形象选择照片弹框 end*/
+
+
+/* 购买置顶服务弹窗 begin */
+.goumaizhidingDisplay{
+	width: 800px;
+	height: 445px;
+	margin-left: -400px;
+	margin-top: -222.5px;
+}
+.taocan{
+	display: inline-block;
+	width: 630px;
+	height: auto;
+}
+.taocanTitle{
+	width: 680px;
+	text-align: left;
+}
+.taocanTitle > p{
+	display: inline-block;
+}
+.taocanTitle > p:first-of-type{
+	font-size: 16px;
+}
+.taocanTitle > p:nth-of-type(2){
+	margin-left: 450px;
+	font-size: 14px;
+}
+.taocanTitle > p:nth-of-type(2) > span{
+	color: #C93756;
+	font-size: 18px;
+}
+.taocanTitle > a{
+	display: inline-block;
+	margin-left: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: #C93756;
+	font-size: 14px;
+	border:1px solid #C93756;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.taocanContent{
+	margin-top: 25px;
+}
+.everyTaocan{
+	display: inline-block;
+	width: 160px;
+	height: 160px;
+	margin-right: 30px;
+	background-color: #F5F5F5;
+	border-radius: 5px;
+	color: #666;
+	cursor: pointer;
+}
+.everyTaocan:nth-of-type(3){
+	margin-right: 0;
+}
+.everyTaocan > p:first-of-type{
+	margin-top: 20px;
+	font-size: 30px;
+}
+.everyTaocan > p:nth-of-type(2){
+	margin-top: 10px;
+	font-size: 12px;
+	color: #999;
+}
+.everyTaocan > p:nth-of-type(2) > span{
+	display: inline-block;
+	font-size: 14px;
+	color: #C93756;
+	margin-left: 8px;
+}
+.everyTaocan > p:nth-of-type(3){
+	font-size: 24px;
+	color: #C93756;
+	margin-top: 10px;
+}
+.everyTaocan > p:nth-of-type(3) > span{
+	display: inline-block;
+	font-size: 14px;
+	color: #999;
+	text-decoration: line-through;
+}
+
+.everyTaocan:hover{
+	box-shadow: inset 0 -15px #C93756,1px 0 #C93756, -1px 0 #C93756, 0 -1px #C93756;
+}
+.everyTaocanClick{
+	box-shadow: inset 0 -15px #C93756,1px 0 #C93756, -1px 0 #C93756, 0 -1px #C93756;
+	background-color: white;
+	color: #212121;
+}
+
+
+.lijigoumaiZhiding{
+	display: inline-block;
+	width: 240px;
+	height: 36px;
+	margin-top: 60px;
+	line-height: 36px;
+	font-size: 18px;
+	color: white;
+	background-color: #C93756;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.lijigoumaiZhiding:hover{
+	background-color: #9E2D45;
+}
+/* 购买置顶服务弹窗 end */
+
+/* 置顶成功  begin */
+
+.zhidingSuccessDisplay {
+	width: 400px;
+	height: 246px;
+	margin-left: -200px;
+	margin-top: -123px;
+}
+
+.zhidingSuccessDisplay>h2 {
+	margin-left: 0;
+}
+
+.zhidingSuccessDisplay>p {
+	margin-left: 50px;
+	margin-right: 50px;
+	font-size: 16px;
+}
+
+
+/* 置顶成功  end */
+
+
+/* 简历已刷新  begin */
+
+.refeshSuccessDisplay {
+	width: 400px;
+	height: 179px;
+	margin-left: -200px;
+	margin-top: -89.5px;
+}
+
+.refeshSuccessDisplay>h2 {
+	margin-left: 0;
+	display: block;
+}
+
+.refeshSuccessDisplay>a {
+	margin-top: 0;
+}
+
+
+/* 简历已刷新  end */
+
+
+/*人气小火苗*/
+
+.renqihuomiaoDisplay {
+	width: 400px;
+	height: 316px;
+	margin-left: -200px;
+	margin-top: -158px;
+}
+
+.renqihuomiaoDisplay>p:nth-of-type(2) {
+	line-height: 24px;
+	margin-left: 60px;
+	margin-right: 60px;
+	font-size: 14px;
+	color: #666;
+}
+
+
+/*预览简历  begin*/
+
+.yulanjianli {
+	width: 840px;
+	height: auto;
+	padding: 15px 20px 0 20px;
+	background-color: white;
+	border-radius: 5px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+
+.yulanjianli>div {
+	margin-top: 15px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.yulanjianli>div:first-of-type {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+
+
+/*创建简历  begin*/
+
+.creatJianli {
+	position: relative;
+	width: 840px;
+	height: auto;
+	padding: 15px 20px 0 20px;
+	background-color: white;
+	border-radius: 5px;
+	margin: 0 auto;
+	font-size: 14px;
+}
+
+.creatJianli > div {
+	margin-top: 15px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #E6E6E6;
+}
+.creatJianli > div:last-of-type {
+	border-bottom: none;
+}
+
+
+.creatJianli>div>form>div {
+	margin-top: 20px;
+	/*height: 36px;*/
+}
+
+.creatJianli .divPeixunjingliEdit {
+	display: none;
+}
+.creatJianli .divQiuzhiyixiangEdit{
+	position: relative;
+}
+.creatJianli .divGongzuojingyanEdit {
+	display: none;
+	width: 840px;
+	padding-bottom: 30px;
+	font-size: 14px;
+}
+
+.btnJianli{
+	margin-top: 30px;
+	text-align: center;
+	font-size: 14px;
+}
+.btnJianli > span{
+	display: inline-block;
+	width: 112px;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.creatJianli .qiwanghangye .weitianxieImg,.creatJianli .qiwangzhiwei .weitianxieImg {
+    margin-top: -6px;
+}
+.creatJianli .juzhudi {
+    position: absolute;
+    left: 120px;
+    top: 301px;
+    margin-top: 0;
+}
+.creatJianli .hujidi {
+    position: absolute;
+    left: 120px;
+    top: 357px;
+    margin-top: 0;
+}
+.creatJianli .qiwanggongzuodi {
+    position: absolute;
+    left: 99px;
+    top: 212px;
+    margin-top: 0;
+}
+
+/*简历中心首页  begin*/
+.jianlizhongxinIndex{
+	position: relative;
+	width: 840px;
+	height: auto;
+	padding: 15px 20px 120px 20px;
+	background-color: white;
+	border-radius: 5px;
+	margin: 0 auto;
+	font-size: 14px;
+	text-align: center;
+}
+.jianlizhongxinIndex > img{
+	margin-top: 90px;
+}
+.jianlizhongxinIndex > p{
+	margin-left: 320px;
+	margin-top: 30px;
+	width: 218px;
+}
+.jianlizhongxinIndex > span:first-of-type{
+	display: block;
+	margin-left: 320px;
+	margin-top: 60px;
+	width: 240px;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 4px;
+	color: white;
+	background-color: #C93756;
+	cursor: pointer;
+}
+.jianlizhongxinIndex > span:first-of-type:hover{
+	background-color: #9E2D45;
+}
+.jianlizhongxinIndex > span:last-of-type{
+	display: block;
+	margin-left: 320px;
+	margin-top: 17px;
+	width: 240px;
+	height: 34px;
+	line-height: 34px;
+	border-radius: 4px;
+	border: 1px solid #C93756;
+	color: #C93756;
+	background-color: white;
+	cursor: pointer;
+}
+.jianlizhongxinIndex > span:last-of-type:hover{
+	color: white;
+	background-color: #C93756;
+}
+/*创建简历失败  begin*/
+.creatJianliFail{
+	width: 400px;
+	height: 246px;
+	margin-left: -200px;
+	margin-top: -123px;
+}
+.creatJianliFail > h2{
+	margin-left: 0;
+}
+.creatJianliFail > p{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+/*创建简历失败  end*/

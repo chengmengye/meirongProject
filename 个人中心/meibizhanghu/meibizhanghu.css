@@ -1,0 +1,506 @@
+body,div,p{
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	min-width: 1600px;
+}
+
+.content{
+	width: 100%;
+	height: auto;
+	background-color: #F5F5F5;
+	font: "microsoft yahei";
+	margin-top: -4px;
+}
+.contentContent{
+	width: 1200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+}
+/*右侧内容*/
+.rightContent{
+	position: relative;
+	display: inline-block;
+	width: 880px;
+	height: 951px;
+	background-color: white;
+	border-radius: 5px;
+	float: right;
+}
+.rightContent>a{
+	display: inline-block;
+	margin: 28px 0 20px 20px;
+	font-size: 18px;
+	line-height: 20px;
+	color: #212121;
+}
+/*积分余额*/
+.divJifen{
+	width: 841px;
+	height: 129px;
+	margin-left: 20px;
+	background-color: #F5F5F5;
+}
+.divJifenyue{
+	float: left;
+	display: inline-block;
+	width: auto;
+	height: 129px;
+	margin-left: 30px;
+}
+.divJifenyue>a{
+	display: block;
+	margin: 29px 0 22px 0;
+	font-size: 18px;
+	line-height: 20px;
+	color: #212121;
+}
+.divJifenyue>a:nth-of-type(2){
+	margin-left: 10px;
+	font-size: 36px;
+	color: #c93756;
+}
+/*充值提现*/
+.divChongzhiTixian{
+	float: left;
+	display: inline-block;
+	width: auto;
+	height: 129px;
+	margin-left: 30px;
+}
+.divChongzhiTixian > a{
+	display: inline-block;
+	margin-top: 76px;
+	margin-right: 3px;
+	padding-left: 7px;
+	padding-right: 7px;
+	border: 1px solid #C93756;
+	border-radius: 3px;
+	font-size: 14px;
+	line-height: 24px;
+	color: #C93756;
+	cursor: pointer;
+}
+.divChongzhiTixian > a:hover{
+	color: white;
+	background-color: #C93756;
+}
+
+/*充值弹窗*/
+.chongzhiDisplay{
+	display: none;
+	width: 800px;
+	height: 680px;
+	margin-left: -400px;
+	margin-top: -340px;
+	text-align: initial !important;
+}
+
+/*充值金额*/
+.chongzhiJine{
+	padding-left: 90px;
+	padding-right: 95px;
+}
+
+.chongzhiJine > p span:first-of-type{
+	display: inline-block;
+	font-size: 16px;
+	color: #212121;
+}
+.chongzhiJine > p span:nth-of-type(2){
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 14px;
+	color: #666;
+}
+.jine{
+	margin-left: 45px;
+}
+.jine > span{
+	display: inline-block;
+	width: 160px;
+	height: 65px;
+	margin-top: 26px;
+	margin-right: 25px;
+	font-size: 24px;
+	line-height: 65px;
+	text-align: center;
+	color: #666;
+	background-color: #F5F5F5;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.jine > span:hover{
+	box-shadow: 0 5px #C93756, 0 -1px #C93756, -1px 0 #C93756, 1px 0 #C93756;
+}
+.chongzhiJineClick{
+	background-color: white !important;
+	box-shadow: 0 5px #C93756, 0 -1px #C93756, -1px 0 #C93756, 1px 0 #C93756;
+}
+/*充值方式*/
+.chongzhiFangshi{
+	padding-left: 90px;
+	padding-right: 95px;
+	margin-top: 26px;
+}
+.chongzhiFangshi > p{
+	font-size: 16px;
+}
+.fangshi{
+	padding-top: 26px;
+	padding-left: 45px;
+}
+.fangshi > div{
+	float: left;
+	display: inline-block;
+	width: 96px;
+	height: 120px;
+	margin-right: 28px;
+	padding: 20px 30px 20px 34px;
+	background-color: #F5F5F5;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.fangshi > div:hover{
+	box-shadow: 0 5px #C93756, 0 -1px #C93756, -1px 0 #C93756, 1px 0 #C93756;
+}
+.chongzhiFangshiClick{
+	background-color: white !important;
+	box-shadow: 0 5px #C93756, 0 -1px #C93756, -1px 0 #C93756, 1px 0 #C93756;
+}
+.fangshi > div > img{
+	width: 90px;
+	height: 90px;
+	border-radius: 10px;
+}
+.fangshi > div > p{
+	margin-top: 3px;
+	font-size: 18px;
+	text-align: center;
+}
+.chongzhiTixian{
+	display: inline-block;
+	width: 240px;
+	height: 38px;
+	margin-left: 280px;
+	line-height: 38px;
+	font-size: 18px;
+	color: white;
+	background-color: #C93756;
+	border-radius: 5px;
+	text-align: center;
+	cursor: pointer;
+}
+.chongzhiTixian:hover{
+	background-color: #9E2D45;
+}
+.lijichongzhi{
+	margin-top: 60px;
+}
+
+/*充值成功弹窗*/
+.chongzhiSuccess{
+	display: none;
+	margin-top: -161px;
+	margin-left: -200px;
+	width: 400px;
+	height: 322px;
+}
+
+.chongzhiSuccess > h2{
+	font-weight: 300;
+	margin-top: 33px;
+	margin-bottom: 33px;
+}
+.chongzhiSuccess > p:first-of-type{
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+.chongzhiSuccess > img{
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	background-color: #4b5253;
+}
+.chongzhiSuccess > p:nth-of-type(2){
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+.successKnow{
+	display: inline-block;
+	width: 110px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 14px;
+	color: #C93756;
+	border: 1px solid #C93756;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/*支付未完成弹窗*/
+.chongzhiFail{
+	display: none;
+	margin-left: -200px;
+	margin-top: -124.5px;
+	width: 400px;
+	height: 249px;
+}
+.chongzhiFail > p:nth-of-type(2){
+	padding-left: 55px;
+	padding-right: 55px;
+}
+.chongzhiFail > div{
+	margin-top: 27px;
+	font-size: 14px;
+}
+.chongzhiFail > div > a{
+	display: inline-block;
+	width: 113px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.chongzhiFail > div > a:first-of-type{
+	margin-right: 10px;
+	color: white;
+	background-color: #C93756;
+	border: 1px solid #C93756;
+}
+.chongzhiFail > div > a:nth-of-type(2){
+	color: #666;
+	background-color: white;
+	border: 1px solid #999;
+}
+
+/*提现*/
+.tixianDisplay{
+	display: none;
+	width: 800px;
+	height: 600px;
+	margin-left: -400px;
+	margin-top: -300px;
+	text-align: initial !important;
+}
+.qitaJine{
+	position: relative;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.qitaJine > a:first-of-type{
+	float: left;
+	display: inline-block;
+	width: 100px;
+	margin-right: 20px;
+	text-align: right;
+	line-height: 36px;
+	font-size: 14px;
+	color: #666;
+}
+.jineInput{
+	float: left;
+	display: inline-block;
+	width: 240px;
+	height: 34px;
+	padding-left: 10px;
+	line-height: 36px;
+	border: 1px solid #999;
+	outline: none;
+}
+.qitaJine > a:nth-of-type(2){
+	position: absolute;
+	left: 130px;
+	top: 0;
+	font-size: 14px;
+	line-height: 36px;
+	color: #999;
+	z-index: 1;
+	cursor: pointer;
+}
+.qitaJine > a:last-of-type{
+	display: none;
+	float: left;
+	margin-left: 10px;
+	font-size: 14px;
+	color: #C93756;
+	line-height: 36px;
+}
+
+/*银行卡信息*/
+.yinhangkaInfo{
+	padding-left: 90px;
+	padding-right: 95px;
+	margin-top: 26px;
+}
+.yinhangkaInfo > p{
+	font-size: 16px;
+}
+.lijitixian{
+	margin-top: 30px;
+}
+
+/*提现成功*/
+.tixianSuccess{
+	display: none;
+	width: 400px;
+	height: 246px;
+	margin-left: -200px;
+	margin-top: -123px;
+}
+.tixianSuccess > h2{
+	margin-top: 36px;
+	margin-bottom: 36px;
+	font-weight: 300;
+}
+.tixianSuccess > p{
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-bottom: 20px;
+	line-height: 24px;
+}
+
+
+/*积分商城*/
+.divJifenShangcheng{
+	display: inline-block;
+	width: 100px;
+	height: 129px;
+	float: right;
+	margin-right: 28px;
+}
+
+.aJifenShangcheng{
+	float: right;
+	display: block;
+	width: auto;
+	height: 34px;
+	margin-top: 63px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px solid #C93756;
+	border-radius: 5px;
+	font-size: 14px;
+	line-height: 35px;
+	color: #C93756;
+	cursor: pointer;
+}
+.aJifenShangcheng:hover{
+	color: white;
+	background-color: #C93756;
+}
+/*积分明细*/
+.divJifenmingxiTitle{
+	width: 812px;
+	height: auto;
+	padding-left: 30px;
+	padding-right: 40px;
+	margin-top: 30px;
+}
+.divJifenmingxiTitle > a:first-of-type{
+	font-size: 16px;
+	color: #212121;
+}
+#quanbumingxi{
+	float: right;
+	font-size: 12px;
+	color: #666;
+	cursor: pointer;
+}
+#quanbumingxi > img{
+	vertical-align: middle;
+	margin-left: 5px;
+}
+.mingxiDisplay{
+	display: none;
+	position: absolute;
+	left: 770px;
+	top: 250px;
+	padding-top: 5px;
+	border: 1px solid #ccc;
+	font-size: 12px;
+	line-height: 25px;
+	color: #666;
+}
+.mingxiDisplay > ul > li{
+	padding-left: 5px;
+	padding-right: 20px;
+	cursor: pointer;
+}
+.mingxiDisplay > ul > li:hover{
+	background-color: #E6E6E6;
+}
+
+/*积分明细表格*/
+.divJifenmingxiTable{
+	margin-top: 10px;
+	margin-left: 20px;
+	width: 840px;
+	height: 609px;
+	border-top: 1px solid #ccc;
+	font-size: 14px;
+	line-height: 22px;
+}
+.tableContent{
+	width: 840px;
+	height: 580px;
+	/*padding-top: 10px;*/
+	overflow: hidden;
+}
+.divJifenmingxiTable span{
+	display: inline-block;
+	text-align: center;
+}
+.divJifenmingxiTable > div span:nth-child(1),
+.divJifenmingxiTable > div span:nth-child(2)
+{
+	width: 200px;
+}
+.divJifenmingxiTable > div span:nth-child(3){
+	width: 250px;
+}
+
+.divJifenmingxiTable .th{
+	margin-bottom: 10px;
+	background-color: #F5F5F5;
+	color: #212121;
+}
+.th span{
+	line-height: 14px;
+	padding-top: 8px;
+	padding-bottom: 7px;
+}
+.divJifenmingxiTable .tr{
+	color: #666;
+	cursor: pointer;
+}
+.tr span{
+	vertical-align: middle;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.tr:hover{
+	background-color: #F5F5F5;
+}
+
+.bac {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: 0.45;
+}

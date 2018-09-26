@@ -1,0 +1,420 @@
+body,div,p,ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font: "microsoft yahei";
+	color: #212121;
+}
+
+.content {
+	width: 100%;
+	height: auto;
+	background-color: #F5F5F5;
+}
+
+.contentContent {
+	width: 1200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+}
+
+
+/*左侧职位记录  begin*/
+.leftZhiweijilu{
+	float: left;
+	display: inline-block;
+	width: 880px;
+	height: 1200px;
+	background-color: white;
+	border-radius: 5px;
+}
+
+/*职位记录title  begin*/
+.zhiweijiluTitle{
+	margin-top: 12px;
+	padding-left: 30px;
+	border-bottom: 1px solid #c4c4c4;
+}
+.zhiweijiluTitle > ul > li{
+	display: inline-block;
+	margin-left: 25px;
+}
+.zhiweijiluTitle > ul > li > a{
+	display: inline-block;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+	color: #666;
+}
+.zhiweijiluTitle > ul > li > a:hover{
+	color: #212121;
+	box-shadow: inset 0 -2px #212121;
+}
+.zhiweijiluTitleClick{
+	color: #212121 !important;
+	box-shadow: inset 0 -2px #212121;
+}
+/*职位记录title  end*/
+
+/*职位记录content  begin*/
+.zhiweijiluContent{
+	padding: 10px 30px 0 30px;
+}
+.everyZhiweijilu{
+	margin-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #F5F5F5;
+	box-shadow: -4px 0 #C93756;
+	overflow: hidden;
+}
+
+.zhiweiInfo{
+	float: left;
+	display: inline-block;
+}
+.zhiweiInfo > a{
+	display: block;
+	color: #212121;
+}
+.zhiweiInfo > a:first-of-type{
+	margin-top: 8px;
+	font-size: 18px;
+}
+.zhiweiInfo > a:first-of-type:hover{
+	color: #C93756;
+}
+.zhiweiInfo > a:nth-of-type(2){
+	margin-top: 10px;
+	font-size: 18px;
+	color: #FF5959;
+}
+.zhiweiInfo > a:nth-of-type(3){
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.zhiweiInfo > a:nth-of-type(3):hover{
+	color: #C93756;
+}
+.zhiweiInfo > a:nth-of-type(3) > span{
+	color: #666;
+}
+.zhiweiState{
+	position: relative;
+	float: right;
+	display: inline-block;
+}
+.zhiweiState > p{
+	/*display: block;*/
+}
+.zhiweiStateP{
+	float: right;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.zhiweiStatePNoPoint{
+	float: right;
+	margin-top: 15px;
+	color: #666;
+}
+.zhiweiStatePHover{
+	display: none;
+	position: absolute;
+	left: 39px;
+	top: 13px;
+	float: right;
+	width: 88px;
+	height: 24px;
+	line-height: 24px;
+	border-radius: 12px;
+	font-size: 12px;
+	text-align: center;
+	color: white;
+	background-color: #C93756;
+	overflow: hidden;
+	cursor: pointer;
+}
+.mianshiPingjia{
+	display: none;
+	position: absolute;
+	left: 39px;
+	top: 13px;
+	float: right;
+	width: 88px;
+	height: 24px;
+	line-height: 24px;
+	border-radius: 12px;
+	font-size: 12px;
+	text-align: center;
+	color: white;
+	background-color: #C93756;
+	overflow: hidden;
+	cursor: pointer;
+}
+.zhiweiStateRiqi{
+	margin-top: 70px;
+	font-size: 14px;
+	color: #999;
+}
+.zhiweiStateRiqi > span{
+	margin-left: 18px;
+}
+
+/*职位记录content  end*/
+
+/*左侧职位记录  end*/
+
+
+
+
+/*右侧推荐职位  begin*/
+.rightTuijianzhiwei{
+	float: right;
+	display: inline-block;
+	margin-left: 15px;
+	width: 300px;
+	height: auto;
+}
+.shoucangBck{
+	width: 270px;
+	height: 47px;
+	padding-top: 13px;
+	padding-left: 30px;
+	background-color: white;
+	border-radius: 5px;
+}
+.myShoucang{
+	position: relative;
+	display: block;
+	width: 238px;
+	height: 34px;
+	line-height: 36px;
+	color: #C93756;
+	border: 1px solid #C93756;
+	border-radius: 4px;
+	text-align: center;
+	cursor: pointer;
+	background: url(img/shoucang.png) no-repeat  60px center;
+}
+.myShoucang:hover{
+	color: white;
+	background: url(img/whiteShoucang.png) no-repeat 60px center #C93756;
+}
+/*.myShoucang > a{
+	color: #C93756;
+	
+}*/
+/*.myShoucang:hover{
+	color: white;
+	background-color: #C93756;
+}*/
+/*.myShoucang > img{
+	position: absolute;
+	left: 60px;
+	top: 9px;
+	
+}*/
+
+.tuijianzhiweiTitle{
+	width: 300px;
+	height: 44px;
+	margin-top: 20px;
+	background-color: white;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 44px;
+}
+
+.tuijianzhiweiContent{
+	width: 280px;
+	height: 88px;
+	padding: 15px 0 15px 20px;
+	margin-top: 10px;
+	border-radius: 5px;
+	background-color: white;
+}
+.tuijianzhiweiContent > a{
+	display: block;
+	color: #212121;
+}
+.tuijianzhiweiContent > a:first-of-type{
+	font-size: 18px;
+}
+.tuijianzhiweiContent > a:first-of-type:hover{
+	color: #C93756;
+}
+.tuijianzhiweiContent > a:first-of-type > span{
+	color: #666;
+}
+.tuijianzhiweiContent > a:nth-of-type(2){
+	margin-top: 10px;
+	font-size: 24px;
+	color: #FF5959;
+}
+.tuijianzhiweiContent > a:nth-of-type(3){
+	font-size: 14px;
+	color: #666;
+}
+.tuijianzhiweiContent > a:nth-of-type(3):hover{
+	color: #212121;
+}
+/*右侧推荐职位  end*/
+
+/*面试邀请弹窗  begin*/
+.mianshiyaoqingDisplay{
+	width: 400px;
+	height: 504px;
+	margin-left: -200px;
+	margin-top: -252px;
+	text-align: initial !important;
+}
+.mianshiyaoqingBck{
+	background-color: rgb(0,0,0,.5) !important;
+}
+/*#jujueMianshiyaoqing{
+	display: block;
+}*/
+.mianshiyaoqingDisplay > h2{
+	margin-left: 140px;
+}
+.yaoqinghanContent{
+	width: 300px;
+	height: auto;
+	margin-left: 50px;
+}
+.yaoqinghanContent > p:first-of-type{
+	font-size: 16px;
+	font-weight: bold;
+}
+.yaoqinghanContent > p:nth-of-type(2){
+	margin-top: 5px;
+	text-indent: 2em;
+	line-height: 22px;
+}
+.yaoqinghanContent > p:nth-of-type(3){
+	margin-top: 20px;
+	line-height: 22px;
+	font-size: 14px;
+	color: #666;
+}
+.yaoqinghanContent > p:nth-of-type(4),
+.yaoqinghanContent > p:nth-of-type(5), .yaoqinghanContent > p:nth-of-type(6){
+	font-size: 14px;
+	line-height: 22px;
+	color: #666;
+}
+.yaoqinghanContent > p:nth-of-type(7){
+	margin-top: 35px;
+	text-align: center;
+	color: #999;
+}
+.mianshizhiweiInfo{
+	width: 275px;
+	height: 48px;
+	margin-top: 15px;
+	background-color: #F5F5F5;
+	padding: 15px 15px 15px 10px;
+}
+.mianshizhiweiInfo > p:first-of-type{
+	font-size: 18px;
+}
+.mianshizhiweiInfo > p:first-of-type > span{
+	float: right;
+	color: #FF5959;
+}
+.mianshizhiweiInfo > p:nth-of-type(2){
+	margin-top: 6px;
+	font-size: 14px;
+	color: #666;
+}
+.caozuoYaoqing{
+	margin-left: 30px;
+}
+/*面试邀请弹窗  end*/
+
+.divPage{
+	width: 820px;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+/*面试评价弹窗  begin*/
+#mianshipingjia{
+	display: none;
+	cursor: default;
+}
+.mianshipingjiaDisplay{
+	width: 400px;
+	height: 408px;
+	margin-left: -200px;
+	margin-top: -204px;
+}
+.mianshipingjiaDisplay > textarea{
+	width: 295px;
+	height: 90px;
+	padding-left: 5px;
+	padding-top: 7px;
+	outline: #999999;
+}
+.xingjipingjia{
+	width: 300px;
+	height: auto;
+	margin-left: 50px;
+	margin-top: 14px;
+	font-size: 14px;
+	text-align: left;
+}
+.xingjipingjia > div{
+	margin-top: 7px;
+}
+.xingjipingjia > div > span{
+	display: inline-block;
+	width: 60px;
+	color: #666;
+}
+.xingjipingjia > div > ul{
+	display: inline-block;
+	margin-left: 25px;
+	vertical-align: middle;
+}
+.xingjipingjia > div > ul > li{
+	float: left;
+	display: inline-block;
+	width: 20px;
+	height: 18px;
+	padding-right: 5px;
+	background: url(img/huiXingxing.png) no-repeat center;
+	cursor: pointer;
+}
+.xingxingClick{
+	background: url(img/xingxing.png) no-repeat center !important;
+}
+/*.xingjipingjia > div > ul > li:hover{
+	background: url(img/xingxing.png);
+}*/
+.pingjiaBtn{
+	margin-top: 25px;
+}
+.pingjiaBtn > span{
+	display: inline-block;
+	width: 112px;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 4px;
+	font-size: 14px;
+	cursor: pointer;
+}
+/*面试评价弹窗  end*/

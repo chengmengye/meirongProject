@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="gerenfengcai.css" />
+		<link rel="stylesheet" href="../common/css/tanchuang.css" />
+	</head>
+
+	<body>
+
+		<iframe align="center" width="100%" height="36px" src="../common/topTitle.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		<div class="content">
+			<div class="contentContent">
+				<iframe align="center" width="auto" height="980px" src="../common/personallist.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+				<div class="rightContent">
+					<div class="topDaohang" id="topDaohang">
+						<ul>
+							<li class="topDaohangClick">个人形象</li>
+							<li>视频展示</li>
+						</ul>
+					</div>
+					<div class="mainContent">
+						<!--没有照片时  begin-->
+						<div class="notHavePhoto" id="notHavePhoto">
+							<input type="file" id="noHavePhotoFile" onchange="UpladFileImg(this,0)" />
+							<a class="shangchuanzhaopian" id="aNohaveShangchuan"><span>+</span> 上传照片</a>
+							<p class="kaitonghuiyuanTishi">非会员用户最多上传八张图片，开通会员可无限上传。<span class="isHuiyuan">立即开通</span></p>
+						</div>
+						<!--没有照片时  end-->
+						<!--有照片时  begin-->
+						<div class="havePhoto" id="havePhoto">
+							<input type="file" id="havePhotoFile" onchange="UpladFileImg(this,0)" />
+							<a class="shangchuanzhaopian" id="aHaveShangchuan"><span>+</span> 上传照片</a>
+							<p class="kaitonghuiyuanTishi">非会员用户最多上传八张图片，开通会员可无限上传。<span class="isHuiyuan">立即开通</span></p>
+							<div class="photo" id="photo">
+								<ul>
+									<li>
+										<div class="divImg">
+											<img alt="" src="img/2.jpg" />
+										</div>
+										<div class="imgTopRight"></div>
+										<div class="imgCaozuo">
+											<a onclick="zhuyezhanshi(this)">开启主页展示</a>
+											<a>删除</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!--有照片时  end-->
+						<!--非会员用户无视频功能  begin-->
+						<div class="noShipin" id="noShipin">
+							<img src="../common/img/footer_erweima.png" />
+							<p>此功能为会员用户专属，开通会员享特权</p>
+							<a href="#">立即开通</a>
+						</div>
+						<!--非会员用户无视频功能  end-->
+						<!--没有视频时  begin-->
+						<div class="notHavePhoto" id="notHaveShipin">
+							<input type="file" id="noHaveShipinFile" onchange="uploadShipin(this)" />
+							<a class="shangchuanzhaopian" id="aNohaveShangchuanShipin"><span>+</span> 上传视频</a>
+							<p class="kaitonghuiyuanTishi">视频展示最多可上传三个</p>
+						</div>
+						<!--没有视频时  end-->
+						<!--有视频时  begin-->
+						<div class="havePhoto" id="haveShipin">
+							<input type="file" id="haveShipinFile" onchange="uploadShipin(this)" />
+							<a class="shangchuanzhaopian" id="aHaveShangchuanShipin"><span>+</span> 上传视频</a>
+							<p class="kaitonghuiyuanTishi">视频展示最多可上传三个</p>
+							<div class="video" id="video">
+								<ul>
+									<!--<li>
+										<div class="divVideo">
+											<video src="video/a.mp4" controls="controls" poster="video/a.mp4"></video>
+											<img />
+											<div class="shipinZhezhao"></div>
+											<img />
+										</div>
+										<!--<div class="imgTopRight"></div>-->
+									<!--<div class="imgCaozuo">
+											<a onclick="zhuyezhanshi(this)">开启主页展示</a>
+											<a>删除</a>
+										</div>
+									</li>-->
+
+								</ul>
+							</div>
+
+						</div>
+						<!--有视频时  end-->
+
+						<!--非会员上传限制  begin-->
+						<div class="tanchuangBck" id="imgCountXianzhi">
+							<div class="tanchuang imgCountXianzhi">
+								<p class="close" onclick="tanchuangClose(this)">×</p>
+								<h2 class="tanchuangTitle">提示！</h2>
+								<p>非会员用户最多上传八张照片</p>
+								<p>如需上传更多照片，请开通会员功能</p>
+								<div>
+									<a href="#" class="button okButton">开通会员</a>
+									<a class="button noButton" onclick="cancle(this)">暂不开通</a>
+								</div>
+							</div>
+						</div>
+						<!--非会员上传限制  end-->
+
+						<!--视频上传限制  begin-->
+						<div class="tanchuangBck" id="shipinCountXianzhi">
+							<div class="tanchuang shipinCountXianzhi">
+								<h2 class="tanchuangTitle">提示！</h2>
+								<p>视频最多只能上传三个</p>
+								<a class="successKnow" onclick="tanchuangClose(this)">知道了</a>
+							</div>
+						</div>
+						<!--视频上传限制  end-->
+
+						<!--删除照片  begin-->
+						<div class="tanchuangBck" id="deleteImg">
+							<div class="tanchuang deleteImg">
+								<p class="close" onclick="tanchuangClose(this)">×</p>
+								<h2 class="tanchuangTitle">确认删除照片？</h2>
+								<div>
+									<a href="#" class="button okButton">确认</a>
+									<a class="button noButton" onclick="cancle(this)">取消</a>
+								</div>
+							</div>
+						</div>
+						<!--删除照片  end-->
+
+						<!--删除视频  begin-->
+						<div class="tanchuangBck" id="deleteShipin">
+							<div class="tanchuang deleteImg">
+								<p class="close" onclick="tanchuangClose(this)">×</p>
+								<h2 class="tanchuangTitle">确认删除视频？</h2>
+								<div>
+									<a href="#" class="button okButton">确认</a>
+									<a class="button noButton" onclick="cancle(this)">取消</a>
+								</div>
+							</div>
+						</div>
+						<!--删除视频  begin-->
+
+						<!--上传失败  begin-->
+						<div class="tanchuangBck">
+							<div class="tanchuang shangchuanFail">
+								<h2 class="tanchuangTitle">上传失败！</h2>
+								<p>照片太大，请上传1M以内的照片</p>
+								<a class="successKnow" onclick="tanchuangClose(this)">知道了</a>
+							</div>
+						</div>
+						<!--上传失败  end-->
+
+						<!--图片格式错误  begin-->
+						<div class="tanchuangBck" id="imgGeshiError">
+							<div class="tanchuang geshicuowu">
+								<h2 class="tanchuangTitle">格式不正确！</h2>
+								<p>暂不支持此格式</p>
+								<p>请上传jpg或png格式的图片</p>
+								<a class="successKnow" onclick="tanchuangClose(this)">知道了</a>
+							</div>
+						</div>
+						<!--图片格式错误  end-->
+
+						<!--上传失败  begin-->
+						<div class="tanchuangBck">
+							<div class="tanchuang shangchuanFail">
+								<h2 class="tanchuangTitle">上传失败！</h2>
+								<p>视频太大，请上传20M以内的视频</p>
+								<a class="successKnow" onclick="tanchuangClose(this)">知道了</a>
+							</div>
+						</div>
+						<!--上传失败  end-->
+
+						<!--视频格式错误  begin-->
+						<div class="tanchuangBck" id="shipinGeshiError">
+							<div class="tanchuang geshicuowu">
+								<h2 class="tanchuangTitle">格式不正确！</h2>
+								<p>暂不支持此格式</p>
+								<p>请上传ogg或mp4或webm格式的视频</p>
+								<a class="successKnow" onclick="tanchuangClose(this)">知道了</a>
+							</div>
+						</div>
+						<!--视频格式错误  end-->
+
+						<!--主页展示已开启  begin-->
+						<div class="tanchuangBck" id="zhanshiOpen">
+							<div class="tanchuang zhuyezhanshi">
+								<h2 class="tanchuangTitle">主页展示已开启</h2>
+								<a class="successKnow" onclick="tanchuangClose(this)">知道了</a>
+							</div>
+						</div>
+						<!--主页展示已开启  end-->
+
+						<!--主页展示已关闭  begin-->
+						<div class="tanchuangBck" id="zhanshiClose">
+							<div class="tanchuang zhuyezhanshi">
+								<h2 class="tanchuangTitle">主页展示已关闭</h2>
+								<a class="successKnow" onclick="tanchuangClose(this)">知道了</a>
+							</div>
+						</div>
+						<!--主页展示已关闭  end-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<iframe align="center" width="100%" height="230px" src="../common/footer.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		</div>
+		<div class="bac" id="bac"></div>
+		<!--图片查看  begin-->
+		<div class="imgLookDisplay">
+			<div class="imgLook" id="imgLook">
+				<img src="" />
+			</div>
+			<img src="img/imgLast.png" id="imgLast" />
+			<img src="img/imgNext.png" id="imgNext" />
+		</div>
+		<!--图片查看  end-->
+		<!--<div class="bacLight"></div>-->
+		<script src="../common/js/jquery-1.11.0.js" charset="utf-8"></script>
+		<script src="gerenfengcai.js" charset="utf-8"></script>
+		<script src="../common/js/tanchuang.js" charset="utf-8"></script>
+		<script src="photoCompress.js" charset="utf-8"></script>
+	</body>
+
+</html>

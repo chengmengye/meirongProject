@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="jianlizhongxin.css" />
+		<link rel="stylesheet" href="../common/css/tanchuang.css" />
+		<link rel="stylesheet" href="../common/css/qiuzhiTop.css" />
+		<link rel="stylesheet" href="../common/css/qiuzhiPaging.css" />
+		<link rel="stylesheet" href="../common/css/xialaCity-picker.css" />
+		<script src="../common/js/jquery-1.11.0.js" charset="UTF-8"></script>
+		<script src="../common/js/tanchuang.js" charset="UTF-8"></script>
+		<script src="../common/js/jquery.timers-1.2.js" charset="UTF-8"></script>
+		<script src="../common/js/city-picker.data.js" charset="UTF-8"></script>
+		<script src="../common/js/xialaCity-picker.js" charset="UTF-8"></script>
+		<script src="yulanjianli.js" charset="UTF-8"></script>
+		<script src=""></script>
+	</head>
+
+	<body>
+		<div style="width: auto;  height: 36px;">
+			<iframe width="100%" height="36px" src="../common/topTitle.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		</div>
+		<!--<div style="width: auto;  height: 80px;">-->
+			<!--<iframe width="100%" height="80px" src="../common/qiuzhiTop.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>-->
+			<!--<div class="qiuzhiTop">
+				<div class="qiuzhiTopContent">
+					<img src="../common/img/qiuzhiLogo.png" />
+					<ul id="qiuzhiTitleUl">
+						<li>
+							<a href="qiuzhiIndex.html">首页</a>
+						</li>
+						<li>
+							<a href="../qiuzhiZhiwei/qiuzhiZhiwei.html">职位</a>
+						</li>
+						<li>
+							<a href="../qiuzhigongsi/qiuzhigongsi.html">公司</a>
+						</li>
+						<li>
+							<a href="#">简历中心</a>
+						</li>
+						<li>
+							<a href="#">求职管理</a>
+						</li>
+					</ul>
+				</div>
+			</div>-->
+		<!--</div>-->
+		<div class="content">
+			<div class="contentContent">
+				<!--左侧的简历信息  begin-->
+				<div class="yulanjianli">
+					<!--基本信息  begin-->
+					<div class="divGerenInfo" id="divGerenInfo">
+						<div class="gerenInfo">
+							<p class="name" id="name">关雎尔</p>
+							<p class="jibenInfo">
+								<span id="spanSex">男</span>
+								<span id="spanAge">26岁</span>
+								<span id="spanXueli">大专</span>
+								<span id="spanJingyan">两年经验</span>
+								<span id="spanXianjudi">石家庄</span>
+							</p>
+							<p class="hukousuozaidi">户口所在地：<span id="spanHukoudi">河北省石家庄市</span></p>
+							<p class="tongxun"><span id="spanDianhua">15859623518</span><span id="spanYouxiang">1815517870@qq.com</span></p>
+						</div>
+						<img src="img/jianliTouxiang.png" id="jianliTouxiang" />
+					</div>
+					<!--基本信息  end-->
+
+					<!--求职意向  begin-->
+					<div class="divQiuzhiyixiang" id="divQiuzhiyixiang">
+						<p class="infoTitle">求职意向</p>
+						<div class="qiuzhiyixiang">
+							<div class="qiuzhiMul">
+								<div class="qiwanghangyeMul" id="qiwanghangyeMul">
+									<p>期望行业：</p>
+									<!--<span>美容师</span>
+									<span>美容师</span>
+									<span>美容师</span>-->
+								</div>
+								<div class="qiwangzhiweiMul" id="qiwangzhiweiMul">
+									<p>期望职位：</p>
+									<!--<span>美容师</span>
+									<span>美容师</span>-->
+								</div>
+							</div>
+							<div>
+								<p>期望薪资：</p>
+								<span id="qiwangxinziShow">3K-5K</span>
+							</div>
+
+							<div>
+								<p>期望工作地：</p>
+								<span id="qiwanggongzuodiShow">北京</span>
+							</div>
+							<div>
+								<p>期望工作性质：</p>
+								<span id="gongzuoxingzhiShow">全职</span>
+							</div>
+
+							<div>
+								<p>求职状态：</p>
+								<span id="qiuzhizhuangtaiShow">一周之内</span>
+							</div>
+
+							<div>
+								<p>是否可以出差：</p>
+								<span id="isChuchai">可以</span>
+							</div>
+						</div>
+					</div>
+					<!--求职意向  end-->
+
+					<!--未填写培训经历  begin-->
+					<div class="peixunjingli" id="noPeixunjingli">
+						<p class="infoTitle">培训经历</p>
+						<p class="weitianxie">暂未填写培训经历</p>
+					</div>
+					<!--未填写培训经历  end-->
+
+					<!--培训经历  begin-->
+					<div class="peixunjingli" id="peixunjingli">
+						<p class="infoTitle">培训经历</p>
+						<div class="peixunjingliContent" id="peixunjingliContent">
+							<div class="everyPeixunjingli">
+								<div class="everyPeixunjingliShow">
+									<p>某某培训机构</p>
+									<p>美容美发</p>
+									<p>2017.04-2018.05</p>
+									<div class="editHover">
+										<img src="img/redEdit.png" class="redEdit"/>
+										<img src="img/redDel.png" class="redDel"/>
+									</div>
+									<img src="textImg/1.jpg" />
+
+								</div>
+								
+							</div>
+							<div class="everyPeixunjingli">
+								<div class="everyPeixunjingliShow">
+									<p>某某培训机构</p>
+									<p>美容美发</p>
+									<p>2017.04-2018.05</p>
+									<div class="editHover">
+										<img src="img/redEdit.png" class="redEdit" />
+										<img src="img/redDel.png" class="redDel"/>
+									</div>
+								</div>
+								
+							</div>
+						
+						</div>
+
+					</div>
+					<!--培训经历  end-->
+
+					<!--未填写工作经验  begin-->
+					<div class="divGongzuojingyan" id="noGongzuojingyan">
+						<p class="infoTitle">工作经验</p>
+						<p class="weitianxie">暂未填写工作经验</p>
+					</div>
+					<!--未填写工作经验  end-->
+
+					<!--工作经验  begin-->
+					<div class="divGongzuojingyan" id="gongzuojingyan">
+						<p class="infoTitle">工作经验</p>
+						<div class="gongzuojingyanContent" id="gongzuojingyanContent">
+							<div class="everyGongzuojingyan">
+								<div class="everyGongzuojingyanShow">
+									<p>河北石家庄九尾狐电子科技</p>
+									<p>2017.4-2018.5</p>
+									<p>美容师<span>3K-4K</span></p>
+									<p>声卡进口坚果开个会好看好看很健康很健康很少看见和科技局戽水抗旱干坏事都很反感和闪光灯和供货商款到发货是否合适个 的灌灌灌灌
+									</p>
+									<div class="editHover">
+										<img src="img/redEdit.png" class="redEdit" onclick="gongzuoRedEditClick(this)" />
+										<img src="img/redDel.png" class="redDel" onclick="gongzuoRedDelClick(this)" />
+									</div>
+								</div>
+						
+							</div>
+							<div class="everyGongzuojingyan">
+								<div class="everyGongzuojingyanShow">
+									<p>河北石家庄九尾狐电子科技</p>
+									<p>2017.4-2018.5</p>
+									<p>美容师<span>3K-4K</span></p>
+									<p>负责网站UI设计，以及公司的视觉设计</p>
+									<div class="editHover">
+										<img src="img/redEdit.png" class="redEdit"/>
+										<img src="img/redDel.png" class="redDel"/>
+									</div>
+								</div>
+							
+							</div>
+						
+						</div>
+					</div>
+					<!--工作经验  end-->
+
+					<!--个人介绍  begin-->
+					<div class="divGerenaihao" id="divGerenaihao">
+						<p class="infoTitle">个人介绍</p>
+						<div class="gerenaihao">
+							<p>兴趣爱好：<span>未填写</span></p>
+							<p>自我评价：<span>未填写</span></p>
+							<div class="gerenxingxiang">
+								<img src="textImg/1.jpg" id="xingxiangImgShow" onload="imgLoad(this,175,233)"/>
+							</div>
+						</div>
+					</div>
+					<!--个人介绍  end-->
+				</div>
+				<!--左侧的简历信息  end-->
+			</div>
+			<iframe width="100%" height="230px" src="../common/footer.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		</div>
+	</body>
+
+</html>

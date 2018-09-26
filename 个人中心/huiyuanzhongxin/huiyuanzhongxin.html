@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="huiyuanzhongxin.css" />
+		<link rel="stylesheet" href="../common/css/tanchuang.css" />
+		<script src="http://code.jquery.com/jquery-latest.js" charset="utf-8"></script>
+		<script src="../common/js/jquery.timers-1.2.js" charset="utf-8"></script>
+		<script src="huiyuanzhongxin.js" charset="utf-8"></script>
+		<script src="../common/js/tanchuang.js" charset="utf-8"></script>
+		<script src="../common/js/date.js" charset="UTF-8"></script>
+	</head>
+
+	<body>
+
+		<iframe align="center" width="100%" height="36px" src="../common/topTitle.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		<div class="content">
+			<div class="contentContent">
+				<iframe align="center" width="auto" height="980px" src="../common/personallist.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+				<div class="rightContent">
+					<h3>会员中心</h3>
+					<!--未开通会员时的状态  begin-->
+					<div class="weikaitongState">
+						<p class="huiyuanState">状态：<span>未开通</span></p>
+						<a class="lijikaitong" id="lijikaitong">立即开通</a>
+					</div>
+					<!--未开通会员时的状态  end-->
+					<!--已开通会员时的状态  begin-->
+					<div class="yikaitongState">
+						<p class="huiyuanState">状态：<span>已开通</span></p>
+						<div class="xufei">
+							<div class="gerenxinxi">
+								<img src="../common/img/touxiang.jpg" />
+								<a>
+									<span>茶山有鹿</span>
+									<img src="../common/img/huiyuan.png" />
+								</a>
+							</div>
+							<div class="huiyuanxinxi">
+								<p>会员状态：<span id="yuefuHuiyuan">月付会员</span></p>
+								<p>截止日期：<span id="huiyuanJiezhiDate">2018-8-9</span></p>
+								<a class="xufeiA" id="xufei">续费</a>
+							</div>
+						</div>
+						<div class="huodong" id="huodong">
+							<ul>
+								<li>
+									<img src="img/huodong.png" />
+								</li>
+								<li>
+									<img src="img/huodong.png" />
+								</li>
+								<li>
+									<img src="img/huodong.png" />
+								</li>
+							</ul>
+							<div class="yuandian">
+								<span class="yuandianSpan"></span>
+								<span class="yuandianSpan"></span>
+								<span class="yuandianSpan"></span>
+							</div>
+						</div>
+					</div>
+					<!--已开通会员时的状态  end-->
+					<!--未开通会员时的会员特权  begin-->
+					<div class="weikaitongHuiyuantequan">
+						<h3>会员特权</h3>
+						<div class="tequanContent">
+							<ul>
+								<li>
+									<img src="img/jifen.png" class="tequanImg" />
+									<p class="tequanP">积分翻倍</p>
+									<a href="../jifenzhanghu/jifenzhanghu.html" class="tequanA">查看积分</a>
+								</li>
+								<li>
+									<img src="img/pingbi.png" class="tequanImg" />
+									<p class="tequanP">屏蔽功能</p>
+									<a href="../gerenpingbi/gerenpingbi.html" class="tequanA">查看屏蔽用户</a>
+								</li>
+								<li>
+									<img src="img/gerenxingxiang.png" class="tequanImg" />
+									<p class="tequanP">无限个人形象展示</p>
+									<a href="../gerenfengcai/gerenfengcai.html" class="tequanA">上传个人形象</a>
+								</li>
+								<li>
+									<img src="img/zhiweixiugai.png" class="tequanImg" />
+									<p class="tequanP">职位修改</p>
+									<a href="#" class="tequanA">编辑职位</a>
+								</li>
+								<li>
+									<img src="img/zhanshishipin.png" class="tequanImg" />
+									<p class="tequanP">展示视频</p>
+									<a href="../gerenfengcai/gerenfengcai.html" class="tequanA">上传视频</a>
+								</li>
+								<li>
+									<img src="img/jianli.png" class="tequanImg" />
+									<p class="tequanP">多次投递简历</p>
+									<a href="#" class="tequanA">查看简历</a>
+								</li>
+								<li>
+									<img src="img/bianjijianli.png" class="tequanImg" />
+									<p class="tequanP">简历置顶</p>
+									<a href="#" class="tequanA">编辑简历内容</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--未开通会员时的会员特权  end-->
+					<!--已开通会员时的会员特权  begin-->
+					<div class="yikaotongHuiyuantequan">
+						<h3>会员特权</h3>
+						<div class="yikaitongTequanContent">
+							<ul>
+								<li>
+									<div class="noPoint">
+										<img src="img/jifen.png" class="tequanImg yikaitongTequanImg" />
+										<p class="tequanP">积分翻倍</p>
+										<a href="../jifenzhanghu/html/jifenzhanghu.html" class="tequanA">查看积分</a>
+									</div>
+									<div class="point">
+										<img src="img/jifen.png" class="tequanImg pointTequanImg" />
+										<p class="tequanP">会员用户投递简历</p>
+										<p class="tequanP">购买课程等积分翻倍</p>
+										<a href="../jifenzhanghu/html/jifenzhanghu.html" class="tequanA pointTequanA">查看积分</a>
+									</div>
+								</li>
+								<li>
+									<div class="noPoint">
+										<img src="img/pingbi.png" class="tequanImg yikaitongTequanImg" />
+										<p class="tequanP">屏蔽功能</p>
+										<a href="#" class="tequanA">查看屏蔽用户</a>
+									</div>
+									<div class="point">
+										<img src="img/pingbi.png" class="tequanImg pointTequanImg" />
+										<p class="tequanP">保护隐私</p>
+										<p class="tequanP">屏蔽不可见用户</p>
+										<a href="#" class="tequanA pointTequanA">查看屏蔽用户</a>
+									</div>
+								</li>
+								<li>
+									<div class="noPoint">
+										<img src="img/gerenxingxiang.png" class="tequanImg yikaitongTequanImg" />
+										<p class="tequanP">无限个人形象展示</p>
+										<a href="../gerenfengcai/html/gerenfengcai.html" class="tequanA">上传个人形象</a>
+									</div>
+									<div class="point">
+										<img src="img/gerenxingxiang.png" class="tequanImg pointTequanImg" />
+										<p class="tequanP">无限上传个人形象</p>
+										<p class="tequanP">空间无限大</p>
+										<a href="../gerenfengcai/html/gerenfengcai.html" class="tequanA pointTequanA">上传个人形象</a>
+									</div>
+								</li>
+								<li>
+									<div class="noPoint">
+										<img src="img/zhiweixiugai.png" class="tequanImg yikaitongTequanImg" />
+										<p class="tequanP">职位修改</p>
+										<a href="#" class="tequanA">编辑职位</a>
+									</div>
+									<div class="point">
+										<img src="img/zhiweixiugai.png" class="tequanImg pointTequanImg" />
+										<p class="tequanP">会员用户尊享</p>
+										<p class="tequanP">半年可修改一次职位</p>
+										<a href="#" class="tequanA pointTequanA">编辑职位</a>
+									</div>
+								</li>
+								<li>
+									<div class="noPoint">
+										<img src="img/zhanshishipin.png" class="tequanImg yikaitongTequanImg" />
+										<p class="tequanP">展示视频</p>
+										<a href="../gerenfengcai/html/gerenfengcai.html" class="tequanA">上传视频</a>
+									</div>
+									<div class="point">
+										<img src="img/zhanshishipin.png" class="tequanImg pointTequanImg" />
+										<p class="tequanP">会员用户尊享</p>
+										<p class="tequanP">可以上传视频</p>
+										<a href="../gerenfengcai/html/gerenfengcai.html" class="tequanA pointTequanA">上传视频</a>
+									</div>
+								</li>
+								<li>
+									<div class="noPoint">
+										<img src="img/jianli.png" class="tequanImg yikaitongTequanImg" />
+										<p class="tequanP">多次投递简历</p>
+										<a href="#" class="tequanA">查看简历</a>
+									</div>
+									<div class="point">
+										<img src="img/jianli.png" class="tequanImg pointTequanImg" />
+										<p class="tequanP">会员用户尊享</p>
+										<p class="tequanP">多次投递简历</p>
+										<a href="#" class="tequanA pointTequanA">查看简历</a>
+									</div>
+								</li>
+								<li>
+									<div class="noPoint">
+										<img src="img/bianjijianli.png" class="tequanImg yikaitongTequanImg" />
+										<p class="tequanP">简历置顶</p>
+										<a href="#" class="tequanA">编辑简历内容</a>
+									</div>
+									<div class="point">
+										<img src="img/bianjijianli.png" class="tequanImg pointTequanImg" />
+										<p class="tequanP">会员用户尊享</p>
+										<p class="tequanP">简历置顶</p>
+										<a href="#" class="tequanA pointTequanA">编辑简历</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--已开通会员时的会员特权  end-->
+					<!--充值会员弹窗  begin-->
+					<div class="tanchuangBck" id="chongzhiHuiyuanDisplay">
+						<div class="tanchuang chongzhiHuiyuanDisplay">
+							<img src="../common/img/close.png" class="close" onclick="tanchuangClose(this)" />
+							<h2 class="tanchuangTitle">充值会员</h2>
+							<div class="meibiYue">
+								<a class="yonghuNicheng">用户昵称：<span>茶山有鹿</span></a>
+								<a class="meibiYueA">美币余额：¥<span class="meibiJine">5</span></a>
+								<a class="chongzhiMeibi" id="chongzhiMeibi">充值</a>
+							</div>
+							<div class="huiyuanPay">
+								<span>一个月：<span>20</span>美币</span>
+								<span>三个月：<span>58</span>美币</span>
+								<span>六个月：<span>108</span>美币</span>
+								<span>一年：<span>188</span>美币</span>
+								<a class="lijichongzhiHuiyuan" id="chongzhiHuiyuanChongzhi">立即充值</a>
+							</div>
+						</div>
+					</div>
+					<!--充值会员弹窗  end-->
+					<!--充值会员成功弹框  begin-->
+					<div class="tanchuangBck" id="chongzhiHuiyuanSuccess">
+						<div class="tanchuang chongzhiHuiyuanSuccess">
+							<img src="../common/img/close.png" class="close" onclick="tanchuangClose(this)" />
+							<h2 class="tanchuangTitle">充值成功</h2>
+							<p>恭喜您成为熠美翼会员用户，并获得以下奖励</p>
+							<div class="jiangli">
+								<div class="getXunzhang">
+									<img/>
+									<p>勋章</p>
+								</div>
+								<div class="getJifen">
+									<img/>
+									<p>1000积分</p>
+								</div>
+							</div>
+							<a class="successKnow" onclick="tanchuangClose(this)">知道了</a>
+						</div>
+					</div>
+					<!--充值会员成功弹框  end-->
+					<!--充值美币弹框  begin-->
+					<div class="tanchuangBck" id="chongzhiMeibiDisplay">
+						<div class="tanchuang chongzhiDisplay">
+							<p id="chongzhiClose" class="close" onclick="tanchuangClose(this)">×</p>
+							<h2 class="tanchuangTitle">美币充值</h2>
+							<div class="chongzhiJine">
+								<p><span>充值金额</span><span>一比一充值</span></p>
+								<div class="jine" id="chongzhiMeibiJine">
+									<span>¥20</span>
+									<span>¥50</span>
+									<span>¥100</span>
+									<span>¥500</span>
+									<span>¥1000</span>
+								</div>
+							</div>
+							<div class="chongzhiFangshi">
+								<p>充值方式</p>
+								<div class="fangshi" id="chongzhiFangshi">
+									<div>
+										<img src="../meibizhanghu/img/zhifubao.png" />
+										<p>支付宝支付</p>
+									</div>
+									<div>
+										<img src="../meibizhanghu/img/weixin.png" />
+										<p>微信支付</p>
+									</div>
+									<div>
+									</div>
+								</div>
+							</div>
+							<a class="chongzhiTixian lijichongzhi" id="chongzhiMeibiChongzhi">立即充值</a>
+						</div>
+					</div>
+					<!--充值美币弹框  end-->
+					<!--充值成功弹框  begin-->
+					<div class="tanchuangBck" id="chongzhiMeibiSuccess">
+						<div class="tanchuang chongzhiSuccess">
+							<h2>充值成功</h2>
+							<p>充值成功，并获得积分奖励</p>
+							<img/>
+							<p>1000积分</p>
+							<a class="successKnow" id="chongzhiSuccessKnow" onclick="tanchuangClose(this)">知道了</a>
+						</div>
+					</div>
+					<!--充值成功弹框  end-->
+					<!--余额不足弹窗  begin-->
+					<div class="tanchuangBck" id="yueBuzuDisplay">
+						<div class="tanchuang yueBuzuDisplay">
+							<img src="../common/img/close.png" class="close" onclick="tanchuangClose(this)" />
+							<h2 class="tanchuangTitle">余额不足</h2>
+							<p>您的美币余额不足，请先充值</p>
+							<p>美币余额：¥<span class="meibiJine">5</span></p>
+							<a class="successKnow" id="yueBuzuChongzhi">立即充值</a>
+						</div>
+					</div>
+					<!--余额不足弹窗  end-->
+					<!--确定充值弹窗  begin-->
+					<div class="tanchuangBck" id="quedingPayDisplay">
+						<div class="tanchuang quedingPayDisplay">
+							<p class="close" onclick="tanchuangClose(this)">×</p>
+							<h2 class="tanchuangTitle">确定充值？</h2>
+							<div>
+								<a href="#" id="okPay">确定</a>
+								<a id="cancelPay" onclick="cancle(this)">取消</a>
+							</div>
+						</div>
+					</div>
+					<!--确定充值弹窗  end-->
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<iframe align="center" width="100%" height="230px" src="../common/footer.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		</div>
+		<!--<div class="bac" id="bac"></div>
+		<div class="bacLight" id="bacLight"></div>-->
+	</body>
+
+</html>

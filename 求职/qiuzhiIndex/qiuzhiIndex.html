@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="qiuzhiIndex.css" />
+		<link rel="stylesheet" href="../common/css/tanchuang.css" />
+		<link rel="stylesheet" href="../common/css/qiuzhiTop.css" />
+		<script src="../common/js/jquery-1.11.0.js" charset="UTF-8"></script>
+		<script src="../common/js/tanchuang.js" charset="UTF-8"></script>
+		<script src="../common/js/jquery.timers-1.2.js" charset="UTF-8"></script>
+		<script src="qiuzhiIndex.js" charset="UTF-8"></script>
+		<script src=""></script>
+	</head>
+
+	<body>
+		<div style="width: auto;  height: 36px;">
+			<iframe width="100%" height="36px" src="../common/topTitle.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		</div>
+		<div style="width: auto;  height: 80px;">
+			<!--<iframe width="100%" height="80px" src="../common/qiuzhiTop.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>-->
+			<div class="qiuzhiTop">
+				<div class="qiuzhiTopContent">
+					<img src="../common/img/qiuzhiLogo.png" />
+					<ul id="qiuzhiTitleUl">
+						<li>
+							<a href="../qiuzhiIndex/qiuzhiIndex.html">首页</a>
+						</li>
+						<li>
+							<a href="../qiuzhiZhiwei/qiuzhiZhiwei.html">职位</a>
+						</li>
+						<li>
+							<a href="../qiuzhigongsi/qiuzhigongsi.html">公司</a>
+						</li>
+						<li>
+							<a href="../jianlizhongxin/jianlizhongxinIndex.html">简历中心</a>
+						</li>
+						<li>
+							<a href="../qiuzhiguanli/qiuzhiguanliToudijilu.html">求职管理</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="contentContent">
+				<!--内容的top begin-->
+				<div class="contentTop">
+					<!--轮播图  begin-->
+					<div class="lunbo">
+						<ul>
+							<li>
+								<img src="img/1.jpg"/>
+							</li>
+							<li>
+								<img src="img/2.jpg"/>
+							</li>
+							<li>
+								<img src="img/3.jpg"/>
+							</li>
+						</ul>
+						<div class="leftLunbo" id="leftLunbo"></div>
+						<div class="rightLunbo" id="rightLunbo"></div>
+						<div class="yuandian">
+							<span class="yuandianSpan yuandianSpanClick"></span>
+							<span class="yuandianSpan"></span>
+							<span class="yuandianSpan"></span>
+						</div>
+					</div>
+					<!--轮播图  end-->
+
+					<!--简历信息 begin-->
+					<div class="jianliInfo" id="jianliInfo">
+						<div class="nimingjianli">
+							<a>匿名简历</a>
+							<a class="jianliIsShow" id="jianliIsShow"><span class="jinliIsshowClick">公开</span><span>隐藏</span></a>
+						</div>
+						<img class="touxiang" src="../common/img/touxiang.jpg"/>
+						<a class="name">
+							刘斌
+							<img src="img/huolizhi.png" />
+							<span>15</span>
+						</a>
+						<div class="qiuzhiInfo">
+							<div class="qieyeChakan" id="qiyeChakan">
+								<p>0</p>
+								<p>企业查看</p>
+							</div>
+							<div class="mianshiYaoqing" id="mianshiYaoqing">
+								<p>5</p>
+								<p>面试邀请</p>
+							</div>
+						</div>
+						<hr />
+						<div class="jianliBianji">
+							<div id="bianjiJianli">
+								<img src="img/bianjijianli.png" />
+								<p>编辑简历</p>
+							</div>
+							<div id="refeshJianli">
+								<img src="img/shuaxinjianli.png" />
+								<p>刷新简历</p>
+							</div>
+							<div id="zhidingJianli">
+								<img src="img/zhidingjianli.png" />
+								<p>置顶简历</p>
+							</div>
+						</div>
+						<div class="btn">
+							<a href="#">职位收藏</a>
+							<a href="../../个人中心/gerenpingbi/gerenpingbi.html" target="_blank">屏蔽公司</a>
+						</div>
+					</div>
+					<!--简历信息 end-->
+
+					<!--无简历信息  begin-->
+					<div class="noJianliInfo" id="noJianliInfo">
+						<img src="img/creatJianli.png" />
+						<p>欢迎来到求职版块，赶紧创建一份简历，找到一份好工作吧</p>
+						<span id="yijianCreatJianli">一键生成简历</span>
+						<span id="creatJianli">创建简历</span>
+					</div>
+					<!--无简历信息  end-->
+				</div>
+				<!--内容的top end-->
+
+				<!--搜索 begin-->
+				<div class="sousuo">
+					<input placeholder="请输入职位或公司" />
+					<div class="btnSousuo">
+						<img src="img/sousuo.png" />
+						<a href="../qiuzhiZhiwei/qiuzhiZhiwei.html">搜索</a>
+					</div>
+				</div>
+				<div class="remensousuo">
+					<span>热门搜索:</span>
+					<a href="#">美容师</a>
+					<a href="#">美容导师</a>
+					<a href="#">美容师</a>
+					<a href="#">美容师</a>
+					<a href="#">美容师</a>
+				</div>
+				<!--搜索  end-->
+
+				<!--推荐职位  begin-->
+				<div class="tuijianzhiwei">
+					<div class="tuijianzhiweiTitle">
+						<a class="tuijianzhiweiA"><span>推荐职位</span><span>推荐职位基于你的职位和求职意向给出</span></a>
+						<a href="../qiuzhiZhiwei/qiuzhiZhiwei.html" class="chakanMore">查看更多>></a>
+					</div>
+					<div class="tuijianzhiweiContent">
+						<div class="everyContent">
+							<div class="everyContentTitle">
+								<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">急聘美容师</a>
+								<a>5K-8K</a>
+							</div>
+							<p><span>石家庄-桥西区</span><span>工作经验1-2年</span></p>
+							<div class="contentYoushi">
+								<span>五险一金</span>
+								<span>双休</span>
+							</div>
+							<hr />
+							<div class="gongsiInfo">
+								<a href="#"><img/></a>
+								<div class="gongsiContent">
+									<a href="#">石家庄九尾狐电子科技</a>
+									<a><span>美容院 | 20-90人</span><span>昨天 15:24</span></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="everyContent">
+							<div class="everyContentTitle">
+								<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">急聘美容师</a>
+								<a>5K-8K</a>
+							</div>
+							<p><span>石家庄-桥西区</span><span>工作经验1-2年</span></p>
+							<div class="contentYoushi">
+								<span>五险一金</span>
+								<span>双休</span>
+							</div>
+							<hr />
+							<div class="gongsiInfo">
+								<a href="#"><img/></a>
+								<div class="gongsiContent">
+									<a href="#">石家庄九尾狐电子科技</a>
+									<a><span>美容院 | 20-90人</span><span>昨天 15:24</span></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="everyContent">
+							<div class="everyContentTitle">
+								<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">急聘美容师</a>
+								<a>5K-8K</a>
+							</div>
+							<p><span>石家庄-桥西区</span><span>工作经验1-2年</span></p>
+							<div class="contentYoushi">
+								<span>五险一金</span>
+								<span>双休</span>
+							</div>
+							<hr />
+							<div class="gongsiInfo">
+								<a href="#"><img/></a>
+								<div class="gongsiContent">
+									<a href="#">石家庄九尾狐电子科技</a>
+									<a><span>美容院 | 20-90人</span><span>昨天 15:24</span></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="everyContent">
+							<div class="everyContentTitle">
+								<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">急聘美容师</a>
+								<a>5K-8K</a>
+							</div>
+							<p><span>石家庄-桥西区</span><span>工作经验1-2年</span></p>
+							<div class="contentYoushi">
+								<span>五险一金</span>
+								<span>双休</span>
+							</div>
+							<hr />
+							<div class="gongsiInfo">
+								<a href="#"><img/></a>
+								<div class="gongsiContent">
+									<a href="#">石家庄九尾狐电子科技</a>
+									<a><span>美容院 | 20-90人</span><span>昨天 15:24</span></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="everyContent">
+							<div class="everyContentTitle">
+								<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">急聘美容师</a>
+								<a>5K-8K</a>
+							</div>
+							<p><span>石家庄-桥西区</span><span>工作经验1-2年</span></p>
+							<div class="contentYoushi">
+								<span>五险一金</span>
+								<span>双休</span>
+							</div>
+							<hr />
+							<div class="gongsiInfo">
+								<a href="#"><img/></a>
+								<div class="gongsiContent">
+									<a href="#">石家庄九尾狐电子科技</a>
+									<a><span>美容院 | 20-90人</span><span>昨天 15:24</span></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="everyContent">
+							<div class="everyContentTitle">
+								<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">急聘美容师</a>
+								<a>5K-8K</a>
+							</div>
+							<p><span>石家庄-桥西区</span><span>工作经验1-2年</span></p>
+							<div class="contentYoushi">
+								<span>五险一金</span>
+								<span>双休</span>
+							</div>
+							<hr />
+							<div class="gongsiInfo">
+								<a href="#"><img/></a>
+								<div class="gongsiContent">
+									<a href="#">石家庄九尾狐电子科技</a>
+									<a><span>美容院 | 20-90人</span><span>昨天 15:24</span></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="everyContent">
+							<div class="everyContentTitle">
+								<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">急聘美容师</a>
+								<a>5K-8K</a>
+							</div>
+							<p><span>石家庄-桥西区</span><span>工作经验1-2年</span></p>
+							<div class="contentYoushi">
+								<span>五险一金</span>
+								<span>双休</span>
+							</div>
+							<hr />
+							<div class="gongsiInfo">
+								<a href="#"><img/></a>
+								<div class="gongsiContent">
+									<a href="#">石家庄九尾狐电子科技</a>
+									<a><span>美容院 | 20-90人</span><span>昨天 15:24</span></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="everyContent">
+							<div class="everyContentTitle">
+								<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">急聘美容师</a>
+								<a>5K-8K</a>
+							</div>
+							<p><span>石家庄-桥西区</span><span>工作经验1-2年</span></p>
+							<div class="contentYoushi">
+								<span>五险一金</span>
+								<span>双休</span>
+							</div>
+							<hr />
+							<div class="gongsiInfo">
+								<a href="#"><img/></a>
+								<div class="gongsiContent">
+									<a href="#">石家庄九尾狐电子科技</a>
+									<a><span>美容院 | 20-90人</span><span>昨天 15:24</span></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="everyContent">
+							<div class="everyContentTitle">
+								<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">急聘美容师</a>
+								<a>5K-8K</a>
+							</div>
+							<p><span>石家庄-桥西区</span><span>工作经验1-2年</span></p>
+							<div class="contentYoushi">
+								<span>五险一金</span>
+								<span>双休</span>
+							</div>
+							<hr />
+							<div class="gongsiInfo">
+								<a href="#"><img/></a>
+								<div class="gongsiContent">
+									<a href="#">石家庄九尾狐电子科技</a>
+									<a><span>美容院 | 20-90人</span><span>昨天 15:24</span></a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!--推荐职位  end-->
+
+				<!-- 热门企业 begin -->
+				<div class="remenqiye">
+					<div class="remenqiyeTitle">
+						<a>热门企业</a>
+						<a href="../qiuzhigongsi/qiuzhigongsi.html" class="chakanMore">查看更多>></a>
+					</div>
+					<div class="remenqiyeContent">
+						<div class="everyRemenqiye">
+							<a href="#"><img/></a>
+							<div class="remenqiyeInfo">
+								<a href="#">石家庄九尾狐电子科技</a>
+								<a>美容院</a>
+								<a>石家庄 | 20-90人 | 3000平米</a>
+							</div>
+							<hr />
+							<div class="qiyezhaopin">
+								<div class="zhaopinInfo">
+									<p>12</p>
+									<p>面试评价</p>
+								</div>
+								<div class="zhaopinInfo">
+									<p>12</p>
+									<p>在招职位</p>
+								</div>
+								<div class="zhaopinInfo">
+									<p>12</p>
+									<p>诚信值</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="everyRemenqiye">
+							<a href="#"><img/></a>
+							<div class="remenqiyeInfo">
+								<a href="#">石家庄九尾狐电子科技</a>
+								<a>美容院</a>
+								<a>石家庄 | 20-90人 | 3000平米</a>
+							</div>
+							<hr />
+							<div class="qiyezhaopin">
+								<div class="zhaopinInfo">
+									<p>12</p>
+									<p>面试评价</p>
+								</div>
+								<div class="zhaopinInfo">
+									<p>12</p>
+									<p>在招职位</p>
+								</div>
+								<div class="zhaopinInfo">
+									<p>12</p>
+									<p>诚信值</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="everyRemenqiye">
+							<a href="#"><img/></a>
+							<div class="remenqiyeInfo">
+								<a href="#">石家庄九尾狐电子科技</a>
+								<a>美容院</a>
+								<a>石家庄 | 20-90人 | 3000平米</a>
+							</div>
+							<hr />
+							<div class="qiyezhaopin">
+								<div class="zhaopinInfo">
+									<p>12</p>
+									<p>面试评价</p>
+								</div>
+								<div class="zhaopinInfo">
+									<p>12</p>
+									<p>在招职位</p>
+								</div>
+								<div class="zhaopinInfo">
+									<p>12</p>
+									<p>诚信值</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="everyRemenqiye">
+							<a href="#"><img/></a>
+							<div class="remenqiyeInfo">
+								<a href="#">石家庄九尾狐电子科技</a>
+								<a>美容院</a>
+								<a>石家庄 | 20-90人 | 3000平米</a>
+							</div>
+							<hr />
+							<div class="qiyezhaopin">
+								<div class="zhaopinInfo">
+									<p>12</p>
+									<p>面试评价</p>
+								</div>
+								<div class="zhaopinInfo">
+									<p>12</p>
+									<p>在招职位</p>
+								</div>
+								<div class="zhaopinInfo">
+									<p>12</p>
+									<p>诚信值</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="everyRemenqiye">
+							<a href="#"><img/></a>
+							<div class="remenqiyeInfo">
+								<a href="#">石家庄九尾狐电子科技</a>
+								<a>美容院</a>
+								<a>石家庄 | 20-90人 | 3000平米</a>
+							</div>
+							<hr />
+							<div class="qiyezhaopin">
+								<div class="zhaopinInfo">
+									<p>12</p>
+									<p>面试评价</p>
+								</div>
+								<div class="zhaopinInfo">
+									<p>12</p>
+									<p>在招职位</p>
+								</div>
+								<div class="zhaopinInfo">
+									<p>12</p>
+									<p>诚信值</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="everyRemenqiye">
+							<a href="#"><img/></a>
+							<div class="remenqiyeInfo">
+								<a href="#">石家庄九尾狐电子科技</a>
+								<a>美容院</a>
+								<a>石家庄 | 20-90人 | 3000平米</a>
+							</div>
+							<hr />
+							<div class="qiyezhaopin">
+								<div class="zhaopinInfo">
+									<p>12</p>
+									<p>面试评价</p>
+								</div>
+								<div class="zhaopinInfo">
+									<p>12</p>
+									<p>在招职位</p>
+								</div>
+								<div class="zhaopinInfo">
+									<p>12</p>
+									<p>诚信值</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- 热门企业 end -->
+			</div>
+			<iframe width="100%" height="230px" src="../common/footer.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+			<div id="bac" class="bac"></div>
+			<!--购买置顶服务弹窗  begin-->
+			<div class="tanchuangBck" id="goumaizhiding">
+				<div class="tanchuang goumaizhidingDisplay">
+					<img src="../common/img/close.png" class="close" onclick="tanchuangClose(this)" />
+					<h2 class="tanchuangTitle">购买置顶服务</h2>
+					<div class="taocan">
+						<div class="taocanTitle">
+							<p>选择套餐</p>
+							<p>美币余额：<span>85.0</span></p>
+							<a href="../../个人中心/meibizhanghu/meibizhanghu.html" target="_blank">充值</a>
+						</div>
+						<div class="taocanContent">
+							<div class="everyTaocan">
+								<p>30天</p>
+								<p>预计被查看次数<span>+300次</span></p>
+								<p>¥98.0 <span>¥250.0</span> </p>
+							</div>
+							<div class="everyTaocan">
+								<p>15天</p>
+								<p>预计被查看次数<span>+150次</span></p>
+								<p>¥68.0 <span>¥150.0</span> </p>
+							</div>
+							<div class="everyTaocan">
+								<p>7天</p>
+								<p>预计被查看次数<span>+50次</span></p>
+								<p>¥68.0 <span>¥150.0</span> </p>
+							</div>
+						</div>
+					</div>
+					<a class="lijigoumaiZhiding" id="lijigoumaiZhiding">立即购买</a>
+				</div>
+			</div>
+			<!--购买置顶服务弹窗  end-->
+
+			<!-- 置顶成功  begin -->
+			<div class="tanchuangBck" id="zhidingSuccess">
+				<div class="tanchuang zhidingSuccessDisplay">
+					<h2 class="tanchuangTitle">置顶成功</h2>
+					<p>简历置顶页功能已开通，您可在简历中心页面查看剩余天数</p>
+					<a class="successKnow" onclick="tanchuangClose(this)">知道了</a>
+				</div>
+			</div>
+			<!-- 置顶成功  end -->
+
+			<!-- 简历已刷新  begin -->
+			<div class="tanchuangBck" id="refeshJianliDisplay">
+				<div class="tanchuang refeshSuccessDisplay">
+					<h2 class="tanchuangTitle">简历已刷新！</h2>
+					<a class="successKnow" onclick="tanchuangClose(this)">知道了</a>
+				</div>
+			</div>
+			<!-- 简历已刷新  end -->
+
+			<!-- 创建简历失败  begin -->
+			<div class="tanchuangBck" id="creatJianliFail">
+				<div class="tanchuang creatJianliFail">
+					<h2 class="tanchuangTitle">创建失败</h2>
+					<p>个人资料进度未达到100%，无法一键生成简历，请完成个人资料或直接创建简历</p>
+					<a class="successKnow" onclick="tanchuangClose(this)">知道了</a>
+				</div>
+			</div>
+			<!-- 创建简历失败  end -->
+			
+		</div>
+	</body>
+
+</html>

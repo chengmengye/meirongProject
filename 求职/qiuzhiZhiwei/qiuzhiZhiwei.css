@@ -1,0 +1,673 @@
+body,div,p,ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font: "microsoft yahei";
+	color: #212121;
+}
+
+.content {
+	width: 100%;
+	height: auto;
+	background-color: #F5F5F5;
+}
+
+.contentContent {
+	position: relative;
+	width: 1200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+	overflow: hidden;
+}
+/*搜索  begin*/
+.sousuo{
+	/*margin-top: 40px;*/
+	margin-left: 160px;
+	overflow: hidden;
+}
+.sousuo > input{
+	float: left;
+	width: 760px;
+	height: 54px;
+	padding-left: 10px;
+	border: 1px solid #C93756;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	outline: none;
+}
+.btnSousuo{
+	float: left;
+	display: inline-block;
+	width: 95px;
+	height: 41px;
+	padding-top: 15px;
+	padding-left: 25px;
+	background-color: #C93756;
+	font-size: 18px;
+	color: white;
+	cursor: pointer;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.btnSousuo > img{
+	vertical-align: middle;
+	margin-right: 5px;
+}
+.btnSousuo > a{
+	color: white;
+}
+.remensousuo{
+	margin-left: 160px;	
+	margin-top: 5px;
+	font-size: 14px;
+}
+.remensousuo > span{
+	color: #666;
+}
+.remensousuo > p{
+	display: inline-block;
+	color: #212121;
+	margin-left: 17px;
+	cursor: pointer;
+}
+.remensousuo > p:hover{
+	color: #C93756;
+}
+/*搜索  end*/
+
+/*左侧求职  begin*/
+.leftQiuzhi{
+	float: left;
+	width: 880px;
+	height: auto;
+	overflow: hidden;
+}
+
+/*top搜索 begin*/
+.topSousuo{
+	width: 870px;
+	height: auto;
+	margin-top: 25px;
+	padding-top: 18px;
+	padding-left: 10px;
+	padding-bottom: 18px;
+	background-color: white;
+	border-radius: 5px;
+	font-size: 14px;
+}
+.topSousuo > div{
+	margin-bottom: 20px;
+}
+.topSousuo > div:last-of-type{
+	margin-bottom: 0;
+}
+.topSousuo > div > a{
+	display: inline-block;
+	width: 80px;
+	text-align: right;
+}
+.topSousuo > div >span{
+	display: inline-block;
+	width: auto;
+	height: 22px;
+	margin-left: 5px;
+	line-height: 22px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #666;
+	cursor: pointer;
+	border-radius: 2px;
+}
+.topSousuoClick{
+	color: white !important;
+	background-color: #C93756;
+}
+.topSousuo > div >span:hover{
+	color: white;
+	background-color: #C93756;
+}
+.gongzuodidian{
+	overflow: hidden;
+}
+.gongzuodidian > a{
+	float: left;
+}
+.gongzuodidianSelect{
+	float: left;
+	margin-left: 10px;
+	overflow: hidden;
+}
+/*top搜索 end*/
+
+/*排序  begin*/
+.sort{
+	width: 852px;
+	height: auto;
+	margin-top: 20px;
+	padding: 18px 18px 18px 10px;
+	background-color: white;
+	border-radius: 5px;
+	font-size: 14px;
+}
+.sort > div{
+	display: inline-block;
+}
+.paixufangshi > a{
+	display: inline-block;
+	width: 80px;
+	text-align: right;
+}
+.paixufangshi >span{
+	display: inline-block;
+	width: auto;
+	height: 22px;
+	margin-left: 5px;
+	line-height: 22px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #666;
+	cursor: pointer;
+	border-radius: 2px;
+}
+.paixufangshi > span:hover{
+	color: white;
+	background-color: #C93756;
+}
+.paixufangshi >span:last-of-type{
+	margin-left: 0;
+}
+/*职位类别*/
+.zhiweileibie{
+	position: relative;
+	margin-left: 33px;
+	font-size: 14px;
+}
+.zhiweileibieContent{
+	display: inline-block;
+	width: 150px;
+	height: 30px;
+	background-color: #E6E6E6;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.zhiweileibieContent > span{
+	margin-left: 5px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #666;
+}
+.zhiweileibieContent > img{
+	float: right;
+	margin-right: 7px;
+	margin-top: 12px;
+}
+/*职位类别display*/
+.zhiweileibieDisplay{
+	display: none;
+	position: absolute;
+	left: 75px;
+	top: 30px;
+	width:auto;
+	height: 252px;
+	padding: 12px 10px 12px 0;
+	border-radius: 5px;
+	background-color: white;
+	box-shadow: 0px 0px 10px rgb(0,0,0,.2), 0px 0px 10px rgb(0,0,0,.2);
+	z-index: 1;
+	overflow: hidden;
+	
+}
+.zhiweileibieDisplay > ul{
+	float: left;
+	/*display: inline-block;*/
+}
+.zhiweileibieDisplay > ul > li{
+	height: 36px;
+	line-height: 36px;
+	padding-left: 20px;
+	cursor: pointer;
+}
+.zhiweileibieDisplay > ul > li:hover{
+	background-color: #E6E6E6 !important;
+}
+.jibie, .zhiwei{
+	display: none;
+}
+.hangye > li{
+	width: 130px;
+}
+.jibie > li, .zhiwei > li{
+	width: 160px;
+}
+
+.zhiwei{
+	width: 194px;
+	height: 252px;
+	overflow-y: auto;
+}
+/*.zhiwei> li:hover{
+	background-color: #E6E6E6;
+}*/
+/*滚动条样式*/
+/*ulSheng是加滚动条的元素*/
+
+.zhiwei::-webkit-scrollbar {
+	/*滚动条整体样式*/
+	width: 4px;
+	/*高宽分别对应横竖滚动条的尺寸*/
+	height: 4px;
+}
+
+.zhiwei::-webkit-scrollbar-thumb {
+	/*滚动条里面小方块*/
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.9);
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.zhiwei::-webkit-scrollbar-track {
+	/*滚动条里面轨道*/
+	-webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0);
+}
+
+.topPage{
+	float: right;
+}
+.topPage > img{
+	vertical-align: middle;
+	cursor: pointer;
+}
+.topPageNum{
+	vertical-align: middle;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.topPageNum > span:last-of-type{
+	color: #666;
+}
+/*排序  end*/
+
+/*职位内容  begin*/
+.zhiweiContent{
+	float: left;
+	width: 880px;
+	height: auto;
+}
+.everyZhiwei{
+	position: relative;
+	width: 840px;
+	height: 128px;
+	margin-top: 10px;
+	padding: 25px 20px 25px 20px;
+	background-color: white;
+	border-radius:5px;
+	overflow: hidden;
+}
+.everyZhiwei > img{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	cursor: pointer;
+}
+.zhiweiTitle{
+	font-size: 18px;
+	color: #212121;
+	cursor: pointer;
+}
+.zhiweiTitle:hover{
+	color: #C93756;
+}
+.zhiweiTitle > span:first-of-type{
+	margin-left: 8px;
+	color: #666;
+}
+.zhiweiTitle > span:last-of-type{
+	margin-left: 18px;
+	font-size: 14px;
+	color: #ccc;
+}
+.leftZhiwei{
+	float: left;
+	display: inline-block;
+}
+.leftZhiwei > p:first-of-type{
+	font-size: 24px;
+	color: #ff5959;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.leftZhiwei > P:nth-of-type(2){
+	font-size: 14px;
+	color: #666;
+}
+.zhiweidaiyu{
+	margin-top: 10px;
+}
+.zhiweidaiyu > span{
+	display: inline-block;
+	width: 60px;
+	height: 24px;
+	margin-right: 5px;
+	line-height: 24px;
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+	border: 1px solid #E6E6E6;
+	border-radius: 2px;
+}
+.middle{
+	position: absolute;
+	top: 0;
+	float: left;
+	display: inline-block;
+	width: 200px;
+	height: 178px;
+}
+.rightZhiwei{
+	float: right;
+	display: inline-block;
+	width: 321px;
+}
+.gongsi{
+	display: inline-block;
+	width: 240px;
+}
+.gongsi > a{
+	display: inline-block;
+	width: 240px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 18px;
+	color: #212121;
+	cursor: pointer;
+}
+.gongsi > a:hover{
+	color: #C93756;
+}
+.gongsi > p{
+	margin-top: 10px;
+	font-size: 14px;
+	color: #666;
+}
+.rightZhiwei > a > img{
+	width: 56px;
+	height: 56px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.caozuoZhiwei{
+	position: relative;
+	float: right;
+	margin-top: 30px;
+}
+.shoucangzhiweiA > img{
+	position: absolute;
+	left: -30px;
+	top: 6px;
+}
+.shoucangzhiweiA:hover{
+	color: #212121;
+	cursor: pointer;
+}
+.yishoucangzhiweiA{
+	color: #666 !important;
+	cursor: default !important;
+}
+
+.caozuoZhiwei > a{
+	font-size: 14px;
+	color: #666;
+	cursor: pointer;
+}
+.shenqingzhiweiA{
+	display: inline-block;
+	width: 110px;
+	height: 34px;
+	line-height: 34px;
+	margin-left: 15px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	text-align: center;
+}
+.shenqingzhiweiA:hover{
+	background-color: #C93756;
+	color: white;
+	border: 1px solid #C93756;
+    cursor: pointer;
+}
+.shenqingzhiweiAClick{
+	background-color: #C93756;
+	color: white !important;
+	border: 1px solid #C93756;
+    cursor: pointer;
+}
+.yishenqingzhiweiA{
+	border: 1px solid #ccc !important;
+	background-color: white !important;
+	color: #666 !important;
+    cursor: default !important;
+}
+/*职位内容  end*/
+/*全选  begin*/
+.allSelect{
+	float: left;
+	width: 880px;
+	height: 60px;
+	/*margin-top: 10px;*/
+	line-height: 60px;
+	font-size: 14px;
+	color: #666;
+	background-color: white;
+	border-radius: 5px;
+}
+.allSelectFixed{
+	box-shadow: 0px 0px 10px rgb(0,0,0,.2), 0px 0px 10px rgb(0,0,0,.2);
+}
+.weixuan{
+	float: left;
+	width: auto;
+	height: auto;
+	margin-top: 10px;
+}
+.yixuanFixed{
+	width: 1200px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	/*margin-top: 0;*/
+}
+
+.ckbQuanxuan{
+	display: inline-block;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.allSelect > a:first-of-type{
+	margin-left: 15px;
+	cursor: pointer;
+}
+.allSelect a:hover{
+	color: #212121;
+}
+.noShenqingzhiwei{
+	display: inline-block;
+	height: 14px;
+	line-height: 14px;
+	margin-left: 7px;
+	padding-left: 15px;
+	border-left: 1px solid #666;
+	cursor: pointer;
+}
+.yiShenqingzhiwei{
+	padding-left: 15px;
+	padding-right: 15px;
+	height: 36px;
+	line-height: 36px;
+	border-left: none;
+	background-color: #C93756;
+	color: white !important;
+	border-radius: 5px;
+}
+#shenqingzhiweiNum{
+	margin-left: 10px;
+}
+.search_btn{
+	float: right;
+}
+.search_btn li{
+	float:left;
+	width:22px;
+	height:22px;
+	text-align: center;
+	line-height: 22px;
+	margin:0px 4px;
+	cursor:pointer;
+	border-radius: 2px;
+	background: #f5f5f5;
+}
+.search_btn li:hover{
+	color:#fff;
+	background: #1976D2;
+}
+.search_btn li:first-child{
+	background: #f5f5f5 url(../img/48454845614_03.png) no-repeat;
+	background-position: 50% 50%;
+}
+.search_btn li:last-child{
+	background: #f5f5f5 url(../img/48453415_03.png) no-repeat;
+	background-position: 50% 50%;
+}
+
+/*全选  end*/
+
+/*分页   begin*/
+.divPage{
+	float: right;
+	display: inline-block;
+	width: 320px;
+	margin-right: 10px;
+}
+/*分页   end*/
+
+/*左侧求职  end*/
+
+
+/*右侧广告  begin*/
+.rightGuanggao{
+	float: right;
+	width: 300px;
+	height: auto;
+	margin-top: 25px;
+}
+.rightGuanggao li{
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+/*右侧广告  end*/
+
+/*申请职位成功弹窗  begin*/
+/*#shenqingSuccess{
+	display: block;
+}*/
+.shenqingSuccessDisplay{
+	width: 400px;
+	height: 225px;
+	margin-left: -200px;
+	margin-top: -112.5px;
+}
+.shenqingSuccessDisplay > h2{
+	margin-left: 0;
+}
+/*申请职位成功弹窗  begin*/
+/*职位申请弹窗  begin*/
+.zhiweishenqingDisplay{
+	/*display: none;*/
+	width: 400px;
+	height: 225px;
+	margin-left: -200px;
+	margin-top: -112.5px;
+}
+.zhiweishenqingDisplay > p > a{
+	font-size: 14px;
+	color: #C93756;
+	margin-left: 10px;
+}
+.zhiweishenqingDisplay > div{
+	margin-top: 28px;
+	font-size: 14px;
+}
+.zhiweishenqingDisplay > div > a{
+	display: inline-block;
+	width: 112px;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.zhiweishenqingDisplay > div > a:first-of-type{
+	margin-right: 10px;
+	color: white;
+	background-color: #C93756;
+	border: 1px solid #C93756;
+}
+.zhiweishenqingDisplay > div > a:first-of-type:hover{
+	background-color: #9E2D45;
+}
+.zhiweishenqingDisplay > div > a:nth-of-type(2){
+	color: #666;
+	background-color: white;
+	border: 1px solid #999;
+}
+.zhiweishenqingDisplay > div > a:nth-of-type(2):hover{
+	color: white;
+	background-color: #999;
+}
+/*#zhiweishenqingDisplay{
+	display: block;
+}*/
+/*职位申请弹窗  end*/
+
+/*职位收藏成功  begin */
+/*#shoucangSuccess{
+	display: block;
+}*/
+.shoucangSuccessDisplay{
+	width: 290px;
+	height: 246px;
+	margin-left: -200px;
+	margin-top: -123px;
+	padding-left: 55px;
+	padding-right: 55px;
+}
+.shoucangSuccessDisplay > h2{
+	margin-left: 0;
+}
+ /*职位收藏成功  end*/ 
+ 
+.divPage{
+	width: 370px;
+	float: right;
+	display: inline-block;
+	margin-top: -10px;
+	margin-right: 0;
+	
+}

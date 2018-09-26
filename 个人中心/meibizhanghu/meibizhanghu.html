@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="meibizhanghu.css" />
+		<link rel="stylesheet" href="../common/css/paging.css" />
+		<link rel="stylesheet" href="../common/css/tanchuang.css" />
+	</head>
+
+	<body>
+		<iframe width="100%" height="36px" src="../common/topTitle.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		<div class="content">
+			<div class="contentContent">
+				<iframe width="auto" height="980px" src="../common/personallist.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+				<div class="rightContent">
+					<a>美币账户</a>
+					<div class="divJifen">
+						<div class="divJifenyue">
+							<a>美币余额</a>
+							<a>¥688.00</a>
+						</div>
+						<div class="divChongzhiTixian">
+							<a id="chongzhi">充值</a>
+							<a id="tixian">提现</a>
+						</div>
+						<div class="divJifenShangcheng">
+							<a href="#" class="aJifenShangcheng">积分商城</a>
+						</div>
+					</div>
+					<!--充值弹框-->
+					<div class="tanchuang chongzhiDisplay">
+						<p id="chongzhiClose" class="close" onclick="tanchuangClose(this)">×</p>
+						<h2 class="tanchuangTitle">美币充值</h2>
+						<div class="chongzhiJine">
+							<p><span>充值金额</span><span>一比一充值</span></p>
+							<div class="jine" id="chongzhiJine">
+								<span>¥20</span>
+								<span>¥50</span>
+								<span>¥100</span>
+								<span>¥500</span>
+								<span>¥1000</span>
+							</div>
+						</div>
+						<div class="chongzhiFangshi">
+							<p>充值方式</p>
+							<div class="fangshi" id="chongzhiFangshi">
+								<div>
+									<img src="img/zhifubao.png" />
+									<p>支付宝支付</p>
+								</div>
+								<div>
+									<img src="img/weixin.png" />
+									<p>微信支付</p>
+								</div>
+								<div>
+								</div>
+							</div>
+						</div>
+						<a class="chongzhiTixian lijichongzhi">立即充值</a>
+					</div>
+					<!--充值成功弹框-->
+					<div class="tanchuang chongzhiSuccess">
+						<h2>充值成功</h2>
+						<p>充值成功，并获得积分奖励</p>
+						<img/>
+						<p>1000积分</p>
+						<a class="successKnow" id="chongzhiSuccessKnow" onclick="tanchuangClose(this)">知道了</a>
+					</div>
+					<!--支付未完成弹窗-->
+					<div class="tanchuang chongzhiFail">
+						<p id="closeChongzhiFail" class="close" onclick="tanchuangClose(this)">×</p>
+						<h2 class="tanchuangTitle">支付未完成</h2>
+						<p>支付超时或网络错误导致支付失败，请重新支付</p>
+						<div>
+							<a href="#">继续支付</a>
+							<a id="changeZhifufangshi">更换支付方式</a>
+						</div>
+					</div>
+					<!--提现-->
+					<div class="tanchuang tixianDisplay">
+						<p id="closeTixian" class="close" onclick="tanchuangClose(this)">×</p>
+						<h2 class="tanchuangTitle">美币提现</h2>
+						<div class="chongzhiJine">
+							<p><span>提现金额</span><span>仅支持100的倍数</span></p>
+							<div class="jine" id="tixianJine">
+								<span>¥100</span>
+								<span>¥200</span>
+								<span>¥500</span>
+							</div>
+							<div class="qitaJine">
+								<a>其他金额</a>
+								<input  type="text" class="jineInput" id="inputJine" onclick="readyInput(this)" onblur="input(this)"/>
+								<a onclick="readyInput(this)">输入金额，仅限100倍数</a>
+								<a>请输入正确的金额</a>
+							</div>
+						</div>
+						<div class="yinhangkaInfo">
+							<p>银行卡信息</p>
+							<div class="qitaJine">
+								<a>银行卡号</a>
+								<input  type="text" class="jineInput" id="inputYinhangkahao" onclick="readyInput(this)" onblur="input(this)"/>
+								<a onclick="readyInput(this)">请输入银行卡号</a>
+								<a>请输入正确的银行卡号</a>
+							</div>
+							<div class="qitaJine">
+								<a>开户行</a>
+								<input  type="text" class="jineInput" id="inputKaihuhang" onclick="readyInput(this)" onblur="input(this)"/>
+								<a onclick="readyInput(this)">请输入开户行</a>
+								<a>请输入开户行名称</a>
+							</div>
+							<div class="qitaJine">
+								<a>持卡人姓名</a>
+								<input  type="text" class="jineInput" id="inputXingming" onclick="readyInput(this)" onblur="input(this)"/>
+								<a onclick="readyInput(this)">请输入持卡人姓名</a>
+								<a>请输入持卡人姓名</a>
+							</div>
+						</div>
+						<a class="chongzhiTixian lijitixian">立即提现</a>
+					</div>
+
+					<!--提现成功-->
+					<div class="tanchuang tixianSuccess">
+						<h2>提现成功</h2>
+						<p>预计到账时间3-7个工作日，如有问题请联系客服</p>
+						<a class="successKnow" id="tixianSuccessKonw" onclick="tanchuangClose(this)">知道了</a>
+					</div>
+					<div class="divJifenmingxiTitle">
+						<a>收支明细</a>
+						<a id="quanbumingxi"><span>全部明细</span><img src="img/daosanjiao.png" /></a>
+					</div>
+					<div class="mingxiDisplay">
+						<ul>
+							<li>全部明细</li>
+							<li>收入明细</li>
+							<li>支出明细</li>
+						</ul>
+					</div>
+					<div class="divJifenmingxiTable">
+						<div class="th">
+							<span>时间</span>
+							<span>积分</span>
+							<span>类型</span>
+						</div>
+						<div class="tableContent">
+							<div id="jifenmingxiTable">
+								<div class="tr">
+									<span>1</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<script src="../common/js/jquery-1.11.0.js"></script>
+					<script src="../common/js/leftDaohang.js"></script>
+					<script src="meibizhanghu.js"></script>
+					<div class="box" id="box"></div>
+					<script src="../common/js/paging.js"></script>
+					<script>
+						var setTotalCount = 15;
+						$('#box').paging({
+							initPageNo: 1, // 初始页码
+							totalPages: 10, //总页数
+							totalCount: '合计' + setTotalCount + '条数据', // 条目总数
+							slideSpeed: 600, // 缓动速度。单位毫秒
+							jump: false, //是否支持跳转
+							callback: function(page) { // 回调函数
+								console.log(page);
+							}
+						})
+					</script>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<iframe align="center" width="100%" height="230px" src="../common/footer.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		</div>
+		<div class="bac" id="bac"></div>
+	</body>
+
+</html>

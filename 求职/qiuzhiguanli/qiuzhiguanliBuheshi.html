@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="qiuzhiguanli.css" />
+		<link rel="stylesheet" href="../common/css/tanchuang.css" />
+		<link rel="stylesheet" href="../common/css/qiuzhiTop.css" />
+		<link rel="stylesheet" href="../common/css/qiuzhiPaging.css" />
+		<script src="../common/js/jquery-1.11.0.js" charset="UTF-8"></script>
+		<script src="../common/js/jquery.timers-1.2.js" charset="UTF-8"></script>
+		<script src="qiuzhiguanliBuheshi.js" charset="UTF-8"></script>
+		<script src=""></script>
+	</head>
+
+	<body>
+		<div style="width: auto;  height: 36px;">
+			<iframe width="100%" height="36px" src="../common/topTitle.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		</div>
+		<div style="width: auto;  height: 80px;">
+			<!--<iframe width="100%" height="80px" src="../common/qiuzhiTop.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>-->
+			<div class="qiuzhiTop">
+				<div class="qiuzhiTopContent">
+					<img src="../common/img/qiuzhiLogo.png" />
+					<ul id="qiuzhiTitleUl">
+						<li>
+							<a href="../qiuzhiIndex/qiuzhiIndex.html">首页</a>
+						</li>
+						<li>
+							<a href="../qiuzhiZhiwei/qiuzhiZhiwei.html">职位</a>
+						</li>
+						<li>
+							<a href="../qiuzhigongsi/qiuzhigongsi.html">公司</a>
+						</li>
+						<li>
+							<a href="../jianlizhongxin/jianlizhongxinIndex.html">简历中心</a>
+						</li>
+						<li>
+							<a href="../qiuzhiguanli/qiuzhiguanliToudijilu.html">求职管理</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="contentContent">
+				<!--左侧的职位状态以及记录  begin-->
+				<div class="leftZhiweijilu">
+					<div class="zhiweijiluTitle" id="zhiweijiluTitle">
+						<ul>
+							<li>
+								<a href="qiuzhiguanliToudijilu.html">投递记录</a>
+							</li>
+							<li>
+								<a href="qiuzhiguanliQiyeChakan.html">企业查看</a>
+							</li>
+							<li>
+								<a href="qiuzhiguanli.html">邀请面试</a>
+							</li>
+							<li>
+								<a href="qiuzhiguanliBuheshi.html">不合适</a>
+							</li>
+						</ul>
+					</div>
+					<div class="zhiweijiluContent">
+						<div class="everyZhiweijilu">
+							<div class="zhiweiInfo">
+								<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">诚聘美容师</a>
+								<a>3K-6K</a>
+								<a href="#">石家庄九尾狐电子科技有限公司&nbsp;<span>[石家庄]</span></a>
+							</div>
+							<div class="zhiweiState">
+								<p class="zhiweiStatePNoPoint">不合适</p>
+								<p class="zhiweiStateRiqi">2017-7-27<span>12:22</span></p>
+							</div>
+						</div>
+						<div class="everyZhiweijilu">
+							<div class="zhiweiInfo">
+								<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">诚聘美容师</a>
+								<a>3K-6K</a>
+								<a href="#">石家庄九尾狐电子科技有限公司&nbsp;<span>[石家庄]</span></a>
+							</div>
+							<div class="zhiweiState">
+								<p class="zhiweiStatePNoPoint">不合适</p>
+								<p class="zhiweiStateRiqi">2017-7-27<span>12:22</span></p>
+							</div>
+						</div>
+						<div class="everyZhiweijilu">
+							<div class="zhiweiInfo">
+								<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">诚聘美容师</a>
+								<a>3K-6K</a>
+								<a href="#">石家庄九尾狐电子科技有限公司&nbsp;<span>[石家庄]</span></a>
+							</div>
+							<div class="zhiweiState">
+								<p class="zhiweiStatePNoPoint">不合适</p>
+								<p class="zhiweiStateRiqi">2017-7-27<span>12:22</span></p>
+							</div>
+						</div>
+						<div class="everyZhiweijilu">
+							<div class="zhiweiInfo">
+								<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">诚聘美容师</a>
+								<a>3K-6K</a>
+								<a href="#">石家庄九尾狐电子科技有限公司&nbsp;<span>[石家庄]</span></a>
+							</div>
+							<div class="zhiweiState">
+								<p class="zhiweiStatePNoPoint">不合适</p>
+								<p class="zhiweiStateRiqi">2017-7-27<span>12:22</span></p>
+							</div>
+						</div>
+						<div class="everyZhiweijilu">
+							<div class="zhiweiInfo">
+								<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">诚聘美容师</a>
+								<a>3K-6K</a>
+								<a href="#">石家庄九尾狐电子科技有限公司&nbsp;<span>[石家庄]</span></a>
+							</div>
+							<div class="zhiweiState">
+								<p class="zhiweiStatePNoPoint">不合适</p>
+								<p class="zhiweiStateRiqi">2017-7-27<span>12:22</span></p>
+							</div>
+						</div>
+						<div class="divPage">
+							<div class="box page" id="box"></div>
+							<script src="../common/js/qiuzhiPaging.js"></script>
+							<script>
+								var setTotalCount = 15;
+								$('#box').paging({
+									initPageNo: 1, // 初始页码
+									totalPages: 10, //总页数
+									totalCount: '合计' + setTotalCount + '条数据', // 条目总数
+									slideSpeed: 600, // 缓动速度。单位毫秒
+									jump: true, //是否支持跳转
+									callback: function(page) { // 回调函数
+										console.log(page);
+									}
+								})
+							</script>
+						</div>
+					</div>
+				</div>
+				<!--左侧的职位状态以及记录  end-->
+
+				<!--左侧推荐职位  begin-->
+				<div class="rightTuijianzhiwei">
+					<div class="shoucangBck">
+						<!--<div class="myShoucang">-->
+						<!--<img src="img/shoucang.png" />-->
+						<a href="#" class="myShoucang">职位收藏</a>
+						<!--</div>-->
+					</div>
+					<div class="tuijianzhiweiTitle">
+						<a>推荐职位</a>
+					</div>
+					<div class="tuijianzhiweiContent">
+						<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">美容师&nbsp;<span>[兼职]</span></a>
+						<a>3K-8K</a>
+						<a href="#">九尾狐电子科技有限公司</a>
+					</div>
+					<div class="tuijianzhiweiContent">
+						<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">美容师&nbsp;<span>[兼职]</span></a>
+						<a>3K-8K</a>
+						<a href="#">九尾狐电子科技有限公司</a>
+					</div>
+					<div class="tuijianzhiweiContent">
+						<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">美容师&nbsp;<span>[兼职]</span></a>
+						<a>3K-8K</a>
+						<a href="#">九尾狐电子科技有限公司</a>
+					</div>
+					<div class="tuijianzhiweiContent">
+						<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">美容师&nbsp;<span>[兼职]</span></a>
+						<a>3K-8K</a>
+						<a href="#">九尾狐电子科技有限公司</a>
+					</div>
+					<div class="tuijianzhiweiContent">
+						<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">美容师&nbsp;<span>[兼职]</span></a>
+						<a>3K-8K</a>
+						<a href="#">九尾狐电子科技有限公司</a>
+					</div>
+				</div>
+				<!--左侧推荐职位  end-->
+			</div>
+			<iframe width="100%" height="230px" src="../common/footer.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+		</div>
+	</body>
+
+</html>

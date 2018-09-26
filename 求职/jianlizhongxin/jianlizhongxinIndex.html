@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="jianlizhongxin.css" />
+		<link rel="stylesheet" href="../common/css/tanchuang.css" />
+		<link rel="stylesheet" href="../common/css/qiuzhiTop.css" />
+		<link rel="stylesheet" href="../common/css/qiuzhiPaging.css" />
+		<link rel="stylesheet" href="../common/css/xialaCity-picker.css" />
+		<script src="../common/js/jquery-1.11.0.js" charset="UTF-8"></script>
+		<script src="../common/js/tanchuang.js" charset="UTF-8"></script>
+		<script src="../common/js/jquery.timers-1.2.js" charset="UTF-8"></script>
+		<script src="../common/js/city-picker.data.js" charset="UTF-8"></script>
+		<script src="../common/js/xialaCity-picker.js" charset="UTF-8"></script>
+		<script src="jianlizhongxinIndex.js" charset="UTF-8"></script>
+		<script src=""></script>
+	</head>
+
+	<body>
+		<div style="width: auto;  height: 36px;">
+			<iframe width="100%" height="36px" src="../common/topTitle.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		</div>
+		<div style="width: auto;  height: 80px;">
+			<!--<iframe width="100%" height="80px" src="../common/qiuzhiTop.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>-->
+			<div class="qiuzhiTop">
+				<div class="qiuzhiTopContent">
+					<img src="../common/img/qiuzhiLogo.png" />
+					<ul id="qiuzhiTitleUl">
+						<li>
+							<a href="../qiuzhiIndex/qiuzhiIndex.html">首页</a>
+						</li>
+						<li>
+							<a href="../qiuzhiZhiwei/qiuzhiZhiwei.html">职位</a>
+						</li>
+						<li>
+							<a href="../qiuzhigongsi/qiuzhigongsi.html">公司</a>
+						</li>
+						<li>
+							<a href="../jianlizhongxin/jianlizhongxinIndex.html">简历中心</a>
+						</li>
+						<li>
+							<a href="../qiuzhiguanli/qiuzhiguanliToudijilu.html">求职管理</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="contentContent">
+				<div class="jianlizhongxinIndex">
+					<img src="img/creatjianli.png" />
+					<p>欢迎来到求职版块，赶紧创建一份简历，找到一份好工作吧</p>
+					<span id="yijianCreatJianli">一键生成简历</span>
+					<span id="creatJianli">创建简历</span>
+				</div>
+				<!--左侧的简历信息  end-->
+			</div>
+			<iframe width="100%" height="230px" src="../common/footer.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+			
+			<!-- 创建简历失败  begin -->
+			<div class="tanchuangBck" id="creatJianliFail">
+				<div class="tanchuang creatJianliFail">
+					<h2 class="tanchuangTitle">创建失败</h2>
+					<p>个人资料进度未达到100%，无法一键生成简历，请完成个人资料或直接创建简历</p>
+					<a class="successKnow" onclick="tanchuangClose(this)">知道了</a>
+				</div>
+			</div>
+			<!-- 创建简历失败  end -->
+		</div>
+	</body>
+
+</html>

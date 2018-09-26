@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="qiuzhiguanli.css" />
+		<link rel="stylesheet" href="../common/css/tanchuang.css" />
+		<link rel="stylesheet" href="../common/css/qiuzhiTop.css" />
+		<link rel="stylesheet" href="../common/css/qiuzhiPaging.css" />
+		<script src="../common/js/jquery-1.11.0.js" charset="UTF-8"></script>
+		<script src="../common/js/tanchuang.js" charset="UTF-8"></script>
+		<script src="../common/js/jquery.timers-1.2.js" charset="UTF-8"></script>
+		<script src="qiuzhiguanli.js" charset="UTF-8"></script>
+		<script src=""></script>
+	</head>
+
+	<body>
+		<div style="width: auto;  height: 36px;">
+			<iframe width="100%" height="36px" src="../common/topTitle.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		</div>
+		<div style="width: auto;  height: 80px;">
+			<!--<iframe width="100%" height="80px" src="../common/qiuzhiTop.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>-->
+			<div class="qiuzhiTop">
+				<div class="qiuzhiTopContent">
+					<img src="../common/img/qiuzhiLogo.png" />
+					<ul id="qiuzhiTitleUl">
+						<li>
+							<a href="../qiuzhiIndex/qiuzhiIndex.html">首页</a>
+						</li>
+						<li>
+							<a href="../qiuzhiZhiwei/qiuzhiZhiwei.html">职位</a>
+						</li>
+						<li>
+							<a href="../qiuzhigongsi/qiuzhigongsi.html">公司</a>
+						</li>
+						<li>
+							<a href="../jianlizhongxin/jianlizhongxinIndex.html">简历中心</a>
+						</li>
+						<li>
+							<a href="../qiuzhiguanli/qiuzhiguanliToudijilu.html">求职管理</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="contentContent">
+				<!--左侧的职位状态以及记录  begin-->
+				<div class="leftZhiweijilu">
+					<div class="zhiweijiluTitle" id="zhiweijiluTitle">
+						<ul>
+							<li>
+								<a href="qiuzhiguanliToudijilu.html">投递记录</a>
+							</li>
+							<li>
+								<a href="qiuzhiguanliQiyeChakan.html">企业查看</a>
+							</li>
+							<li>
+								<a href="qiuzhiguanli.html">邀请面试</a>
+							</li>
+							<li>
+								<a href="qiuzhiguanliBuheshi.html">不合适</a>
+							</li>
+						</ul>
+					</div>
+					<div class="zhiweijiluContent">
+						<div class="everyZhiweijilu">
+							<div class="zhiweiInfo">
+								<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">诚聘美容师</a>
+								<a>3K-6K</a>
+								<a href="#">石家庄九尾狐电子科技有限公司&nbsp;<span>[石家庄]</span></a>
+							</div>
+							<div class="zhiweiState">
+								<p class="zhiweiStateP">已接受</p>
+								<p class="zhiweiStatePHover">查看邀请函</p>
+								<p class="mianshiPingjia">面试评价</p>
+								<p class="zhiweiStateRiqi">2017-7-27<span>12:22</span></p>
+							</div>
+						</div>
+
+						<div class="everyZhiweijilu">
+							<div class="zhiweiInfo">
+								<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">诚聘美容师</a>
+								<a>3K-6K</a>
+								<a href="#">石家庄九尾狐电子科技有限公司&nbsp;<span>[石家庄]</span></a>
+							</div>
+							<div class="zhiweiState">
+								<p class="zhiweiStateP">已接受</p>
+								<p class="zhiweiStatePHover">查看邀请函</p>
+								<p class="mianshiPingjia">面试评价</p>
+								<p class="zhiweiStateRiqi">2017-7-27<span>12:22</span></p>
+							</div>
+						</div>
+						<div class="everyZhiweijilu">
+							<div class="zhiweiInfo">
+								<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">诚聘美容师</a>
+								<a>3K-6K</a>
+								<a href="#">石家庄九尾狐电子科技有限公司&nbsp;<span>[石家庄]</span></a>
+							</div>
+							<div class="zhiweiState">
+								<p class="zhiweiStateP">待确认</p>
+								<p class="zhiweiStatePHover">查看邀请函</p>
+								<p class="mianshiPingjia">面试评价</p>
+								<p class="zhiweiStateRiqi">2017-7-27<span>12:22</span></p>
+							</div>
+						</div>
+						<div class="everyZhiweijilu">
+							<div class="zhiweiInfo">
+								<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">诚聘美容师</a>
+								<a>3K-6K</a>
+								<a href="#">石家庄九尾狐电子科技有限公司&nbsp;<span>[石家庄]</span></a>
+							</div>
+							<div class="zhiweiState">
+								<p class="zhiweiStateP">已拒绝</p>
+								<p class="zhiweiStatePHover">查看邀请函</p>
+								<p class="mianshiPingjia">面试评价</p>
+								<p class="zhiweiStateRiqi">2017-7-27<span>12:22</span></p>
+							</div>
+						</div>
+						<div class="divPage">
+							<div class="box page" id="box"></div>
+							<script src="../common/js/qiuzhiPaging.js"></script>
+							<script>
+								var setTotalCount = 15;
+								$('#box').paging({
+									initPageNo: 1, // 初始页码
+									totalPages: 10, //总页数
+									totalCount: '合计' + setTotalCount + '条数据', // 条目总数
+									slideSpeed: 600, // 缓动速度。单位毫秒
+									jump: true, //是否支持跳转
+									callback: function(page) { // 回调函数
+										console.log(page);
+									}
+								})
+							</script>
+						</div>
+					</div>
+				</div>
+				<!--左侧的职位状态以及记录  end-->
+
+				<!--右侧推荐职位  begin-->
+				<div class="rightTuijianzhiwei">
+					<div class="shoucangBck">
+						<!--<div class="myShoucang">-->
+						<!--<img src="img/shoucang.png" />-->
+						<a href="#" class="myShoucang">职位收藏</a>
+						<!--</div>-->
+					</div>
+					<div class="tuijianzhiweiTitle">
+						<a>推荐职位</a>
+					</div>
+					<div class="tuijianzhiweiContent">
+						<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">美容师&nbsp;<span>[兼职]</span></a>
+						<a>3K-8K</a>
+						<a href="#">九尾狐电子科技有限公司</a>
+					</div>
+					<div class="tuijianzhiweiContent">
+						<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">美容师&nbsp;<span>[兼职]</span></a>
+						<a>3K-8K</a>
+						<a href="#">九尾狐电子科技有限公司</a>
+					</div>
+					<div class="tuijianzhiweiContent">
+						<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">美容师&nbsp;<span>[兼职]</span></a>
+						<a>3K-8K</a>
+						<a href="#">九尾狐电子科技有限公司</a>
+					</div>
+					<div class="tuijianzhiweiContent">
+						<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">美容师&nbsp;<span>[兼职]</span></a>
+						<a>3K-8K</a>
+						<a href="#">九尾狐电子科技有限公司</a>
+					</div>
+					<div class="tuijianzhiweiContent">
+						<a href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">美容师&nbsp;<span>[兼职]</span></a>
+						<a>3K-8K</a>
+						<a href="#">九尾狐电子科技有限公司</a>
+					</div>
+				</div>
+				<!--右侧推荐职位  end-->
+			</div>
+			<iframe width="100%" height="230px" src="../common/footer.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+
+			<!--面试邀请函  begin-->
+			<div class="tanchuangBck mianshiyaoqingBck" id="mianshiyaoqing">
+				<div class="tanchuang mianshiyaoqingDisplay">
+					<img src="../common/img/close.png" class="close" onclick="tanchuangClose(this)" />
+					<h2 class="tanchuangTitle">面试邀请函</h2>
+					<div class="yaoqinghanContent">
+						<p>张先生</p>
+						<p>经过我公司初步筛选，认为你与我们的职位要求很匹配，现诚挚邀请你来我司面试。</p>
+						<p>面试时间：2018-09-23 08:00:00</p>
+						<p>面试地址：石家庄桥西区万象天成1302</p>
+						<p>联系人：张女士</p>
+						<p>联系电话：13358966985</p>
+						<div class="mianshizhiweiInfo">
+							<p>诚聘美容师<span>3K-5K</span></p>
+							<p>石家庄九尾狐电子科技有限公司</p>
+						</div>
+						<div class="caozuoYaoqing">
+							<a class="button okButton" id="jieshouMianshi">接受面试</a>
+							<a class="button noButton" id="fangqiMianshi">放弃面试</a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!--面试邀请函  end-->
+
+			<!--面试邀请函  已接受 begin-->
+			<div class="tanchuangBck mianshiyaoqingBck" id="jieshouMianshiyaoqing">
+				<div class="tanchuang mianshiyaoqingDisplay">
+					<img src="../common/img/close.png" class="close" onclick="tanchuangClose(this)" />
+					<h2 class="tanchuangTitle">面试邀请函</h2>
+					<div class="yaoqinghanContent">
+						<p>张先生</p>
+						<p>经过我公司初步筛选，认为你与我们的职位要求很匹配，现诚挚邀请你来我司面试。</p>
+						<p>面试时间：2018-09-23 08:00:00</p>
+						<p>面试地址：石家庄桥西区万象天成1302</p>
+						<p>联系人：张女士</p>
+						<p>联系电话：13358966985</p>
+						<div class="mianshizhiweiInfo">
+							<p>诚聘美容师<span>3K-5K</span></p>
+							<p>石家庄九尾狐电子科技有限公司</p>
+						</div>
+						<p>你已接受面试邀请，记得不要迟到哦！</p>
+					</div>
+
+				</div>
+			</div>
+			<!--面试邀请函 已接受  end-->
+
+			<!--面试邀请函  已拒绝 begin-->
+			<div class="tanchuangBck mianshiyaoqingBck" id="jujueMianshiyaoqing">
+				<div class="tanchuang mianshiyaoqingDisplay">
+					<img src="../common/img/close.png" class="close" onclick="tanchuangClose(this)" />
+					<h2 class="tanchuangTitle">面试邀请函</h2>
+					<div class="yaoqinghanContent">
+						<p>张先生</p>
+						<p>经过我公司初步筛选，认为你与我们的职位要求很匹配，现诚挚邀请你来我司面试。</p>
+						<p>面试时间：2018-09-23 08:00:00</p>
+						<p>面试地址：石家庄桥西区万象天成1302</p>
+						<p>联系人：张女士</p>
+						<p>联系电话：13358966985</p>
+						<div class="mianshizhiweiInfo">
+							<p>诚聘美容师<span>3K-5K</span></p>
+							<p>石家庄九尾狐电子科技有限公司</p>
+						</div>
+						<p>你已拒绝此公司的面试邀请</p>
+					</div>
+
+				</div>
+			</div>
+			<!--面试邀请函 已拒绝  end-->
+
+			<!--面试评价 begin-->
+			<div class="bac"></div>
+			<div class="tanchuangBck" id="mianshipingjiaDisplay">
+				<div class="tanchuang mianshipingjiaDisplay">
+					<img src="../common/img/close.png" class="close" onclick="tanchuangClose(this)" />
+					<h2 class="tanchuangTitle">面试评价</h2>
+					<textarea placeholder="请如实填写面试评价，字数100以内（选填）" maxlength="100"></textarea>
+					<div class="xingjipingjia">
+						<div>
+							<span>描述相符</span>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div>
+							<span>面试官</span>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div>
+							<span>公司环境</span>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+					<div class="pingjiaBtn">
+						<span class="btn okButton" id="okPingjia">确定</span>
+						<span class="btn noButton" onclick="cancle(this)">取消</span>
+					</div>
+				</div>
+			</div>
+			<!--面试评价  end-->
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="jifenzhanghu.css" />
+		<link rel="stylesheet" href="../common/css/paging.css" />
+	</head>
+
+	<body>
+		<!--<div id="dingwei"></div>
+		<div id="gerenzhongxin"></div>
+		<div id="wangzhandaohang"></div>-->
+		<iframe align="center" width="100%" height="36px" src="../common/topTitle.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		<div class="content">
+			<div class="contentContent">
+				<iframe align="center" width="auto" height="980px" src="../common/personallist.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+				<div class="rightContent">
+					<a class="sub_right_title">积分账户</a>
+					<div class="divJifen">
+						<div class="divJifenyue">
+							<a>积分余额</a>
+							<a>86666</a>
+						</div>
+						<div class="divJifenShangcheng">
+							<a class="jifenGuize" id="jifenguize"><img src="img/wenhao.png" /><span>积分规则</span></a>
+							<a class="aJifenShangcheng">积分商城</a>
+						</div>
+						<div class="jifenguizeDisplay">
+							<p id="jifenguizeClose">×</p>
+							<h2>积分规则</h2>
+							<p>积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则</p>
+						</div>
+					</div>
+					<div class="divJifenmingxiTitle">
+						<a>积分明细</a>
+						<a>最多显示一年的积分明细</a>
+					</div>
+					<div class="divJifenmingxiTable">
+						<div class="th">
+							<span>时间</span>
+							<span>积分</span>
+							<span>类型</span>
+						</div>
+						<div class="tableContent">
+							<div id="jifenmingxiTable">
+								<div class="tr">
+									<span>1</span>
+									<span>积分</span>
+									<span>类型类型类型类型类型类型类型类型类型类型类型类型类</span>
+								</div>
+								<div class="tr">
+									<span>2</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>3</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>4</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>5</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>6</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>7</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>8</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>9</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>10</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>11</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>12</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>13</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>14</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>15</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<script src="../common/js/jquery-1.11.0.js"></script>
+					<script src="jifenzhanghu.js"></script>
+					<div class="box" id="box"></div>
+					<script src="../common/js/paging.js"></script>
+					<script>
+						var setTotalCount = 15;
+						$('#box').paging({
+							initPageNo: 1, // 初始页码
+							totalPages: 10, //总页数
+							totalCount: '合计' + setTotalCount + '条数据', // 条目总数
+							slideSpeed: 600, // 缓动速度。单位毫秒
+							jump: true, //是否支持跳转
+							callback: function(page) { // 回调函数
+								console.log(page);
+							}
+						})
+					</script>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<iframe align="center" width="100%" height="230px" src="../common/footer.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		</div>
+		<div class="bac" id="bac"></div>
+	</body>
+
+</html>

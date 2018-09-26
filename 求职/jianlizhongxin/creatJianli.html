@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="jianlizhongxin.css" />
+		<link rel="stylesheet" href="../common/css/tanchuang.css" />
+		<link rel="stylesheet" href="../common/css/qiuzhiTop.css" />
+		<link rel="stylesheet" href="../common/css/qiuzhiPaging.css" />
+		<link rel="stylesheet" href="../common/css/xialaCity-picker.css" />
+		<script src="../common/js/jquery-1.11.0.js" charset="UTF-8"></script>
+		<script src="../common/js/tanchuang.js" charset="UTF-8"></script>
+		<script src="../common/js/jquery.timers-1.2.js" charset="UTF-8"></script>
+		<script src="../common/js/city-picker.data.js" charset="UTF-8"></script>
+		<script src="../common/js/xialaCity-picker.js" charset="UTF-8"></script>
+		<script src="creatJianli.js" charset="UTF-8"></script>
+	</head>
+
+	<body>
+		<div style="width: auto;  height: 36px;">
+			<iframe width="100%" height="36px" src="../common/topTitle.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		</div>
+		<div style="width: auto;  height: 80px;">
+			<!--<iframe width="100%" height="80px" src="../common/qiuzhiTop.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>-->
+			<div class="qiuzhiTop">
+				<div class="qiuzhiTopContent">
+					<img src="../common/img/qiuzhiLogo.png" />
+					<ul id="qiuzhiTitleUl">
+						<li>
+							<a href="../qiuzhiIndex/qiuzhiIndex.html">首页</a>
+						</li>
+						<li>
+							<a href="../qiuzhiZhiwei/qiuzhiZhiwei.html">职位</a>
+						</li>
+						<li>
+							<a href="../qiuzhigongsi/qiuzhigongsi.html">公司</a>
+						</li>
+						<li>
+							<a href="../jianlizhongxin/jianlizhongxinIndex.html">简历中心</a>
+						</li>
+						<li>
+							<a href="../qiuzhiguanli/qiuzhiguanliToudijilu.html">求职管理</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="contentContent">
+				<!--左侧的简历信息  begin-->
+				<div class="creatJianli">
+					<!--基本信息编辑  begin-->
+					<div class="divGerenInfoEdit" id="divGerenInfoEdit">
+						<form action="" method="post" id="jibenInfo">
+							<div class="editName"><span class="firstSpan">姓名</span><span>关雎尔</span></div>
+							<div class="sex">
+								<span class="firstSpan">性别</span>
+								<input type="radio" name="sex" id="male" checked="checked" />
+								<label for="male">男</label>&nbsp;
+								<input type="radio" name="sex" id="female" />
+								<label for="female">女</label>
+							</div>
+							<div class="bornDate">
+								<span class="firstSpan">出生年月</span>
+								<input class="inputSelect" type="date" name="date" id="birthInput" placeholder="获取个人资料" />
+								<img class="weitianxieImg" src="img/redWenhao.png" />
+							</div>
+							<div class="xueli">
+								<span class="firstSpan">学历</span>
+								<input class="inputSelect" type="text" id="xueliInput" readonly="readonly" placeholder="未填写" />
+								<ul class="ulDisplay" id="xueliUl">
+									<li>保密</li>
+									<li>大专</li>
+									<li>本科</li>
+									<li>硕士</li>
+									<li>博士</li>
+								</ul>
+								<img class="weitianxieImg" src="img/redWenhao.png" />
+							</div>
+							<div class="gongzuojingyan">
+								<span class="firstSpan">工作经验</span>
+								<input class="inputSelect" type="text" name="" id="gongzuojingyanInput" readonly="readonly" placeholder="暂无工作经验" />
+								<ul class="ulDisplay" id="gongzuojingyanUl">
+									<li>1年以下</li>
+									<li>1-3年</li>
+									<li>3-5年</li>
+									<li>5-10年</li>
+									<li>10年以上</li>
+								</ul>
+								<img class="weitianxieImg" src="img/redWenhao.png" />
+							</div>
+							<div class="xianjudi">
+								<span class="firstSpan">现居地</span>
+								<input class="inputSelect" id="xianjudiInput" type="text" readonly="readonly" placeholder="未填写" />
+								<img class="weitianxieImg" src="img/redWenhao.png" />
+							</div>
+
+							<div class="selectHukousuozaidi">
+								<span class="firstSpan">户口所在地</span>
+								<input class="inputSelect" id="hukoudiInput" type="text" readonly="readonly" placeholder="未填写" />
+								<img class="weitianxieImg" src="img/redWenhao.png" />
+							</div>
+
+							<div class="jianliTouxiang">
+								<div class="imgTouxiang">
+									<img src="img/jianliTouxiang.png" id="editTouxiang" onload="imgLoad(this,150,150)" />
+								</div>
+								<div class="editTouxiangHover" id="editTouxiangHover">
+									<div class="imgFile">
+										<input type="file" onchange="uploadFileImg(this,'editTouxiang')" id="imgFileInput" />
+										<img src="img/bigEdit.png" />
+									</div>
+									<img src="img/bigDel.png" id="delTouxiang" />
+								</div>
+								<p>只支持JPG格式,大小不要超过500k建议使用150*150像素以上的图片</p>
+							</div>
+							<div class="lianxidianhua">
+								<span class="firstSpan">联系电话</span>
+								<input class="input" type="text" placeholder="必填" id="lianxidianhuaInput" />
+								<img class="weitianxieImg" src="img/redWenhao.png" />
+							</div>
+							<div class="youxiang">
+								<span class="firstSpan">邮箱</span>
+								<input class="input" type="text" placeholder="必填" id="youxiangInput" />
+								<img class="weitianxieImg" src="img/redWenhao.png" />
+							</div>
+						</form>
+
+						<div class="juzhudi">
+							<form>
+								<div>
+									<div>
+										<div style="position: relative;">
+											<input class="form-control" readonly type="text" value="" data-toggle="city-picker" />
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+
+						<div class="hujidi">
+							<form>
+								<div>
+									<div>
+										<div style="position: relative;">
+											<input class="form-controlp" readonly type="text" value="" data-toggle="city-picker" />
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!--基本信息 编辑 end-->
+
+					<!--求职意向编辑 begin-->
+					<div class="divQiuzhiyixiangEdit" id="divQiuzhiyixiangEdit">
+						<p class="infoTitle">求职意向</p>
+						<form action="" method="post" id="qiuzhiyixiang">
+							<div class="qiwanghangye">
+								<span class="firstSpan mulSpan">期望行业</span>
+								<div class="inputSelect muliSelect" id="divQiwanghangye">
+									<a>必填</a>
+								</div>
+								<ul class="ulDisplay ulMuliSelect">
+									<li><input type="checkbox" name="cbkQiwanghangye" /><span>美容专业线</span></li>
+									<li><input type="checkbox" name="cbkQiwanghangye" /><span>日化线</span></li>
+									<li><input type="checkbox" name="cbkQiwanghangye" /><span>美发行业</span></li>
+									<li><input type="checkbox" name="cbkQiwanghangye" /><span>彩妆纹绣</span></li>
+									<li><input type="checkbox" name="cbkQiwanghangye" /><span>美容周边行业</span></li>
+								</ul>
+								<img class="weitianxieImg" src="img/redWenhao.png" />
+							</div>
+							<div class="qiwangzhiwei">
+								<span class="firstSpan mulSpan">期望职位</span>
+								<div class="inputSelect muliSelect" id="divQiwangzhiwei">
+									<a>必填</a>
+								</div>
+								<ul class="ulDisplay ulMuliSelect ulMuliQiwangzhiwei">
+									<li><input type="checkbox" name="ckbQiwangzhiwei" /><span>总经理</span></li>
+									<li><input type="checkbox" name="ckbQiwangzhiwei" /><span>行政总监</span></li>
+									<li><input type="checkbox" name="ckbQiwangzhiwei" /><span>行政（文员）</span></li>
+									<li><input type="checkbox" name="ckbQiwangzhiwei" /><span>销售总监</span></li>
+									<li><input type="checkbox" name="ckbQiwangzhiwei" /><span>销售经理</span></li>
+									<li><input type="checkbox" name="ckbQiwangzhiwei" /><span>销售（业务）</span></li>
+									<li><input type="checkbox" name="ckbQiwangzhiwei" /><span>技术总监</span></li>
+									<li><input type="checkbox" name="ckbQiwangzhiwei" /><span>技术总监</span></li>
+									<li><input type="checkbox" name="ckbQiwangzhiwei" /><span>技术总监</span></li>
+									<li><input type="checkbox" name="ckbQiwangzhiwei" /><span>技术总监</span></li>
+								</ul>
+								<img class="weitianxieImg" src="img/redWenhao.png" />
+							</div>
+							<div>
+								<span class="firstSpan">期望薪资</span>
+								<input class="inputSelect" type="text" id="qiwangxinziInput" readonly="readonly" placeholder="必填" />
+								<ul class="ulDisplay">
+									<li>1K以下</li>
+									<li>1K-3K</li>
+									<li>3K-5K</li>
+									<li>5K-8K</li>
+									<li>8K-10K</li>
+									<li>10K-12K</li>
+									<li>12K-15K</li>
+									<li>15K以上</li>
+								</ul>
+								<img class="weitianxieImg" src="img/redWenhao.png" />
+							</div>
+							<div>
+								<span class="firstSpan">期望工作地</span>
+								<input class="inputSelect" type="text" name="" id="qiwanggongzuodiInput" readonly="readonly" placeholder="不限" />
+								<img class="weitianxieImg" src="img/redWenhao.png" />
+							</div>
+							<div>
+								<span class="firstSpan">工作性质</span>
+								<input class="inputSelect" id="gongzuoxingzhiInput" type="text" value="全职" readonly="readonly" placeholder="未选择" />
+								<ul class="ulDisplay">
+									<li>全职</li>
+									<li>兼职</li>
+									<li>实习</li>
+									<li>校园</li>
+								</ul>
+							</div>
+							<div>
+								<span class="firstSpan">求职状态</span>
+								<input class="inputSelect" type="text" id="qiuzhizhuangtaiInput" readonly="readonly" value="离职" />
+								<ul class="ulDisplay">
+									<li>离职</li>
+									<li>在职</li>
+									<li>应届生</li>
+									<li>在校生</li>
+								</ul>
+							</div>
+							<div class="isChuchai" id="isChuchaiEdit">
+								<span class="firstSpan">是否出差</span>
+								<input type="radio" name="isChuchai" id="okChuchai" checked="checked" value="可以" />
+								<label for="okChuchai">可以</label>&nbsp;
+								<input type="radio" name="isChuchai" id="noChuchai" value="不接受出差" />
+								<label for="noChuchai">不接受出差</label>
+							</div>
+
+						</form>
+						<div class="qiwanggongzuodi">
+							<form>
+								<div>
+									<div>
+										<div style="position: relative;" class="divQiwanggongzuodi">
+											<input class="form-controlr" readonly type="text" value="" data-toggle="city-picker" />
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!--求职意向编辑 end-->
+
+					<!--未填写培训经历  begin-->
+					<div class="peixunjingli" id="noPeixunjingli">
+						<p class="infoTitle">培训经历</p>
+						<span class="add" id="noJingliXinzeng">新增</span>
+						<p class="weitianxie">暂未填写培训经历</p>
+					</div>
+					<!--未填写培训经历  end-->
+
+					<!--培训经历  begin-->
+					<div class="peixunjingli" id="peixunjingli">
+						<p class="infoTitle">培训经历</p>
+						<span class="add" id="addPeixunjingli">新增</span>
+						<!--培训经历编辑 begin-->
+						<div class="divPeixunjingliEdit">
+							<form action="" method="post">
+								<div>
+									<span class="firstSpan">培训机构</span>
+									<input class="input peixunjigouInput" type="text" placeholder="必填" value="" onchange="isInput(this)" />
+									<img class="weitianxieImg" src="img/redWenhao.png" />
+								</div>
+								<div>
+									<span class="firstSpan">培训课程</span>
+									<input class="input peixunKechengInput" type="text" placeholder="必填" value="" onchange="isInput(this)" />
+									<img class="weitianxieImg" src="img/redWenhao.png" />
+								</div>
+								<div class="peixunDate">
+									<span class="firstSpan">培训时间</span>
+									<input class="inputSelect peixunStartDate" type="month" name="peixunStartDate" onchange="startDate(this)" />&nbsp;&nbsp;一&nbsp;&nbsp;
+									<input class="inputSelect peixunEndDate" type="month" name="peixunEndDate" onchange="endDate(this)" />
+									<input type="radio" name="zhijin" class="zhijin peixunDateZhijin" onchange="zhijin(this)" />
+									<label for="peixunDateZhijin">至今</label>
+									<img class="weitianxieImg" src="img/redWenhao.png" />
+								</div>
+								<div class="zhengshuImg">
+									<span class="firstSpan">证书图片</span>
+									<div class="uploadZhengshuImg">
+										<img src="" class="editZhengshu" />
+										<input type="file" value="" placeholder="未选择" class="zhengshuInput emptyZhengshuFileInput" onchange="uploadFileImg(this,'editZhengshu')" />
+									</div>
+									<div class="editZhengshuHover">
+										<div class="zhengshuFile">
+											<input type="file" onchange="uploadFileImg(this,'editZhengshu')" class="zhengshuFileInput" />
+											<img src="img/bigEdit.png" />
+										</div>
+										<img src="img/bigDel.png" class="delZhengshu" />
+									</div>
+
+									<!--<img class="weitianxieImg" src="img/redWenhao.png" />-->
+								</div>
+								<div>
+									<input type="button" class="save savePeixunjingli" value="保存" onclick="peixunjinliEditSave(this)" />
+									<input type="button" class="cancel cancelPeixunjingli" value="取消" onclick="peixunjinliEditCancle(this)" />
+								</div>
+
+							</form>
+						</div>
+						<!--培训经历编辑 end-->
+
+						<div class="peixunjingliContent" id="peixunjingliContent">
+							<!--培训经历编辑 begin-->
+							<div class="divPeixunjingliEdit" id="addDivPeixunjingliEdit">
+								<form action="" method="post">
+									<div>
+										<span class="firstSpan">培训机构</span>
+										<input class="input peixunjigouInput" type="text" id="peixunjigouInput" placeholder="必填" value="" />
+										<img class="weitianxieImg" src="img/redWenhao.png" />
+									</div>
+									<div>
+										<span class="firstSpan">培训课程</span>
+										<input class="input peixunKechengInput" type="text" id="peixunKechengInput" placeholder="必填" value="" />
+										<img class="weitianxieImg" src="img/redWenhao.png" />
+									</div>
+									<div class="peixunDate">
+										<span class="firstSpan">培训时间</span>
+										<input class="inputSelect peixunStartDate" type="month" name="peixunStartDate" id="peixunStartDate" />&nbsp;&nbsp;一&nbsp;&nbsp;
+										<input class="inputSelect peixunEndDate" type="month" name="peixunEndDate" id="peixunEndDate" />
+										<input type="radio" name="zhijin" class="zhijin peixunDateZhijin" id="peixunDateZhijin" />
+										<label for="peixunDateZhijin">至今</label>
+										<img class="weitianxieImg" src="img/redWenhao.png" />
+									</div>
+									<div class="zhengshuImg">
+										<span class="firstSpan">证书图片</span>
+										<div class="uploadZhengshuImg" id="uploadZhengshuImg">
+											<img src="" id="editZhengshu" class="editZhengshu" />
+											<input type="file" value="" id="emptyZhengshuFileInput" placeholder="未选择" class="zhengshuInput emptyZhengshuFileInput" onchange="uploadFileImg(this,'editZhengshu')" />
+										</div>
+										<div class="editZhengshuHover" id="editZhengshuHover">
+											<div class="zhengshuFile">
+												<input type="file" onchange="uploadFileImg(this,'editZhengshu')" id="zhengshuFileInput" class="zhengshuFileInput" />
+												<img src="img/bigEdit.png" />
+											</div>
+											<img src="img/bigDel.png" id="delZhengshu" class="delZhengshu" />
+										</div>
+
+										<!--<img class="weitianxieImg" src="img/redWenhao.png" />-->
+									</div>
+									<div>
+										<input type="button" class="save" value="保存" id="savePeixunjingli" onclick="peixunjinliEditSave(this)" />
+										<input type="button" class="cancel" value="取消" id="cancelPeixunjingli" onclick="peixunjinliEditCancle(this)" />
+									</div>
+
+								</form>
+							</div>
+							<!--培训经历编辑 end-->
+						</div>
+
+					</div>
+					<!--培训经历  end-->
+
+					<!--未填写工作经验  begin-->
+					<div class="divGongzuojingyan" id="noGongzuojingyan">
+						<p class="infoTitle">工作经验</p>
+						<span class="add" id="noGongzuojingyanAdd">新增</span>
+						<p class="weitianxie">暂未填写工作经验</p>
+					</div>
+					<!--未填写工作经验  end-->
+
+					<!--工作经验  begin-->
+					<div class="divGongzuojingyan" id="gongzuojingyan">
+						<p class="infoTitle">工作经验</p>
+						<span class="add" id="addGongzuojingyan">新增</span>
+						<!--工作经验编辑 begin-->
+						<div class="divGongzuojingyanEdit">
+							<form action="" method="post">
+								<div>
+									<span class="firstSpan">公司名称</span>
+									<input class="input gongsiNameInput" type="text" placeholder="必填" value="" onchange="isInput(this)" />
+									<img class="weitianxieImg" src="img/redWenhao.png" />
+								</div>
+								<div>
+									<span class="firstSpan">职位名称</span>
+									<input class="input zhiweiNameInput" type="text" placeholder="必填" value="" onchange="isInput(this)" />
+									<img class="weitianxieImg" src="img/redWenhao.png" />
+								</div>
+								<div>
+									<span class="firstSpan">税前月薪</span>
+									<input class="input shuiqianyuexinInput" type="text" placeholder="必填" value="" onchange="isInput(this)" />
+									<img class="weitianxieImg" src="img/redWenhao.png" />
+								</div>
+								<div class="gongzuoDate">
+									<span class="firstSpan">工作时间</span>
+									<input class="inputSelect gongzuoStartDate" type="month" name="gongzuoStartDate" onchange="startDate(this)" />&nbsp;&nbsp;一&nbsp;&nbsp;
+									<input class="inputSelect gongzuoEndDate" type="month" name="gongzuoEndDate" onchange="endDate(this)" />
+									<input type="radio" name="zhijin" class="zhijin gongzuoDatezhijin" onchange="zhijin(this)" />
+									<label for="gongzuoDatezhijin">至今</label>
+									<img class="weitianxieImg" src="img/redWenhao.png" />
+								</div>
+								<div class="gongzuomiaoshu">
+									<span class="firstSpan">工作描述</span>
+									<textarea placeholder="必填" class="gongzuomiaoshu" onchange="isInput(this)"></textarea>
+									<img class="weitianxieImg" src="img/redWenhao.png" />
+								</div>
+								<div>
+									<input type="button" class="save saveGongzuojingyan" value="保存" onclick="gongzuojingyanEditSave(this)" />
+									<input type="button" class="cancel cancelGongzuojingyan" value="取消" onclick="gongzuojingyanEditCancle(this)" />
+								</div>
+
+							</form>
+						</div>
+						<!--工作经验编辑 end-->
+						<div class="gongzuojingyanContent" id="gongzuojingyanContent">
+							<!--工作经验编辑 begin-->
+							<div class="divGongzuojingyanEdit" id="addDivGongzuojingyanEdit">
+								<form action="" method="post">
+									<div>
+										<span class="firstSpan">公司名称</span>
+										<input class="input gongsiNameInput" type="text" id="gongsiNameInput" placeholder="必填" value="" />
+										<img class="weitianxieImg" src="img/redWenhao.png" />
+									</div>
+									<div>
+										<span class="firstSpan">职位名称</span>
+										<input class="input zhiweiNameInput" type="text" id="zhiweiNameInput" placeholder="必填" value="" />
+										<img class="weitianxieImg" src="img/redWenhao.png" />
+									</div>
+									<div>
+										<span class="firstSpan">税前月薪</span>
+										<input class="input shuiqianyuexinInput" type="text" id="shuiqianyuexinInput" placeholder="必填" value="" />
+										<img class="weitianxieImg" src="img/redWenhao.png" />
+									</div>
+									<div class="gongzuoDate">
+										<span class="firstSpan">工作时间</span>
+										<input class="inputSelect gongzuoStartDate" type="month" name="gongzuoStartDate" id="gongzuoStartDate" />&nbsp;&nbsp;一&nbsp;&nbsp;
+										<input class="inputSelect gongzuoEndDate" type="month" name="gongzuoEndDate" id="gongzuoEndDate" />
+										<input type="radio" name="zhijin" id="gongzuoDatezhijin" class="zhijin gongzuoDatezhijin" />
+										<label for="gongzuoDatezhijin">至今</label>
+										<img class="weitianxieImg" src="img/redWenhao.png" />
+									</div>
+									<div class="gongzuomiaoshu">
+										<span class="firstSpan">工作描述</span>
+										<textarea placeholder="必填" id="gongzuomiaoshu" class="gongzuomiaoshu"></textarea>
+										<img class="weitianxieImg" src="img/redWenhao.png" />
+									</div>
+									<div>
+										<input type="button" class="save" value="保存" id="saveGongzuojingyan" />
+										<input type="button" class="cancel" value="取消" id="cancelGongzuojingyan" />
+									</div>
+
+								</form>
+							</div>
+							<!--工作经验编辑 end-->
+						</div>
+					</div>
+					<!--工作经验  end-->
+					<!--个人介绍编辑 begin-->
+					<div class="divGerenaihaoEdit" id="divGerenaihaoEdit">
+						<p class="infoTitle">个人爱好</p>
+						<form action="" method="post">
+							<div>
+								<span class="firstSpan">兴趣爱好</span>
+								<input class="input" type="text" id="xingquaihaoInput" placeholder="必填" value="" />
+								<img class="weitianxieImg" src="img/redWenhao.png" />
+							</div>
+							<div class="gongzuomiaoshu">
+								<span class="firstSpan">自我评价</span>
+								<textarea placeholder="必填(最多填写200字)" id="ziwopingjia" maxlength="200"></textarea>
+								<img class="weitianxieImg" src="img/redWenhao.png" />
+							</div>
+							<div class="xingxiangImg">
+								<span class="firstSpan">个人形象</span>
+								<div class="uploadXingxiangImg" id="uploadXingxiangImg">
+									<img src="" id="xingxiangImg" onload="imgLoad(this,175,233)" />
+								</div>
+								<div class="editXingxiangHover" id="editXingxiangHover">
+									<img src="img/bigEdit.png" id="editXingxiang" />
+									<img src="img/bigDel.png" id="delXingxiang" />
+								</div>
+								<!--<input type="file" value="" placeholder="未选择" />-->
+							</div>
+
+						</form>
+						<!--左侧的简历信息  end-->
+						<div class="btnJianli">
+							<span class="btn okButton" id="creatJianli">创建简历</span>
+							<span class="btn noButton" id="cancleCreat">取消创建</span>
+						</div>
+					</div>
+					<!--个人介绍编辑 end-->
+
+				</div>
+			</div>
+			<iframe width="100%" height="230px" src="../common/footer.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+			<!--个人形象选择照片弹框  begin-->
+			<div class="bac"></div>
+			<div class="tanchuangBck" id="selectPhotoDisplay">
+				<div class="tanchuang selectPhotoDisplay">
+					<img src="../common/img/close.png" class="close" onclick="tanchuangClose(this)" />
+					<h2 class="tanchuangTitle">选择照片</h2>
+					<ul class="gerenxingxiangPhoto" id="gerenxingxiangPhoto">
+						<li>
+							<img src="textImg/1.jpg" onload="imgLoad(this,175,233)" />
+						</li>
+						<li>
+							<img src="textImg/2.jpg" onload="imgLoad(this,175,233)" />
+						</li>
+						<li>
+							<img src="textImg/3.jpg" onload="imgLoad(this,175,233)" />
+						</li>
+						<li>
+							<img src="textImg/4.jpg" onload="imgLoad(this,175,233)" />
+						</li>
+						<li>
+							<img src="textImg/5.jpg" onload="imgLoad(this,175,233)" />
+						</li>
+						<li>
+							<img src="textImg/6.jpg" onload="imgLoad(this,175,233)" />
+						</li>
+						<li>
+							<img src="textImg/7.jpg" onload="imgLoad(this,175,233)" />
+						</li>
+						<li>
+							<img src="textImg/1.jpg" onload="imgLoad(this,175,233)" />
+						</li>
+					</ul>
+					<div class="gerenxingxiangBtn">
+						<span class="button okButton" id="selectPhotoOk">确定</span>
+						<span class="button noButton" onclick="cancle(this)">取消</span>
+					</div>
+				</div>
+			</div>
+			<!--个人形象选择照片弹框  end-->
+
+			<!--无个人形象照片可选时  begin-->
+			<div class="tanchuangBck" id="noPhotoDisplay">
+				<div class="tanchuang editJianliNameFail">
+					<h2 class="tanchuangTitle">暂无照片</h2>
+					<p>你暂未上传个人形象，请先去个人风采上传</p>
+					<a class="successKnow" onclick="tanchuangClose(this)">知道了</a>
+				</div>
+			</div>
+			<!--无个人形象照片可选时  end-->
+		</div>
+	</body>
+
+</html>

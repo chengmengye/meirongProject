@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="qiuzhiZhiwei.css" />
+		<link rel="stylesheet" href="../common/css/tanchuang.css" />
+		<link rel="stylesheet" href="../common/css/city-picker.css" />
+		<link rel="stylesheet" href="zcity.css" />
+		<link rel="stylesheet" href="../common/css/qiuzhiPaging.css" />
+		<link rel="stylesheet" href="../common/css/qiuzhiTop.css" />
+		<script src="../common/js/jquery-1.11.0.js" charset="UTF-8"></script>
+		<script src="../common/js/tanchuang.js" charset="UTF-8"></script>
+		<script src="../common/js/jquery.timers-1.2.js" charset="UTF-8"></script>
+		<script src="qiuzhiZhiwei.js" charset="UTF-8"></script>
+		<script src="../common/js/city-picker.data.js" charset="UTF-8"></script>
+		<script src="../common/js/city-picker.js" charset="UTF-8"></script>
+	</head>
+
+	<body>
+		<div style="width: auto;  height: 36px;">
+			<iframe width="100%" height="36px" src="../common/topTitle.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		</div>
+		<div style="width: auto;  height: 80px;">
+			<!--<iframe width="100%" height="80px" src="../common/qiuzhiTop.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>-->
+			<div class="qiuzhiTop">
+				<div class="qiuzhiTopContent">
+					<img src="../common/img/qiuzhiLogo.png" />
+					<ul id="qiuzhiTitleUl">
+						<li>
+							<a href="../qiuzhiIndex/qiuzhiIndex.html">首页</a>
+						</li>
+						<li>
+							<a href="../qiuzhiZhiwei/qiuzhiZhiwei.html">职位</a>
+						</li>
+						<li>
+							<a href="../qiuzhigongsi/qiuzhigongsi.html">公司</a>
+						</li>
+						<li>
+							<a href="../jianlizhongxin/jianlizhongxinIndex.html">简历中心</a>
+						</li>
+						<li>
+							<a href="../qiuzhiguanli/qiuzhiguanliToudijilu.html">求职管理</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="contentContent">
+				<!--搜索 begin-->
+				<div class="sousuo">
+					<input placeholder="请输入职位" id="sousuoZhiwei" />
+					<div class="btnSousuo">
+						<img src="img/sousuo.png" />
+						<a>搜索</a>
+					</div>
+				</div>
+				<div class="remensousuo">
+					<span>热门搜索:</span>
+					<p>美容师</p>
+					<p>美容导师</p>
+					<p>美容师</p>
+					<p>美容师</p>
+					<p>美容师</p>
+				</div>
+				<!--搜索  end-->
+
+				<!--左侧求职  begin-->
+				<!--检索条件  begin-->
+				<div class="leftQiuzhi">
+					<div class="topSousuo" id="topSousuo">
+						<div class="gongzuodidian">
+							<a>工作地点：</a>
+							<div class="gongzuodidianSelect">
+								<div class="td-04">
+									<div class="zcityGroup" city-range="{'level_start':1,'level_end':3}"></div>
+								</div>
+								<script type="text/javascript" src="zcity.js"></script>
+								<script type="text/javascript">
+									zcityrun('.zcityGroup');
+								</script>
+							</div>
+
+						</div>
+						<div class="xinzidaiyu" id="xinzidaiyu">
+							<a>薪资待遇：</a>
+							<span class="topSousuoClick">不限</span>
+							<span>1K以下</span>
+							<span>1K-3K</span>
+							<span>3K-5K</span>
+							<span>5K-8K</span>
+							<span>8K-10K</span>
+							<span>10K-12K</span>
+							<span>12K-15K</span>
+							<span>15K以上</span>
+						</div>
+						<div class="gongzuojingyan" id="gongzuojingyan">
+							<a>工作经验：</a>
+							<span class="topSousuoClick">不限</span>
+							<span>无经验</span>
+							<span>1年以下</span>
+							<span>1-3年</span>
+							<span>3-5年</span>
+							<span>5-10年</span>
+							<span>10年以上</span>
+						</div>
+						<div class="xueli" id="xueli">
+							<a>学历：</a>
+							<span class="topSousuoClick">不限</span>
+							<span>高中</span>
+							<span>大专</span>
+							<span>本科</span>
+							<span>硕士</span>
+							<span>博士</span>
+						</div>
+						<div class="zhiweileixing" id="zhiweileixing">
+							<a>职位类型：</a>
+							<span class="topSousuoClick">不限</span>
+							<span>全职</span>
+							<span>兼职</span>
+							<span>实习</span>
+							<span>校园</span>
+						</div>
+					</div>
+					<div class="sort">
+						<div class="paixufangshi" id="paixufangshi">
+							<a>排序方式：</a>
+							<span class="topSousuoClick">默认</span>
+							<span>最新</span>
+						</div>
+						<div class="zhiweileibie">
+							<a>职位类别：</a>
+							<div class="zhiweileibieContent" id="zhiweileibieContent">
+								<span>不限</span>
+								<img src="img/xiala.png" />
+							</div>
+							<div class="zhiweileibieDisplay" id="zhiweileibieDisplay">
+								<ul class="hangye" id="hangye">
+									<li>不限</li>
+									<li>美容专业线</li>
+									<li>日化线</li>
+									<li>美发行业</li>
+									<li>彩妆纹绣</li>
+									<li>美容周边行业</li>
+								</ul>
+								<!--<ul class="jibie" id="jibie">
+									<li>厂家（非代工）</li>
+									<li>代理商（省级）</li>
+									<li>代理商（市级）</li>
+									<li>美容院（省级）</li>
+									<li>美容院（市级）</li>
+									<li>美容院（乡级）</li>
+									<li>医美整形（中医诊所）</li>
+								</ul>-->
+								<ul class="zhiwei" id="zhiwei">
+									<li>总经理</li>
+									<li>行政总监</li>
+									<li>行政（文员）</li>
+									<li>销售总监</li>
+									<li>销售经理</li>
+									<li>销售（业务）</li>
+									<li>技术总监</li>
+									<li>技术总监</li>
+								</ul>
+							</div>
+						</div>
+						<div class="topPage">
+							<img src="img/topPageLeft.png" id="topPageLeft" />
+							<a class="topPageNum"><span id="topNowPage">1</span> / <span id="topAllpage">30</span></a>
+							<img src="img/topPageRight.png" id="topPageRight" />
+						</div>
+					</div>
+					<!--检索条件  end-->
+					<!--职位内容  begin-->
+					<div class="zhiweiContent">
+						<div class="everyZhiwei">
+							<img src="img/weixuanzhong.png" />
+							<div class="leftZhiwei">
+								<a class="zhiweiTitle" href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">美容师<span>[兼职]</span><span>2018-08-03</span></a>
+								<p>3K-8K</p>
+								<p>石家庄-桥西区 | 大专 | 1-2年工作经验</p>
+								<div class="zhiweidaiyu">
+									<span>五险一金</span>
+									<span>双休</span>
+									<span>带薪年假</span>
+									<span>全勤奖</span>
+								</div>
+							</div>
+							<div class="middle"></div>
+							<div class="rightZhiwei">
+								<div class="gongsi">
+									<a href="#">九尾狐电子科技有限公司sdfsdfsf</a>
+									<p>美容院|3000平米|20-99人</p>
+								</div>
+								<a href="#"><img/></a>
+								<div class="caozuoZhiwei">
+									<!--class用来js写效果-->
+									<a class="shoucangzhiweiA"><img src="img/shoucang.png" />收藏职位</a>
+									<a class="shenqingzhiweiA">申请职位</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="everyZhiwei">
+							<img src="img/weixuanzhong.png" />
+							<div class="leftZhiwei">
+								<a class="zhiweiTitle"  href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">美容师<span>[兼职]</span><span>2018-08-03</span></a>
+								<p>3K-8K</p>
+								<p>石家庄-桥西区 | 大专 | 1-2年工作经验</p>
+								<div class="zhiweidaiyu">
+									<span>五险一金</span>
+									<span>双休</span>
+									<span>带薪年假</span>
+									<span>全勤奖</span>
+								</div>
+							</div>
+							<div class="middle"></div>
+							<div class="rightZhiwei">
+								<div class="gongsi">
+									<a href="#">九尾狐电子科技有限公司sdfsdfsf</a>
+									<p>美容院|3000平米|20-99人</p>
+								</div>
+								<a href="#"><img/></a>
+								<div class="caozuoZhiwei">
+									<!--class用来js写效果-->
+									<a class="shoucangzhiweiA"><img src="img/shoucang.png" />收藏职位</a>
+									<a class="shenqingzhiweiA">申请职位</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="everyZhiwei">
+							<img src="img/weixuanzhong.png" />
+							<div class="leftZhiwei">
+								<a class="zhiweiTitle"  href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">美容师<span>[兼职]</span><span>2018-08-03</span></a>
+								<p>3K-8K</p>
+								<p>石家庄-桥西区 | 大专 | 1-2年工作经验</p>
+								<div class="zhiweidaiyu">
+									<span>五险一金</span>
+									<span>双休</span>
+									<span>带薪年假</span>
+									<span>全勤奖</span>
+								</div>
+							</div>
+							<div class="middle"></div>
+							<div class="rightZhiwei">
+								<div class="gongsi">
+									<a href="#">九尾狐电子科技有限公司sdfsdfsf</a>
+									<p>美容院|3000平米|20-99人</p>
+								</div>
+								<a href="#"><img/></a>
+								<div class="caozuoZhiwei">
+									<!--class用来js写效果-->
+									<a class="shoucangzhiweiA"><img src="img/shoucang.png" />收藏职位</a>
+									<a class="shenqingzhiweiA">申请职位</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="everyZhiwei">
+							<img src="img/weixuanzhong.png" />
+							<div class="leftZhiwei">
+								<a class="zhiweiTitle"  href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">美容师<span>[兼职]</span><span>2018-08-03</span></a>
+								<p>3K-8K</p>
+								<p>石家庄-桥西区 | 大专 | 1-2年工作经验</p>
+								<div class="zhiweidaiyu">
+									<span>五险一金</span>
+									<span>双休</span>
+									<span>带薪年假</span>
+									<span>全勤奖</span>
+								</div>
+							</div>
+							<div class="middle"></div>
+							<div class="rightZhiwei">
+								<div class="gongsi">
+									<a href="#">九尾狐电子科技有限公司sdfsdfsf</a>
+									<p>美容院|3000平米|20-99人</p>
+								</div>
+								<a href="#"><img/></a>
+								<div class="caozuoZhiwei">
+									<!--class用来js写效果-->
+									<a class="shoucangzhiweiA"><img src="img/shoucang.png" />收藏职位</a>
+									<a class="shenqingzhiweiA">申请职位</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="everyZhiwei">
+							<img src="img/weixuanzhong.png" />
+							<div class="leftZhiwei">
+								<a class="zhiweiTitle"  href="../zhiweixiangqing/zhiweixiangqing.html" target="_blank">美容师<span>[兼职]</span><span>2018-08-03</span></a>
+								<p>3K-8K</p>
+								<p>石家庄-桥西区 | 大专 | 1-2年工作经验</p>
+								<div class="zhiweidaiyu">
+									<span>五险一金</span>
+									<span>双休</span>
+									<span>带薪年假</span>
+									<span>全勤奖</span>
+								</div>
+							</div>
+							<div class="middle"></div>
+							<div class="rightZhiwei">
+								<div class="gongsi">
+									<a href="#">九尾狐电子科技有限公司sdfsdfsf</a>
+									<p>美容院|3000平米|20-99人</p>
+								</div>
+								<a href="#"><img/></a>
+								<div class="caozuoZhiwei">
+									<!--class用来js写效果-->
+									<a class="shoucangzhiweiA"><img src="img/shoucang.png" />收藏职位</a>
+									<a class="shenqingzhiweiA">申请职位</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--职位内容  end-->
+					<!--选择情况 begin-->
+					<div id="yixuanzeFixed" class="weixuan">
+						<div class="allSelect">
+							<div class="ckbQuanxuan">
+								<input type="checkbox" id="ckbQuanxuan" />
+								<a>全选</a>
+							</div>
+							<a id="bottomShoucangzhiwei">收藏职位</a>
+							<a class="noShenqingzhiwei" id="bottomShenqingzhiwei">申请职位<span id="shenqingzhiweiNum"></span></a>
+							<div class="divPage">
+								<div class="box" id="box"></div>
+								<script src="../common/js/qiuzhiPaging.js"></script>
+								<script>
+									var setTotalCount = 15;
+									$('#box').paging({
+										initPageNo: 1, // 初始页码
+										totalPages: 10, //总页数
+										totalCount: '合计' + setTotalCount + '条数据', // 条目总数
+										slideSpeed: 600, // 缓动速度。单位毫秒
+										jump: true, //是否支持跳转
+										callback: function(page) { // 回调函数
+											console.log(page);
+										}
+									})
+								</script>
+							</div>
+						</div>
+
+					</div>
+					<!--选择情况 begin-->
+				</div>
+				<!--左侧求职  end-->
+
+				<!--右侧广告  begin-->
+				<div class="rightGuanggao">
+					<ul>
+						<li>
+							<a href="#"><img src="img/guanggao.png" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/guanggao.png" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/guanggao.png" /></a>
+						</li>
+					</ul>
+				</div>
+				<!--右侧广告  end-->
+			</div>
+			<iframe width="100%" height="230px" src="../common/footer.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+			<!-- 申请职位成功  begin -->
+			<div class="tanchuangBck" id="shenqingSuccess">
+				<div class="tanchuang shenqingSuccessDisplay">
+					<h2 class="tanchuangTitle">申请成功</h2>
+					<p id="shenqingSuccessInfo">您的简历已投递，请静候佳音</p>
+					<a class="successKnow" onclick="tanchuangClose(this)">知道了</a>
+				</div>
+			</div>
+			<!-- 申请职位成功  end -->
+
+			<!--职位申请弹窗  begin-->
+			<div class="tanchuangBck" id="zhiweishenqingDisplay">
+				<div class="tanchuang zhiweishenqingDisplay">
+					<p class="close" id="zhiweishenqingClose">×</p>
+					<h2 class="tanchuangTitle">职位申请</h2>
+					<p>简历名称：求职美容师
+						<a href="#">修改</a>
+					</p>
+					<div>
+						<a id="displayLijishenqing">立即申请</a>
+						<a href="../jianlizhongxin/yulanJianli.html" target="_blank">预览简历</a>
+					</div>
+				</div>
+			</div>
+			<!--职位申请弹窗  end-->
+			<!-- 职位收藏成功  begin -->
+			<div class="tanchuangBck" id="shoucangSuccess">
+				<div class="tanchuang shoucangSuccessDisplay">
+					<h2 class="tanchuangTitle">职位已收藏</h2>
+					<p>您可在个人中心，收藏与关注中查看收藏的内容</p>
+					<a class="successKnow" onclick="tanchuangClose(this)">知道了</a>
+				</div>
+			</div>
+			<!-- 职位收藏成功  end -->
+			<!-- 职位收藏成功  begin -->
+			<div class="tanchuangBck" id="weixuanZhiwei">
+				<div class="tanchuang shoucangSuccessDisplay">
+					<h2 class="tanchuangTitle">提示</h2>
+					<p>请勾选职位</p>
+					<a class="successKnow" onclick="tanchuangClose(this)">知道了</a>
+				</div>
+			</div>
+			<!-- 职位收藏成功  end -->
+
+		</div>
+	</body>
+
+</html>

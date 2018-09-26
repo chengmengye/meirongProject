@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="../common/js/jquery-1.11.0.js" charset="utf-8"></script>
+		<script type="text/javascript" src="../common/js/jquery.Jcrop.js" charset="utf-8"></script>
+		<script type="text/javascript" src="../common/js/imgCaijian.js" charset="utf-8"></script>
+		<script type="text/javascript" src="../common/js/city-picker.data.js" charset="utf-8"></script>
+		<script type="text/javascript" src="../common/js/city-picker.js" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../common/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/personallist.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/topTitle.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/city-picker.css">
+		<link rel="stylesheet" type="text/css" href="../common/css/jquery.Jcrop.css" />
+		<link rel="stylesheet" type="text/css" href="../common/css/layout.css" />
+		<title>个人中心</title>
+	</head>
+
+	<body>
+
+		<!--头部-begin-->
+
+		<div class="titl">
+			<div class="topTitle">
+				<div class="titleContent">
+					<div class="titleLeftContent">
+						<ul>
+							<li>
+								<a href="###">熠美翼首页</a>
+							</li>
+							<li>
+								<a href="###" class="dingwei" id="location"></a>
+							</li>
+						</ul>
+						<form id="locationForm">
+							<div id="distpicker">
+								<div>
+									<div style="position: relative;">
+										<input id="city-picker3" class="form-control" readonly type="text" value="北京市/北京市" data-toggle="city-picker">
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="titleRightContent">
+						<ul>
+							<li>
+								<a>
+									<span id="topTitleNicheng">茶山有鹿</span>
+									<img class="huiyuan" src="../common/img/notHuiyuan.png" />
+								</a>
+							</li>
+							<li>
+								<a href="###">消息（<span>0</span>）</a>
+							</li>
+							<li>
+								<a id="aGerenzhongxin">
+									个人中心
+									<img src="../common/img/xia.png" />
+								</a>
+								<div class="gerenzhongxinDisplay">
+									<div class="Jiantou gerenzhongxinJiantou"></div>
+									<ul>
+										<li>
+											<a href="#">积分账户</a>
+										</li>
+										<li>
+											<a href="#">美币账户</a>
+										</li>
+										<li>
+											<a href="#">个人风采</a>
+										</li>
+										<li>
+											<a href="#">信用中心</a>
+										</li>
+										<li>
+											<a href="#">勋章墙</a>
+										</li>
+										<li>
+											<a href="#">关注与收藏</a>
+										</li>
+										<li>
+											<a href="#">资料与账户</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li>
+								<a id="aWangzhandaohang">
+									网站导航
+									<img src="../common/img/xia.png" />
+								</a>
+								<div class="wangzhandaohangDisplay">
+									<div class="Jiantou wangzhandaohangJiantou"></div>
+									<ul>
+										<li>
+											<a href="#">美业新闻</a>
+										</li>
+										<li>
+											<a href="#">招商代理</a>
+										</li>
+										<li>
+											<a href="#">品牌加盟</a>
+										</li>
+										<li>
+											<a href="#">找工作</a>
+										</li>
+										<li>
+											<a href="#">活动模板</a>
+										</li>
+										<li>
+											<a href="#">美业课堂</a>
+										</li>
+										<li>
+											<a href="#">教育会讯</a>
+										</li>
+										<li>
+											<a href="#">新品快递</a>
+										</li>
+										<li>
+											<a href="#">积分商城</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--头部-end-->
+
+		<div id="sub">
+			<div class="sub_cent">
+
+				<!--左侧导航-begin-->
+
+				<div class="sub_left">
+					<div class="person">
+						<ul>
+							<li class="toux">
+								<canvas id="leftTouxiang"></canvas>
+								<img src="../common/img/touxiang.jpg" />
+							</li>
+							<li>
+								<p>茶山有鹿</p>
+							</li>
+							<li>
+								<ul class="person_ul">
+									<li id="person_li_one"><img src="../common/img/touxiang.jpg" /></li>
+									<li><img src="../common/img/touxiang.jpg" /></li>
+									<li><img src="../common/img/touxiang.jpg" /></li>
+									<li><img src="../common/img/touxiang.jpg" /></li>
+									<li><img src="../common/img/touxiang.jpg" /></li>
+									<li><img src="../common/img/touxiang.jpg" /></li>
+									<li><img src="../common/img/touxiang.jpg" /></li>
+								</ul>
+							</li>
+							<li>
+								<p>个人主页</p>
+							</li>
+						</ul>
+					</div>
+					<ul class="part">
+						<li>
+							<a href="###">积分账户</a>
+						</li>
+						<li>
+							<a href="###">美币账户</a>
+						</li>
+						<li>
+							<a href="###">会员中心</a>
+						</li>
+						<li>
+							<a href="###">个人风采</a>
+						</li>
+						<li>
+							<a href="###">信用中心</a>
+						</li>
+						<li>
+							<a href="###">勋章墙</a>
+						</li>
+						<li>
+							<a href="###">我的简历</a>
+						</li>
+						<li>
+							<a href="###">我的课堂</a>
+						</li>
+						<li>
+							<a href="###">我的模板</a>
+						</li>
+						<li>
+							<a href="###">我的收藏</a>
+						</li>
+						<li>
+							<a href="###">资料与账号</a>
+						</li>
+					</ul>
+				</div>
+
+				<!--左侧导航-end-->
+
+				<!--右边-->
+
+				<div class="sub_right">
+					<a>积分账户</a>
+					<div class="divJifen">
+						<div class="divJifenyue">
+							<a>积分余额</a>
+							<a>86666</a>
+						</div>
+						<div class="divJifenShangcheng">
+							<a class="jifenGuize" id="jifenguize"><img src="../img/wenhao.png" /><span>积分规则</span></a>
+							<a class="aJifenShangcheng">积分商城</a>
+						</div>
+						<div class="jifenguizeDisplay">
+							<p id="jifenguizeClose">×</p>
+							<h2>积分规则</h2>
+							<p>积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则积分规则</p>
+						</div>
+					</div>
+					<div class="divJifenmingxiTitle">
+						<a>积分明细</a>
+						<a>最多显示一年的积分明细</a>
+					</div>
+					<div class="divJifenmingxiTable">
+						<div class="th">
+							<span>时间</span>
+							<span>积分</span>
+							<span>类型</span>
+						</div>
+						<div class="tableContent">
+							<div id="jifenmingxiTable">
+								<div class="tr">
+									<span>1</span>
+									<span>积分</span>
+									<span>类型类型类型类型类型类型类型类型类型类型类型类型类</span>
+								</div>
+								<div class="tr">
+									<span>2</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>3</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>4</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>5</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>6</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>7</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>8</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>9</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>10</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>11</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>12</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>13</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>14</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+								<div class="tr">
+									<span>15</span>
+									<span>积分</span>
+									<span>类型</span>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+					<script src="http://code.jquery.com/jquery-latest.js"></script>
+					<script src="../js/jifenzhanghu.js"></script>
+					<div class="box" id="box"></div>
+					<script src="../../common/js/paging.js"></script>
+					<script>
+						var setTotalCount = 15;
+						$('#box').paging({
+							initPageNo: 1, // 初始页码
+							totalPages: 10, //总页数
+							totalCount: '合计' + setTotalCount + '条数据', // 条目总数
+							slideSpeed: 600, // 缓动速度。单位毫秒
+							jump: false, //是否支持跳转
+							callback: function(page) { // 回调函数
+								console.log(page);
+							}
+						})
+					</script>
+				</div>
+			</div>
+		</div>
+
+		<!--footer-begin-->
+
+		<div class="footer">
+			<iframe align="center" width="100%" height="230" src="footer.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+		</div>
+
+		<!--footer-end-->
+
+	</body>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="../common/js/topTitle.js"></script>
+	<script type="text/javascript" src="../common/js/personallist.js" charset="utf-8"></script>
+
+</html>

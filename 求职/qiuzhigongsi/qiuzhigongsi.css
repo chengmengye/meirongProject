@@ -1,0 +1,247 @@
+body,div,p,ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font: "microsoft yahei";
+	color: #212121;
+}
+
+.content {
+	width: 100%;
+	height: auto;
+	background-color: #F5F5F5;
+}
+
+.contentContent {
+	position: relative;
+	width: 1200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+	overflow: hidden;
+}
+/*左侧求职  begin*/
+.leftQiuzhi{
+	float: left;
+	width: 1200px;
+	height: auto;
+	overflow: hidden;
+}
+
+/*top搜索 begin*/
+.topSousuo{
+	width: 1200px;
+	height: auto;
+	/*margin-top: 25px;*/
+	padding-top: 18px;
+	padding-left: 10px;
+	padding-bottom: 18px;
+	background-color: white;
+	border-radius: 5px;
+	font-size: 14px;
+}
+.topSousuo > div{
+	margin-bottom: 20px;
+}
+.topSousuo > div:last-of-type{
+	margin-bottom: 0;
+}
+.topSousuo > div > a{
+	display: inline-block;
+	width: 80px;
+	text-align: right;
+}
+.topSousuo > div >span{
+	display: inline-block;
+	width: auto;
+	height: 22px;
+	margin-left: 5px;
+	line-height: 22px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #666;
+	cursor: pointer;
+	border-radius: 2px;
+}
+.topSousuoClick{
+	color: white !important;
+	background-color: #C93756 !important;
+}
+
+.topSousuo > div >span:hover{
+	color: white;
+	background-color: #C93756;
+}
+.gongzuodidian{
+	overflow: hidden;
+}
+.gongzuodidian > a{
+	float: left;
+}
+.gongzuodidianSelect{
+	float: left;
+	margin-left: 10px;
+	overflow: hidden;
+}
+/*top搜索 end*/
+
+/*排序  begin*/
+.sort{
+	width: 1200px;
+	height: auto;
+	margin-top: 20px;
+	padding: 18px 18px 18px 10px;
+	background-color: white;
+	border-radius: 5px;
+	font-size: 14px;
+}
+.sort > div{
+	display: inline-block;
+}
+.paixufangshi > a{
+	display: inline-block;
+	width: 80px;
+	text-align: right;
+}
+.paixufangshi >span{
+	display: inline-block;
+	width: auto;
+	height: 22px;
+	margin-left: 5px;
+	line-height: 22px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #666;
+	cursor: pointer;
+	border-radius: 2px;
+}
+.paixufangshi > span:nth-of-type(2),
+.paixufangshi > span:nth-of-type(3){
+	padding-right: 20px;
+	background: url(img/Xiapaixu.png) no-repeat 57px center;
+}
+
+.paixufangshi >span:last-of-type{
+	margin-left: 0;
+}
+.paixufangshi >span:hover{
+	color: white;
+	background: url(img/whiteXiapaixu.png) no-repeat  #C93756 57px center;
+}
+.paixufangshiImg{
+	background: url(img/whiteXiapaixu.png) no-repeat  #C93756 57px center !important;
+}
+.topPage{
+	float: right;
+	margin-right: 28px;
+}
+.topPage > img{
+	vertical-align: middle;
+	cursor: pointer;
+}
+.topPageNum{
+	vertical-align: middle;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.topPageNum > span:last-of-type{
+	color: #666;
+}
+/*排序  end*/
+
+/* 热门企业  begin */
+.remenqiyeTitle{
+	margin-top: 30px;
+}
+.remenqiyeTitle > a:first-of-type{
+	font-size: 18px;
+	font-weight: bold;
+}
+.remenqiyeContent{
+	width: 110%;
+	height: auto;
+}
+.everyRemenqiye{
+	position: relative;
+	display: inline-block;
+	width: 348px;
+	height: 178px;
+	margin-right: 18px;
+	margin-top: 20px;
+	padding: 25px 20px 25px 20px;
+	background-color: white;
+	border-radius: 5px;
+}
+.everyRemenqiye > a > img{
+	float: left;
+	width: 84px;
+	height: 84px;
+}
+.remenqiyeInfo{
+	float: left;
+	margin-left: 10px;
+	font-size: 14px;
+	color: #666;
+}
+.remenqiyeInfo > a:first-of-type{
+	display: block;
+	font-size: 18px;
+	color: #212121;
+	margin-bottom: 18px;
+}
+.remenqiyeInfo > a:first-of-type:hover{
+	color: #C93756;
+}
+.remenqiyeInfo > a:last-of-type{
+	display: block;
+	margin-top: 5px;
+}
+.everyRemenqiye > hr{
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 17px;
+	border: none;
+	border-top: 1px solid #E6E6E6;
+}
+.qiyezhaopin{
+	float: left;
+	text-align: center;
+}
+.zhaopinInfo{
+	display: inline-block;
+	float: left;
+	padding-left: 30px;
+	padding-right: 35px;
+}
+.zhaopinInfo > p:first-of-type{
+	font-size: 18px;
+	color: #C93756;
+}
+.zhaopinInfo > p:last-of-type{
+	margin-top: 5px;
+	font-size: 12px;
+	color: #666;
+}
+.zhaopinInfo:nth-of-type(2){
+	border-left: 1px solid #E6E6E6;
+	border-right: 1px solid #E6E6E6;
+}
+/* 热门企业  end */
+.divPage{
+	width: 1200px;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}

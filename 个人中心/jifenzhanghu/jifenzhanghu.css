@@ -1,0 +1,236 @@
+body,
+div,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	font: "microsoft yahei";
+	color: #212121;
+}
+
+.content {
+	width: 100%;
+	height: auto;
+	background-color: #F5F5F5;
+}
+
+.contentContent {
+	width: 1200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 30px;
+}
+
+.rightContent {
+	/*position: relative;*/
+	display: inline-block;
+	width: 880px;
+	height: 951px;
+	background-color: white;
+	border-radius: 5px;
+	float: right;
+}
+.sub_right_title{
+	display: inline-block;
+	margin: 28px 0 20px 20px;
+	font-size: 18px;
+	line-height: 20px;
+	color: #212121;
+}
+/*积分余额*/
+.divJifen{
+	width: 841px;
+	height: 129px;
+	margin-left: 20px;
+	background-color: #F5F5F5;
+}
+.divJifenyue{
+	display: inline-block;
+	width: auto;
+	height: 129px;
+	margin-left: 30px;
+}
+.divJifenyue>a{
+	display: block;
+	margin: 29px 0 22px 0;
+	font-size: 18px;
+	line-height: 20px;
+	color: #212121;
+}
+.divJifenyue>a:nth-of-type(2){
+	font-size: 36px;
+	color: #c93756;
+}
+
+.divJifenShangcheng{
+	display: inline-block;
+	width: 100px;
+	height: 129px;
+	float: right;
+	margin-right: 28px;
+}
+.jifenGuize{
+	float: right;
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 18px;
+	margin-right: 0;
+	font-size: 14px;
+	color: #999;
+}
+.jifenGuize > span{
+	margin-left: 5px;
+	line-height: 16px;
+	vertical-align: top;
+}
+#jifenguize:hover{
+	color: #212121;
+	cursor: pointer;
+}
+.aJifenShangcheng{
+	float: right;
+	display: block;
+	width: auto;
+	height: 34px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px solid #C93756;
+	border-radius: 5px;
+	font-size: 14px;
+	line-height: 35px;
+	color: #C93756;
+	cursor: pointer;
+}
+.aJifenShangcheng:hover{
+	color: white;
+	background-color: #C93756;
+}
+.jifenguizeDisplay{
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -300px;
+	margin-left: -400px;
+	width: 798px;
+	height: 600px;
+	text-align: center;
+	/*border: 1px solid #F5F5F5;*/
+	box-shadow: 0px 0px 10px rgb(0,0,0,.2), 0px 0px 10px rgb(0,0,0,.2);
+	background-color: white;
+	color: #212121;
+	z-index: 1;
+}
+.jifenguizeDisplay > p:first-of-type{
+	float: right;
+	margin-top: 2px;
+	margin-right: 20px;
+	font-size: 36px;
+	color: #212121;
+	cursor: pointer;
+}
+.jifenguizeDisplay h2{
+	font-weight: 300;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.jifenguizeDisplay > p:nth-of-type(2){
+	width: 709px;
+	height: 485px;
+	border: none;
+	padding-left: 40px;
+	padding-right: 49px;
+	font-size: 14px;
+}
+
+/*积分明细*/
+.divJifenmingxiTitle{
+	width: 812px;
+	height: auto;
+	padding-left: 30px;
+	padding-right: 40px;
+	margin-top: 30px;
+}
+.divJifenmingxiTitle > a:first-of-type{
+	font-size: 16px;
+	color: #212121;
+}
+.divJifenmingxiTitle > a:nth-of-type(2){
+	float: right;
+	font-size: 12px;
+	color: #999;
+}
+/*积分明细表格*/
+.divJifenmingxiTable{
+	margin-top: 10px;
+	margin-left: 20px;
+	width: 840px;
+	height: 609px;
+	border-top: 1px solid #ccc;
+	font-size: 14px;
+	line-height: 22px;
+}
+.tableContent{
+	width: 840px;
+	height: 580px;
+	/*padding-top: 10px;*/
+	overflow: hidden;
+}
+.divJifenmingxiTable span{
+	display: inline-block;
+	text-align: center;
+}
+.divJifenmingxiTable > div span:nth-child(1),
+.divJifenmingxiTable > div span:nth-child(2)
+{
+	width: 200px;
+}
+.divJifenmingxiTable > div span:nth-child(3){
+	width: 250px;
+}
+
+.divJifenmingxiTable .th{
+	margin-bottom: 10px;
+	background-color: #F5F5F5;
+	color: #212121;
+}
+.th span{
+	line-height: 14px;
+	padding-top: 8px;
+	padding-bottom: 7px;
+}
+.divJifenmingxiTable .tr{
+	color: #666;
+	cursor: pointer;
+}
+.tr span{
+	vertical-align: middle;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.tr:hover{
+	background-color: #F5F5F5;
+}
+
+.bac {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000000;
+	opacity: 0.45;
+}
