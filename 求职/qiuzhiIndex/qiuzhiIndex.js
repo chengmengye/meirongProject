@@ -57,7 +57,7 @@ $(document).ready(function() {
 	});
 
 	//是否存在简历
-	var isHaveJianli = 0;
+	var isHaveJianli = 1;
 	if(isHaveJianli == 0) {
 		$("#noJianliInfo").css("display", "inline-block");
 		$("#jianliInfo").css("display", "none");

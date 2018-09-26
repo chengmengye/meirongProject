@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" href="gerenfengcai.css" />
+		<link rel="stylesheet" href="qiyefengcai.css" />
 		<link rel="stylesheet" href="../common/css/tanchuang.css" />
 	</head>
 
@@ -24,21 +24,21 @@
 					<div class="mainContent">
 						<!--没有照片时  begin-->
 						<div class="notHavePhoto" id="notHavePhoto">
-							<input type="file" id="noHavePhotoFile" onchange="UpladFileImg(this,0)" />
+							<input type="file" id="noHavePhotoFile" onchange="UpladFileImg(this,1)" />
 							<a class="shangchuanzhaopian" id="aNohaveShangchuan"><span>+</span> 上传照片</a>
 							<p class="kaitonghuiyuanTishi">非会员用户最多上传八张图片，开通会员可无限上传。<span class="isHuiyuan">立即开通</span></p>
 						</div>
 						<!--没有照片时  end-->
 						<!--有照片时  begin-->
 						<div class="havePhoto" id="havePhoto">
-							<input type="file" id="havePhotoFile" onchange="UpladFileImg(this,0)" />
+							<input type="file" id="havePhotoFile" onchange="UpladFileImg(this,1)" />
 							<a class="shangchuanzhaopian" id="aHaveShangchuan"><span>+</span> 上传照片</a>
 							<p class="kaitonghuiyuanTishi">非会员用户最多上传八张图片，开通会员可无限上传。<span class="isHuiyuan">立即开通</span></p>
 							<div class="photo" id="photo">
 								<ul>
 									<!--<li>
 										<div class="divImg">
-											<img alt="" src="img/2.jpg" />
+											<img alt="" src="img/2.jpg" onload="imgLoad(this)"/>
 										</div>
 										<div class="imgTopRight"></div>
 										<div class="imgCaozuo">
@@ -220,7 +220,7 @@
 		<!--图片查看  end-->
 		<!--<div class="bacLight"></div>-->
 		<script src="../common/js/jquery-1.11.0.js" charset="utf-8"></script>
-		<script src="gerenfengcai.js" charset="utf-8"></script>
+		<script src="qiyefengcai.js" charset="utf-8"></script>
 		<script src="../common/js/tanchuang.js" charset="utf-8"></script>
 		<script src="photoCompress.js" charset="utf-8"></script>
 	</body>

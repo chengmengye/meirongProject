@@ -51,11 +51,11 @@
 .okButton{
 	margin-right: 10px;
 	color: white;
-	background-color: #C93756;
-	border: 1px solid #C93756;
+	background-color: #1976d2;
+	border: 1px solid #1976d2;
 }
 .okButton:hover{
-	background-color: #9e2d45;
+	background-color: #0264c5;
 }
 .noButton{
 	color: #666;
@@ -74,14 +74,14 @@
 	margin-top: 30px;
 	line-height: 35px;
 	font-size: 14px;
-	color: #C93756;
-	border: 1px solid #C93756;
+	color: #1976d2;
+	border: 1px solid #1976d2;
 	border-radius: 5px;
 	cursor: pointer;
 }
 .successKnow:hover{
 	color: white;
-	background-color: #C93756;
+	background-color: #1976d2;
 }
 /*弹窗的遮罩*/
 .bac {

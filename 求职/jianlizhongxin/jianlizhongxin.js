@@ -917,4 +917,9 @@ $(document).ready(function() {
 	$("#renqihuomiaoGuige").click(function() {
 		$("#renqihuomiaoDisplay").css("display", "block");
 	});
+	
+//	邀请好友助力点击 
+	$("#yaoqinghaoyouZhuli").click(function(){
+		$("#haoyouzhuliDisplay").css("display","block");
+	});
 });

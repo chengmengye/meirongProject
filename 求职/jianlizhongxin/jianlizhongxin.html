@@ -252,6 +252,11 @@
 									<li><input type="checkbox" name="ckbQiwangzhiwei" /><span>销售（业务）</span></li>
 									<li><input type="checkbox" name="ckbQiwangzhiwei" /><span>技术总监</span></li>
 									<li><input type="checkbox" name="ckbQiwangzhiwei" /><span>技术总监</span></li>
+									<li><input type="checkbox" name="ckbQiwangzhiwei" /><span>销售总监</span></li>
+									<li><input type="checkbox" name="ckbQiwangzhiwei" /><span>销售经理</span></li>
+									<li><input type="checkbox" name="ckbQiwangzhiwei" /><span>销售（业务）</span></li>
+									<li><input type="checkbox" name="ckbQiwangzhiwei" /><span>技术总监</span></li>
+									<li><input type="checkbox" name="ckbQiwangzhiwei" /><span>技术总监</span></li>
 								</ul>
 								<img class="weitianxieImg" src="img/redWenhao.png" />
 							</div>
@@ -799,7 +804,7 @@
 					<div class="caozuojianli">
 						<div class="jianliBianji">
 							<div id="yulanjanli">
-								<img src="img/bianjijianli.png" />
+								<img src="img/yulanjianli.png" />
 								<p>预览简历</p>
 							</div>
 							<div id="refeshJianli">
@@ -839,13 +844,13 @@
 						<p>人气小火苗</p>
 						<img src="img/wenhao.png" id="renqihuomiaoGuige" />
 						<p class="huomiaozhi">23</p>
-						<a>邀请好友助力</a>
+						<a id="yaoqinghaoyouZhuli">邀请好友助力</a>
 					</div>
 				</div>
 				<!--右侧操作简历  end-->
 			</div>
 			<iframe width="100%" height="230px" src="../common/footer.html" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
-			
+
 			<div class="bac" id="bac"></div>
 			<!--任务奖励弹框  begin-->
 			<div class="tanchuangBck" id="">
@@ -871,7 +876,7 @@
 			<!--修改简历名称  begin-->
 			<div class="tanchuangBck" id="editJianliNameDisplay">
 				<div class="tanchuang editJianliName">
-					<p class="close" onclick="tanchuangClose(this)">×</p>
+					<img src="../common/img/close.png" class="close" onclick="tanchuangClose(this)" />
 					<h2 class="tanchuangTitle">修改简历名称</h2>
 					<input type="text" value="美容师 美容导师" id="inputJianliName" maxlength="10" />
 					<div>
@@ -889,7 +894,7 @@
 					<img src="../common/img/close.png" class="close" onclick="tanchuangClose(this)" />
 					<h2 class="tanchuangTitle">选择照片</h2>
 					<ul class="gerenxingxiangPhoto" id="gerenxingxiangPhoto">
-						<li>
+						<li class="gerenxingxiangPhotoClick">
 							<img src="textImg/1.jpg" onload="imgLoad(this,175,233)" />
 						</li>
 						<li>
@@ -903,6 +908,15 @@
 						</li>
 						<li>
 							<img src="textImg/5.jpg" onload="imgLoad(this,175,233)" />
+						</li>
+						<li>
+							<img src="textImg/6.jpg" onload="imgLoad(this,175,233)" />
+						</li>
+						<li>
+							<img src="textImg/7.jpg" onload="imgLoad(this,175,233)" />
+						</li>
+						<li>
+							<img src="textImg/1.jpg" onload="imgLoad(this,175,233)" />
 						</li>
 						<li>
 							<img src="textImg/6.jpg" onload="imgLoad(this,175,233)" />
@@ -996,13 +1010,38 @@
 			<!--修改简历名称  begin-->
 			<div class="tanchuangBck" id="renqihuomiaoDisplay">
 				<div class="tanchuang renqihuomiaoDisplay">
-					<p class="close" onclick="tanchuangClose(this)">×</p>
+					<img src="../common/img/close.png" class="close" onclick="tanchuangClose(this)" />
 					<h2 class="tanchuangTitle">人气小火苗</h2>
 					<p>邀请好友为你助力，可增加小火苗值，有助于简历排名，可以让更多的企业发现你。</p>
 				</div>
 			</div>
 			<!--修改简历名称  end-->
 
+			<!--邀请好友助力  begin-->
+			<div class="tanchuangBck" id="haoyouzhuliDisplay">
+				<div class="tanchuang haoyouzhuliDisplay">
+					<img src="../common/img/close.png" class="close" onclick="tanchuangClose(this)" />
+					<h2 class="tanchuangTitle">邀请好友助力</h2>
+					<div class="haoyouzhuliContent">
+						<p>复制以下链接给你的好友，好友助力增加火苗值</p>
+						<p>http//www.yimeiyi.com/jianlizhongxin</p>
+					</div>
+					<div>
+						<span class="button okButton">复制链接</span>
+						<span class="button noButton" onclick="cancle(this)">取消</span>
+					</div>
+				</div>
+			</div>
+			<!--邀请好友助力  end-->
+
+			<!--复制成功  begin-->
+			<div class="tanchuangBck" id="fuzhilianjieSuccessDisplay">
+				<div class="tanchuang fuzhilianjieSuccessDisplay">
+					<h2 class="tanchuangTitle">复制成功</h2>
+					<a class="successKnow" onclick="tanchuangClose(this)">知道了</a>
+				</div>
+			</div>
+			<!--复制成功  end-->
 		</div>
 	</body>
 
