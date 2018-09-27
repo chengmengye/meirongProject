@@ -10,12 +10,12 @@
 		<link rel="stylesheet" href="../common/css/qiuzhiPaging.css" />
 		<link rel="stylesheet" href="../common/css/xialaCity-picker.css" />
 		<script src="../common/js/jquery-1.11.0.js" charset="UTF-8"></script>
+		<script src="https://cdn.bootcss.com/clipboard.js/2.0.1/clipboard.js"></script>
 		<script src="../common/js/tanchuang.js" charset="UTF-8"></script>
 		<script src="../common/js/jquery.timers-1.2.js" charset="UTF-8"></script>
 		<script src="../common/js/city-picker.data.js" charset="UTF-8"></script>
 		<script src="../common/js/xialaCity-picker.js" charset="UTF-8"></script>
 		<script src="jianlizhongxin.js" charset="UTF-8"></script>
-		<script src=""></script>
 	</head>
 
 	<body>
@@ -1024,10 +1024,10 @@
 					<h2 class="tanchuangTitle">邀请好友助力</h2>
 					<div class="haoyouzhuliContent">
 						<p>复制以下链接给你的好友，好友助力增加火苗值</p>
-						<p>http//www.yimeiyi.com/jianlizhongxin</p>
+						<p id="copyContent">http//www.yimeiyi.com/jianlizhongxin</p>
 					</div>
 					<div>
-						<span class="button okButton">复制链接</span>
+						<span class="button okButton" id="copyLianjie">复制链接</span>
 						<span class="button noButton" onclick="cancle(this)">取消</span>
 					</div>
 				</div>

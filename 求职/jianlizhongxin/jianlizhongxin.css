@@ -1899,9 +1899,6 @@ textarea {
 /*好友助力弹窗   end*/
 
 /*复制链接成功弹窗   begin*/
-#fuzhilianjieSuccessDisplay{
-	display: block;
-}
 .fuzhilianjieSuccessDisplay{
 	/*display: none;*/
 	width: 400px;

@@ -922,4 +922,20 @@ $(document).ready(function() {
 	$("#yaoqinghaoyouZhuli").click(function(){
 		$("#haoyouzhuliDisplay").css("display","block");
 	});
+//	邀请好友助力中复制链接点击
+	$("#copyLianjie").click(function(){
+		var content = $("#copyContent").html();
+		var clipboard = new ClipboardJS('#copyLianjie', {
+			text: function() {
+				return content;		
+			};
+		});	
+		clipboard.on('success', function(e) {
+			$("#haoyouzhuliDisplay").css("display","none");
+			$("#fuzhilianjieSuccessDisplay").css("display","block");
+		}); 	
+//		clipboard.on('error', function(e) {
+//			console.log(e);	
+//		});
+});
 });
